@@ -1,0 +1,29 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+  include: 'N'
+
+- title: Modules
+  url: /modules/
+  include: 'N'
+
+- title: Probes
+  url: /probe/
+  include: 'N'
+
+- title: Sensors
+  url: /sensors/
+  include: 'N'
+
+- title: Components
+  url: /components/
+  include: 'N'
+
+- title: Arduino
+  url: /arduino/
+  include: 'N'
+
+- title: Search
+  url: /search/
+  include: 'N'

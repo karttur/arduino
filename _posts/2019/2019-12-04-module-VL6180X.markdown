@@ -1,0 +1,36 @@
+---
+layout: post
+title: VL6810X distance and ambient light module
+categories: module
+excerpt: "VL6180X Time-of-Flight distance and ambient light sensing"
+tags:
+  - distance
+  - time-of-flight
+  - ambient light
+  - L6810X
+image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
+date: '2019-12-04 11:27'
+modified: '2019-12-04 T18:17:25.000Z'
+comments: true
+share: true
+---
+
+### Introduction
+
+The [VL6180X Time-of-Flight distance and ambient light sensing component](https://www.st.com/en/imaging-and-photonics-solutions/vl6180x.html) uses infra-red lidar for estimating distances. It also contains an ambient light sensor. Integrated modules with the VL6180X are available from [Ddafruit](https://www.adafruit.com/product/3316), [Sparkfun](https://www.sparkfun.com/products/14722) and [Pololu](https://www.pololu.com/product/2489).
+
+For more details on the module see the [Tutorial: STMicroelectronics VL6180X Time-of-Flight LIDAR Sensor](https://mcuoneclipse.com/2016/12/03/tutorial-stmicroelectronics-vl6180x-time-of-flight-lidar-sensor/).
+
+### Availability in Sweden
+
+In Sweden the Pololu component built on the [ST VL6180X proximity and ambient light sensor](https://www.pololu.com/product/2489) is available from [Lawicel](https://www.lawicel-shop.se). The Adafruit equivalent breakout board is available from [elfa](https://www.elfa.se/sv/vl6180x-tof-avstandsmaetare-5v-adafruit-3316/p/30129217?channel=b2c&price_gs=163.75&wt_mc=se.cse.gshop.sv.-&source=googleps&ext_cid=shgooaqsesv-na&gclid=CjwKCAiA58fvBRAzEiwAQW-hzTK8MioM0FVtLuRuMXxcfe-WNIWFOCdqKsG63lCPkBr_zVCA48H6ihoCSJIQAvD_BwE), but at double the price compared to the Pololu module at Lawicel.
+
+### Meta data
+
+[Pololu data sheet for VL6180X](https://www.pololu.com/file/0J961/VL6180X.pdf).
+
+### Sketch and wire
+
+The post on [VL6810X sketch and wiring](../../project/project-ToF-VL6180X) contains instructions for how to wire the VL6810X module to an Arduino UNO board and links to libraries and codes. How to wire using an Arduino Nano board is outlined in the post [Arduino Nano project - distance](../../project/project-nano-VL6180X/).
+
+The [manual for Adafruit VL6180X Time of Flight Micro-LIDAR Distance Sensor Breakout](https://www.elfa.se/Web/Downloads/_t/ds/Adafruit_VL6180X_eng_tds.pdf?pid=30129217) contains some more illustrations on how to wire the VL6810X module with different boards.
