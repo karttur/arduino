@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AS726X spectrometer module
+title: AMS AS726X spectrometer module
 categories: module
 excerpt: "Breakout board with AMS AS726X spectrometer"
 tags:
