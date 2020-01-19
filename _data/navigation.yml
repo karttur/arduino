@@ -4,12 +4,20 @@
   url: /about/
   include: 'N'
 
-- title: Modules
-  url: /modules/
+- title: Front
+  url: /
   include: 'N'
 
-- title: Probes
-  url: /probe/
+- title: IDE
+  url: /ide/
+  include: 'N'
+
+- title: Projects
+  url: /project/
+  include: 'N'
+
+- title: Modules
+  url: /module/
   include: 'N'
 
 - title: Sensors
@@ -20,8 +28,8 @@
   url: /components/
   include: 'N'
 
-- title: Arduino
-  url: /arduino/
+- title: Other
+  url: /blog/
   include: 'N'
 
 - title: Search

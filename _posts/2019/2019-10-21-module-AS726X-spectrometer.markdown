@@ -42,14 +42,14 @@ Sparkfun offers the AMS AS726X sensor engines as barebone components:
 
 At time of writing this (January 2020) they are approximately 9 USD each.
 
-Sparkfun also offers modules with integreated the AMS AS726X sensor engines and light sources. Only two of the three sensors components are offered as single components:
+Sparkfun also offers modules with integrated the AMS AS726X sensor engines and light sources. Only two of the three sensors components are offered as single breakout boards:
 
 - [AS7262 Visible bands](https://www.sparkfun.com/products/14347)
 - [AS7263 Red to NIR bands](https://www.sparkfun.com/products/14351)
 
-These two break out boards are priced at approximately 26 USD each.
+These two modules are priced at approximately 26 USD each.
 
-Sparkfun also offers a [breakout board that combines all three to an 18 channel spectrometer (SparkFun Triad Spectroscopy Sensor - AS7265x)](https://www.sparkfun.com/products/15050), prized at approximately 65 USD.
+Sparkfun also offers a [breakout board that combines all three AMS spectrometers to an 18 channel spectrometer (SparkFun Triad Spectroscopy Sensor - AS7265x)](https://www.sparkfun.com/products/15050), prized at approximately 65 USD.
 
 Sparfun presentation with video on
 [AS726X NIR/VIS Spectral Sensor Hookup Guide](https://learn.sparkfun.com/tutorials/as726x-nirvi?_ga=2.211969364.15411215.1573062302-739318782.1573062302)

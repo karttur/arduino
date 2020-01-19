@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MIT App Inventor
-categories: arduinoide
+categories: ide
 excerpt: "MIT App Inventor"
 tags:
   - arduino IDE

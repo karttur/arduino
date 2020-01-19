@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Fritzing design app
-categories: arduino
+categories: blog
 excerpt: "Install the Fritzing project design app"
 tags:
   - arduino IDE

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I2C scanner
-categories: project
+categories: ide
 excerpt: "Arduino sketch for scanning I2C addresses on breakout boards"
 tags:
   - arduino

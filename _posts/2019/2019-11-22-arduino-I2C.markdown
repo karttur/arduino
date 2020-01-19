@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I2C communication
-categories: arduinoide
+categories: ide
 excerpt: "Ardunio hard and softcoding I2C communication bus"
 tags:
   - arduino

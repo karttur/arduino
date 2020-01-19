@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setup Arduino IDE
-categories: arduinoide
+categories: ide
 excerpt: "Setting up Arduino IDE on Mac OSX"
 tags:
   - arduino IDE
