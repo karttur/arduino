@@ -7,8 +7,9 @@ tags:
   - soil
   - sensors
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2019-10-22 11:27'
-modified: '2019-10-22 T18:17:25.000Z'
+date: '2019-10-30 11:27'
+modified: '2019-10-30
+ T18:17:25.000Z'
 comments: true
 share: true
 ---

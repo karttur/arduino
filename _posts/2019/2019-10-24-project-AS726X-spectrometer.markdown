@@ -1,24 +1,24 @@
 ---
 layout: post
-title: AMD six band spectrometer
-categories: arduinoide
+title: AMD six band spectrometer project
+categories: project
 excerpt: "Wiring up the AMD as726x spectrometer"
 tags:
   - arduino
   - spectrometer
-  - adafruit
-  - Sparkfun
+  - wiring
+  - sketch
   - I2C
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2019-11-24 11:27'
-modified: '2019-11-24 T18:17:25.000Z'
+date: '2019-10-24 11:27'
+modified: '2019-10-24 T18:17:25.000Z'
 comments: true
 share: true
 ---
 
 ### Introduction
 
-This post is about wiring the [AMS AS72Sx 6 channel broad band spectrometer](../../sensors/sensors-ams/) to an Arduino board.
+This small "project" post covers how to wire an integrated module with the [AMS AS72Sx 6 channel broad band spectrometer](../../module/module-AS726X-spectrometer/) to an Arduino board.
 
 #### The I2C communication bus
 
@@ -46,3 +46,12 @@ Breakout boards with the AMD AS72Sx sensor(s) are offered both by [Adafruit](../
 ### Wiring
 
 The wiring is the same regardless if you use the Adafruit or Sparkfun breakout boards. The Adafruit manual is [here](https://learn.adafruit.com/adafruit-as7262-6-channel-visible-light-sensor?view=all).
+
+### Adafruit additional components
+
+
+[Adafruit TFT display 1.44 (240 x 135)](https://www.adafruit.com/product/4383), also available from [Elfa](https://www.elfa.se/sv/44-tums-tft-lcd-skaerm-adafruit-2088/p/30129195?channel=b2c&price_gs=176.25&wt_mc=se.cse.gshop.sv.-&source=googleps&ext_cid=shgooaqsesv-na&&gclid=Cj0KCQiA-4nuBRCnARIsAHwyuPo4YAQ16hq3lAwA2j1m6p-NhvISnPZBGCaRi5XegqPpJp5-LjVZA0MaAv2REALw_wcB).
+
+[Adafruit TFT display 0.96 (160 x 80)](https://www.elfa.se/sv/96-tums-160-80-tft-display-delning-adafruit-3533/p/30139159?q=Adafruit+0.96&pos=2&origPos=2&origPageSize=10&track=true).
+
+The board used in the Adafruits manual for [Arduino wiring of these components](https://learn.adafruit.com/adafruit-as7262-6-channel-visible-light-sensor/arduino-wiring-test) is the Adafruit METRO M0 Express, also available from [Elfa](https://www.elfa.se/sv/adafruit-metro-m0-express-adafruit-3505/p/30129229?q=Adafruit+Metro+M0+&pos=1&origPos=1&origPageSize=10&track=true).
