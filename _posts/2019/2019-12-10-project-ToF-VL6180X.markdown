@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VL6810X sketch and wiring
+title: VL6810X sketch and wiring - UNO
 categories: project
 excerpt: "Wiring up the Pololu VL6180X Time Of Fight distance sensor"
 tags:
@@ -25,7 +25,7 @@ This post is about wiring the [VL6180X lidar Time of Flight distance and ambient
 
 The Adafruit manual for [VL6180X Time of Flight Micro-LIDAR Distance Sensor Breakout](https://www.elfa.se/Web/Downloads/_t/ds/Adafruit_VL6180X_eng_tds.pdf?pid=30129217) contains more information.
 
-Another post covers [Arduino Nano project - VL6180X distance sensor](../project-nano-VL6180X/)
+Another post covers how to wire the VL6810X to  [Nano](../project-ToF-VL6180X-nano/)
 
 #### The I2C communication bus
 
@@ -48,6 +48,12 @@ Breakout boards with the VL6180X lidar+ambinent light sensors are offered both b
 
 The wiring is the same regardless if you use the Adafruit, Sparkfun or Pololu breakout boards.
 Just connect power (5v) and ground, and then the SCL and SDA ports. All connections are item to item (5v -> 5v, gnd -> gnd, SCL -> SCL, SDA -> SDA).
+
+
+<figure>
+<img src="../../images/ToF-VL6180X-UNO_bb.png">
+<figcaption> Wiring a VL6180X Time-of-Flight sensor to an Arduino UNO board.</figcaption>
+</figure>
 
 The [Adafruit manual for VL6180X Time of Flight Micro-LIDAR Distance Sensor Breakout](https://www.elfa.se/Web/Downloads/_t/ds/Adafruit_VL6180X_eng_tds.pdf?pid=30129217) contains illustrations on how to wire the VL6810X module with different boards.
 

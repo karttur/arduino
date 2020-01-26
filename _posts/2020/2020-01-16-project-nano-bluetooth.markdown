@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bluetooth classic sketch and wiring Arduino Nano
-categories: module
+categories: project
 excerpt: "Wire and sketch HC-05 or HC-06 Bluetooth module for Arduino Nao"
 tags:
   - bluetooth

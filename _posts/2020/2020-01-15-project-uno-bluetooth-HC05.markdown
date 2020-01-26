@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bluetooth classic sketch and wiring Arduino UNO
-categories: module
+categories: project
 excerpt: "Wire and sketch HC-05 or HC-06 Bluetooth module for  Arduino UNO"
 tags:
   - bluetooth
@@ -27,6 +27,6 @@ There are many manuals and tutorials for how to wire and sketch your Arduino Blu
 ### Wiring
 
 <figure>
-<img src="../../images/fritzing-uno-HC05_01.png">
-<figcaption> Wiring a HC-05/HC-06 Classic Bluettoh module to an Arduino UNO board using a voltage divider for the HC-05/HC-06 module RX port. The voltage divider use 560 Ohm and 1 kOhm resistors. </figcaption>
+<img src="../../images/fritzing_HM10-UNO_bb.png">
+<figcaption> Wiring a HM10 Bluetooth BLE module to an Arduino UNO board using a voltage divider for the HM10 module RX port. The voltage divider use 560 Ohm and 1 kOhm resistors. </figcaption>
 </figure>

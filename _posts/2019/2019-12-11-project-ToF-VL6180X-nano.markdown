@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Arduino Nano project - VL6180X distance sensor
+title: VL6810X sketch and wiring - Nano
 categories: project
 excerpt: "Wire and sketch the VL6180X distance sensor for Arduino Nano"
 tags:
-  - arduino IDE
-  - setup
-  - Mac OSX
-  - Nano
+  - arduino
+  - time of flight
+  - lidar
+  - pololu
+  - distance
+  - ambient light
+  - VL6180X
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2020-01-08 11:27'
 modified: '2020-01-08 T18:17:25.000Z'
