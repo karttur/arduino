@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Internet of Things soil moisturr probes
-categories: sensor
+categories: sensors
 excerpt: "External connectors for arduino senor unit"
 tags:
   - probe
@@ -44,7 +44,7 @@ This [LHT65 LoRaWAN SHT20 Temperature and Humidity Sensor](https://www.elfa.se/s
 
 ### HD Denmark
 
-[https://www.digital.hededanmark.com/portfolio/soil-moisture-sensor/?xdomain_data=D84RScBZBtAO2xDX4HmTI9y5b4ZQl9CIWjRpHFFxwnbXctq3j4Nd5oyTPok%3D](Soil moisture sensor).
+[https://www.digital.hededanmark.com/portfolio/soil-moisture-sensors/?xdomain_data=D84RScBZBtAO2xDX4HmTI9y5b4ZQl9CIWjRpHFFxwnbXctq3j4Nd5oyTPok%3D](Soil moisture sensor).
 
 ### EVVOS
 
@@ -52,7 +52,7 @@ This [LHT65 LoRaWAN SHT20 Temperature and Humidity Sensor](https://www.elfa.se/s
 
 ### Wired article
 
-[A Solar-Powered Soil Sensor for Serious Gardeners](https://www.wired.com/2015/04/edyn-garden-sensor/)
+[A Solar-Powered Soil Sensor for Serious Gardeners](https://www.wired.com/2015/04/edyn-garden-sensors/)
 
 ### Enviro Pro
 

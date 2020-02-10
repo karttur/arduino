@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VL6810X sketch and wiring - Nano
-categories: project
+categories: projects
 excerpt: "Wire and sketch the VL6180X distance sensor for Arduino Nano"
 tags:
   - arduino
@@ -11,9 +11,10 @@ tags:
   - distance
   - ambient light
   - VL6180X
+  - Nano
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2020-01-08 11:27'
-modified: '2020-01-08 T18:17:25.000Z'
+date: '2019-12-02 11:27'
+modified: '2019-12-02 T18:17:25.000Z'
 comments: true
 share: true
 ---
@@ -29,7 +30,7 @@ The default libraries and sketches for the VL6180X sensor all use the
 
 #### I2C and the Arduino Nano board
 
-Larger boards have dedicated connectors for SCL and SDA, but not the Nano board. Instead the Nano board uses the analogue ports A4 for SCL and A5 for SDA. This is like a standard for most Arduino boards.
+Larger boards have dedicated connectors for SDA and SCL, but not the Nano board. Instead the Nano board uses the analogue ports A4 for SDA and A5 for SCL. This is a standard for Arduino boards lacking dedicated ports for SDA and SCL.
 
 #### Wiring
 
@@ -168,4 +169,4 @@ void loop()
 
 #### Other alternatives
 
-The post [VL6810X sketch and wiring](../project-ToF-VL6180X/) contains links to alternative sketches that retrieves more information from the VL6810X module.
+The post [VL6810X sketch and wiring - UNO](../project-ToF-VL6180X-uno/) contains links to alternative sketches that retrieves more information from the VL6810X module.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Soil sensors
-categories: sensor
+categories: sensors
 excerpt: "Soil sensors for spectral calibration"
 tags:
   - soil

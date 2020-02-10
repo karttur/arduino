@@ -24,11 +24,18 @@ The repo is thus divided in 6 main categories:
 <ul>
 
   <li><a href="../ide/index.html">IDE (Arduino Integrated Development Environment)</a></li>
-  <li><a href="../project/index.html">Projects (sketch and wiring tuorials for various modules)</a></li>
-  <li><a href="../module/index.html">Modules (integrated electronic components, usually directly useful for Arduino wiring and sketching)</a></li>
-  <li><a href="../sensor/index.html">Sensor (environmental senors, usually available as modules)</a></li>
-  <li><a href="../component/index.html">Components (Other types of electronic components)</a></li>
+  <li><a href="../projects/index.html">Projects (sketch and wiring tuorials for various modules)</a></li>
+  <li><a href="../modules/index.html">Modules (integrated electronic components, usually directly useful for Arduino wiring and sketching)</a></li>
+  <li><a href="../sensors/index.html">Sensor (environmental senors, usually available as modules)</a></li>
+  <li><a href="../components/index.html">Components (Other types of electronic components)</a></li>
   <li><a href="../blog/index.html">Blog (information that does not fit the above)</a></li>
+</ul>
+
+<h4><a href="../projects/">Software related.</a><h4>
+<ul class="post-list">
+{% for post in site.categories.ide limit:5 %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
 </ul>
 
 <h4><a href="../projects/">Arduino projects incuding hardware and software integration.</a><h4>
@@ -55,13 +62,6 @@ The repo is thus divided in 6 main categories:
 <h4><a href="../sensors/">Reviews and links to external sensors</a><h4>
 <ul class="post-list">
 {% for post in site.categories.sensor limit:5 %}
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
-{% endfor %}
-</ul>
-
-<h4><a href="../arduino/">Arduino wiring and spetching (but not a complete project)</a><h4>
-<ul class="post-list">
-{% for post in site.categories.arduinoide limit:5 %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>

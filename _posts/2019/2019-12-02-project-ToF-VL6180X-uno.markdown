@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VL6810X sketch and wiring - UNO
-categories: project
+categories: projects
 excerpt: "Wiring up the Pololu VL6180X Time Of Fight distance sensor"
 tags:
   - arduino
@@ -11,9 +11,11 @@ tags:
   - distance
   - ambient light
   - VL6180X
+  - UNO
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2019-12-10 11:27'
-modified: '2019-12-10 T18:17:25.000Z'
+date: '2019-12-02 11:27'
+modified: '2019-12-02
+ T18:17:25.000Z'
 comments: true
 share: true
 ---
@@ -21,7 +23,7 @@ share: true
 
 ### Introduction
 
-This post is about wiring the [VL6180X lidar Time of Flight distance and ambient light meter](../../module/module-VL6180X) to an Arduino UNO board.
+This post is about wiring the [VL6180X lidar Time of Flight distance and ambient light meter](../../modules/module-ToF-VL6180X) to an Arduino UNO board.
 
 The Adafruit manual for [VL6180X Time of Flight Micro-LIDAR Distance Sensor Breakout](https://www.elfa.se/Web/Downloads/_t/ds/Adafruit_VL6180X_eng_tds.pdf?pid=30129217) contains more information.
 
@@ -30,7 +32,7 @@ Another post covers how to wire the VL6810X to  [Nano](../project-ToF-VL6180X-na
 #### The I2C communication bus
 
 The default libraries and sketches for the VL6180X sensor all use the
-[I2C protocol (communication bus)](https://howtomechatronics.com/tutorials/arduino/how-i2c-communication-works-and-how-to-use-it-with-arduino/). For details on the I2C protocol see the post on [I2C communication](../../arduinoide/arduino-I2C).
+[I2C protocol (communication bus)](https://howtomechatronics.com/tutorials/arduino/how-i2c-communication-works-and-how-to-use-it-with-arduino/). For details on the I2C protocol see the post on [I2C communication](../../ide/ide-I2C).
 
 #### Arduino library
 
@@ -187,7 +189,7 @@ void loop()
 
 ### Advanced sketch 1
 
-The [Tutorial: STMicroelectronics VL6180X Time-of-Flight LIDAR Sensor](https://mcuoneclipse.com/2016/12/03/tutorial-stmicroelectronics-vl6180x-time-of-flight-lidar-sensor/) is an in depth explanation of the VL6180X component and its breakout board, including different alternatives on how to sketch.
+The [Tutorial: STMicroelectronics VL6180X Time-of-Flight LIDAR Sensor](https://mcuoneclipse.com/2016/12/03/tutorial-stmicroelectronics-vl6180x-time-of-flight-lidar-sensors/) is an in depth explanation of the VL6180X component and its breakout board, including different alternatives on how to sketch.
 
 ### Advanced sketch 2
 

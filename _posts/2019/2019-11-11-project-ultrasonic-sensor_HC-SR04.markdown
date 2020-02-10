@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Ultrasonic sensor HC-SR04
-categories: project
-excerpt: " Arduino setup Ultrasonic sensor HC-SR04"
+categories: projects
+excerpt: "Arduino setup Ultrasonic sensor HC-SR04"
 tags:
   - arduino IDE
   - setup

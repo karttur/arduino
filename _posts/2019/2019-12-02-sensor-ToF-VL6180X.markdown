@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VL6810X distance and ambient light module
-categories: sensor
+categories: sensors
 excerpt: "VL6180X Time-of-Flight distance and ambient light sensing"
 tags:
   - distance
@@ -9,8 +9,8 @@ tags:
   - ambient light
   - VL6810X
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2019-12-04 11:27'
-modified: '2019-12-04 T18:17:25.000Z'
+date: '2019-12-02 11:27'
+modified: '2019-12-02 T18:17:25.000Z'
 comments: true
 share: true
 ---
@@ -19,4 +19,8 @@ share: true
 
 The [VL6180X Time-of-Flight distance and ambient light sensor](https://www.st.com/en/imaging-and-photonics-solutions/vl6180x.html) uses infra-red lidar for estimating distances. It also contains an ambient light sensor.
 
-[Integrated modules with the VL6180X](../../module/VL6180X/) are available from [Ddafruit](https://www.adafruit.com/product/3316), [Sparkfun](https://www.sparkfun.com/products/14722) and [Pololu](https://www.pololu.com/product/2489).
+[Integrated modules with the VL6180X](../../modules/module-ToF-VL6180X/) are available from [Adafruit](https://www.adafruit.com/product/3316), [Sparkfun](https://www.sparkfun.com/products/14722) and [Pololu](https://www.pololu.com/product/2489).
+
+### Meta data
+
+[Data sheet for VL6180X](https://www.pololu.com/file/0J961/VL6180X.pdf).

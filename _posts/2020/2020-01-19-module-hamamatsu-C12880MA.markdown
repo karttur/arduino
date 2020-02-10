@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hamamatsu micro-spectrometer modules
-categories: module
+categories: modules
 excerpt: "Breakout boards with the Hamamatsu C12880MA micro-spectrometer"
 tags:
   - spectrometer

@@ -4,7 +4,7 @@
   url: /about/
   include: 'N'
 
-- title: Front
+- title: Fount
   url: /
   include: 'N'
 
@@ -13,11 +13,11 @@
   include: 'N'
 
 - title: Projects
-  url: /project/
+  url: /projects/
   include: 'N'
 
 - title: Modules
-  url: /module/
+  url: /modules/
   include: 'N'
 
 - title: Sensors

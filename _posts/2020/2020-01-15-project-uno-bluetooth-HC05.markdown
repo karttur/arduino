@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bluetooth classic sketch and wiring Arduino UNO
-categories: project
+categories: projects
 excerpt: "Wire and sketch HC-05 or HC-06 Bluetooth module for  Arduino UNO"
 tags:
   - bluetooth

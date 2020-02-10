@@ -39,4 +39,4 @@ As usual it is cheaper to buy directly from China, [Banggood.com](https://www.ba
 
 ### Sketch and wire
 
-The post on [Bluetooth sketch and wiring](../../project/project-uno-bluetooth) contains instructions for how to wire a HC-06 module to an Arduino UNO board and links to libraries and codes. How to wire using an Arduino Nano board is outlined in the post [Arduino Nano project - bluetooth](../../project/project-nano-bluetooth/).
+The post on [Bluetooth sketch and wiring](../../projects/project-uno-bluetooth) contains instructions for how to wire a HC-06 module to an Arduino UNO board and links to libraries and codes. How to wire using an Arduino Nano board is outlined in the post [Arduino Nano project - bluetooth](../../projects/project-nano-bluetooth/).

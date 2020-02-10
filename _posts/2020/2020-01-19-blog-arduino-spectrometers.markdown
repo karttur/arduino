@@ -16,7 +16,7 @@ share: true
 
 ### Introduction
 
-The spectral [sensors](../../sensor/index.html) and [modules](../../module/index.html) listed in this blog have been used for developing spectral sensors of different types by different companies.
+The spectral [sensors](../../sensors/index.html) and [modules](../../modules/index.html) listed in this blog have been used for developing spectral sensors of different types by different companies.
 
 ### AMS AS726x
 

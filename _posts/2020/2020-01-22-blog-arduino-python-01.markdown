@@ -102,7 +102,7 @@ As I did not manage to install the packages I wanted when creating the virtual e
 
 #### pyfirmata
 
-[pyFirmata][https://pypi.org/project/pyFirmata/] is a Python interface for the [Firmata](https://github.com/firmata/protocol) protocol. Firmata protocol is for communicating with microcontrollers from software on a computer (or smartphone/tablet, etc). The protocol can be implemented in firmware on any microcontroller architecture as well as software on any computer software package (see list of client libraries below).
+[pyFirmata][https://pypi.org/projects/pyFirmata/] is a Python interface for the [Firmata](https://github.com/firmata/protocol) protocol. Firmata protocol is for communicating with microcontrollers from software on a computer (or smartphone/tablet, etc). The protocol can be implemented in firmware on any microcontroller architecture as well as software on any computer software package (see list of client libraries below).
 
 <span class='terminal'>$ conda install -c conda-forge pyfirmata<(span)>
 

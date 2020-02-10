@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hamamatsu micro-spectrometer
-categories: sensor
+categories: sensors
 excerpt: "Finger-tip sized, ultra-compact spectrometer head supporting high sensitivity and long wavelength region"
 tags:
   - spectrometer
@@ -26,7 +26,7 @@ The [Hamamatsu C12880MA micro-spectrometer](https://www.hamamatsu.com/eu/en/prod
 
 ### Other pages
 
-[Link to post on Arduino compatible breakout boards with the Hamamatsu C12880MA MEMS micro-spectrometer](../../module/module-hamamatsu-C12880MA)
+[Link to post on Arduino compatible breakout boards with the Hamamatsu C12880MA MEMS micro-spectrometer](../../modules/module-hamamatsu-C12880MA)
 
 
 module-hamamatsu-C12880MA

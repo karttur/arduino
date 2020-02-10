@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Arduino Nano project preparation
-categories: project
+categories: projects
 excerpt: "Prepare Arduino for Nano board project"
 tags:
   - arduino IDE

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AMS spectral sensor AS7341
-categories: sensor
+categories: sensors
 excerpt: "AMS 11-channel broad band sensors"
 tags:
   - spectrometer
@@ -40,7 +40,7 @@ A third youtube video [AMS - AS7261 Spectral Sensor - Color Scanning Made Easy!]
 
 ### Breakout boards
 
-The AS726X sensors are available as [Arduino breakout boards](../../module/module-AS726X-spectrometer).
+The AS726X sensors are available as [Arduino breakout boards](../../modules/module-AS726X-spectrometer).
 
 The [AS726x Demo Kit](https://ams.com/as726xdemokit) is a Windows PC-hosted evaluation environment, designed to provide the user a quick-start approach to spectral sensing.
 

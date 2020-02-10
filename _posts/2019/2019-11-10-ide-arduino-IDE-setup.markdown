@@ -71,4 +71,4 @@ I used the Homebrew alternative, which boils down to the following two <span cla
 
 <span class='terminal'>$ brew cask install wch-ch34x-usb-serial-driver</span>
 
-Then again try to see
+Then again try to connect to your arduino board.

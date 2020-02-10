@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AMS spectral sensor
-categories: sensor
+categories: sensors
 excerpt: "AMS 6-channel broad band sensors"
 tags:
   - spectrometer
@@ -9,7 +9,7 @@ tags:
   - AMS
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2019-10-20 11:27'
-modified: '2019-10-20 T18:17:25.000Z'
+modified: '2020-02-09 T18:17:25.000Z'
 comments: true
 share: true
 ---
@@ -36,12 +36,12 @@ The video on [ams Spectral ID iSPI Eval Kit](https://www.youtube.com/watch?v=KKy
 
 There is also another AMS youtube presentation on [Smart Light Management with ams AS7261 Spectral Sensor](https://www.youtube.com/watch?v=BWD0_Vh66Jw). This presentation shows how to apply AS7261 for steering light colors and also include a module that does this.
 
-A third youtube video [AMS - AS7261 Spectral Sensor - Color Scanning Made Easy!](https://www.youtube.com/watch?v=ofGJlK3BU-I) presents the commercial [NODE+ wireless sensor from Variable Inc.](https://www.variableinc.com). The history of this device is also presented on a dedicated [wikipedia page](https://en.wikipedia.org/wiki/NODE_(wireless_sensor). It is [available for approximately 60 USD](https://www.variableinc.com/shop.html). It comes with an android app that links it to a mobile phone.
+A third youtube video [AMS - AS7261 Spectral Sensor - Color Scanning Made Easy!](https://www.youtube.com/watch?v=ofGJlK3BU-I) presents the commercial [NODE+ wireless sensor from Variable Inc.](https://www.variableinc.com). It is [available for approximately 60 USD](https://www.variableinc.com/shop.html). It comes with an android app that links it to a mobile phone.
 
 ### Breakout boards
 
-The AS726X sensors are available as [Arduino breakout boards](../../module/module-AS726X-spectrometer).
+The AS726X sensors are available as [Arduino breakout boards](../../modules/module-AS726X-spectrometer).
 
 The [AS726x Demo Kit](https://ams.com/as726xdemokit) is a Windows PC-hosted evaluation environment, designed to provide the user a quick-start approach to spectral sensing.
 
-[Demo kit available from mouser](https://www.mouser.se/ProductDetail/ams/AS7265X-DEMO-KIT-V30?qs=sGAEpiMZZMt6ebhnBMWiDOYh%2FMrMJUWru3SwCgM89GEEPBr%252BOZV9NQ%3D%3D) with all three sensors in one module (similar to the [sparkfun product](https://www.sparkfun.com/products/15050))
+[Demo kit available from mouser](https://www.mouser.se/ProductDetail/ams/AS7265X-DEMO-KIT-V30?qs=sGAEpiMZZMt6ebhnBMWiDOYh%2FMrMJUWru3SwCgM89GEEPBr%252BOZV9NQ%3D%3D) with all three sensors in one module (similar to the [sparkfun product](https://www.sparkfun.com/products/15050) but at almost double the price.)
