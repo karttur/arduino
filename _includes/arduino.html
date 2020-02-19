@@ -1,0 +1,54 @@
+
+{% if page.component %}
+	{% if link.url contains 'http' %}
+			{% assign domain = '' %}
+			{% else %}
+			{% assign domain = site.url %}
+	{% endif %}
+	<a href="{{ domain }}/components/{{ page.sensor }}" class="btn" title="component">Component</a>
+{% endif %}
+
+{% if page.sensor %}
+	{% if link.url contains 'http' %}
+			{% assign domain = '' %}
+			{% else %}
+			{% assign domain = site.url %}
+	{% endif %}
+	<a href="{{ domain }}/sensors/{{ page.sensor }}" class="btn" title="sensor">Sensor</a>
+{% endif %}
+
+{% if page.module %}
+	{% if page.module contains 'http' %}
+			{% assign domain = '' %}
+			{% else %}
+			{% assign domain = site.url %}
+	{% endif %}
+	<a href="{{ domain }}/modules/{{ page.module }}" class="btn" title="module">Module</a>
+{% endif %}
+
+{% if page.project %}
+	{% if link.url contains 'http' %}
+			{% assign domain = '' %}
+			{% else %}
+			{% assign domain = site.url %}
+	{% endif %}
+	<a href="{{ domain }}/projects/{{ page.project }}" class="btn" title="project nano">Project Nano</a>
+{% endif %}
+
+{% if page.projectuno %}
+	{% if link.url contains 'http' %}
+			{% assign domain = '' %}
+			{% else %}
+			{% assign domain = site.url %}
+	{% endif %}
+	<a href="{{ domain }}/projects/{{ page.projectuno }}" class="btn" title="project uno">Project Uno</a>
+{% endif %}
+
+{% if page.multiproject %}
+	{% if link.url contains 'http' %}
+			{% assign domain = '' %}
+			{% else %}
+			{% assign domain = site.url %}
+	{% endif %}
+	<a href="{{ domain }}/projects/{{ page.multiproject }}" class="btn" title="multi project">Multi Project</a>
+{% endif %}

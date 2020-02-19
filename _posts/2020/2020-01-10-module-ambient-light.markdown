@@ -11,6 +11,10 @@ date: '2020-01-10 11:27'
 modified: '2020-01-10 T18:17:25.000Z'
 comments: true
 share: true
+component: null
+sensor: sensor-ambient-light
+module: null
+project: project-ambient-light
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 

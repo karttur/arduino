@@ -19,7 +19,15 @@ share: true
 
 ## Get started
 
-On the [official MIT App Inventor page](https://appinventor.mit.edu) click the <span class='button'>Create Apps!</span> button. If you have a Google account you can login with that directly, otherwise you have to create an account.
+On the [official MIT App Inventor page](https://appinventor.mit.edu) click the <span class='button'>Create Apps!</span> button.
+
+<figure>
+<img src="../../images/mit_app-inventor-front.png">
+<figcaption> MIT App Inventor front page.
+</figcaption>
+</figure>
+
+If you have a Google account you can login with that directly, otherwise you have to create an account.
 
 ## My first Android + Arduino app
 
@@ -60,7 +68,7 @@ void loop() {
 ## Create button
 
 For this project you need one button, for opening the Bluteooth connections on your Android mobile phone. ![My Map](../../images/bluertooth_connect-btn_200x41_v02.png){: .pull-right}
-You can use any button design you like for this tutorial, if you want to make a customized button you can follow the tutorial on Karttur's [Button design page](../design-buttons).
+You can use any button design you like for this tutorial, if you want to make a customized button you can follow the tutorial on Karttur's [Button design page](https://karttur.github.io/environimagine/design/design-buttons/).
 
 ## MIT App inventor
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: AMD six band spectrometer project
+title: AMD six band spectrometer project (UNO)
 categories: projects
-excerpt: "Wiring up the AMD as726x spectrometer"
+excerpt: "Wiring up the AMD as726x spectrometer with Arduino UNO"
 tags:
   - arduino
   - spectrometer
@@ -14,8 +14,12 @@ date: '2019-10-20 11:27'
 modified: '2020-01-24 T18:17:25.000Z'
 comments: true
 share: true
+component: null
+sensor: sensor-AS726X-spectrometer
+module: module-AS726X-spectrometer
+project: null
 ---
-
+<script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 ### Introduction
 
 This small "project" post covers how to wire an integrated module with the [AMS AS72Sx 6 channel broad band spectrometer](../../modules/module-AS726X-spectrometer/) to an Arduino board.

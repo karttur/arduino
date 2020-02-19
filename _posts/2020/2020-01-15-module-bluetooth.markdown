@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bluetooth modules for Arduino
-categories: module
+categories: modules
 excerpt: "Different generations and makes of bluetooth modules for Arduino"
 tags:
   - bluetooth

@@ -9,23 +9,23 @@ tags:
   - Mac OSX
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2019-11-10 11:27'
-modified: '2019-11-10 T18:17:25.000Z'
+modified: '2020-02-18 T12:17:25.000Z'
 comments: true
 share: true
 ---
 
 ## Introduction
 
-The Arduino Integrated development Environment (IDE) can be accessed using the could, or installed locally. This post covers how to setup Arduino IDE locally on Mac OSX. At time of writing this (November 2019) the Arduino IDE does not recognize the usb port for all kinds of board and the post describes how to use [<span class='app'>Homebrew</span>](https://brew.sh) to fix this problem.
+The Arduino Integrated development Environment (IDE) can be accessed using the cloud, or installed locally. This post covers how to setup Arduino IDE locally on Mac OSX. At time of writing this (November 2019) the Arduino IDE does not recognize the usb port for all kinds of board and the post describes how to use [<span class='app'>Homebrew</span>](https://brew.sh) to fix this problem.
 
-If <span class='app'>Ardiono IDE</span> recognizes the USB and the sketch (script) compiles but does not load with an error like:
+If <span class='app'>Ardiono IDE</span> recognizes the USB and the sketch (script) compiles but does not load, and ends with an error like:
 
 ```
 avrdude: stk500_recv(): programmer is not responding
 avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x00
 ```
 
-a probable cause is that you have some componets connected to your rx and tx pins.
+a probable cause is that you have some components connected to your rx and tx pins.
 
 ## prerequisits
 
@@ -33,7 +33,13 @@ a probable cause is that you have some componets connected to your rx and tx pin
 
 ## Arduino IDE
 
-Get the latest <span class='app'>Arduino IDE</span> from the [Arduino software page](https://www.arduino.cc/en/main/software). Select the operating system, that will take you the page giving you the option of contributing towards the development of the Arduino software. You can either <span class='button'>JUST DOWNLOAD</span> or <span class='button'>CONTRIBUTE & DOWNLOAD</span>.
+Get the latest <span class='app'>Arduino IDE</span> from the [Arduino software page](https://www.arduino.cc/en/main/software). Select the operating system, that will take you to the page giving you the option of contributing towards the development of the Arduino software (shown in figure below). You can either <span class='button'>JUST DOWNLOAD</span> or <span class='button'>CONTRIBUTE & DOWNLOAD</span>.
+
+<figure>
+<img src="../../images/arduino_download.png">
+<figcaption> Arduino IDE download page.
+</figcaption>
+</figure>
 
 ### Install
 
@@ -41,7 +47,22 @@ Once downloaded on Mac OSX, all you need to do is to drag the <span class='app'>
 
 ### Start
 
-Start <span class='app'>Arduino</span> by double clicking. You probably need to allow it to start as you downloaded directly from the Arduino homepage (not via the repository deisgnated for your Operating System).
+Start <span class='app'>Arduino</span> by double clicking. You probably need to allow it to start as you downloaded directly from the Arduino homepage (not via the repository designated for your Operating System).
+
+To allow <span class='app'>Arduino</span>, go via the mac main menu, click the apple (absolute top left of the computer screen), select <span class='finder'>System Preferences...</span>.
+
+In the top row of the <span class='tab'>System Preferences</span> window, click the Security & Privacy icon. In the window that open, under the <span class='tab'>General</span> tab (usually in front by default), you should see a paragraph towards the bottom:
+
+```
+"Arduino" was blocked from opening...
+```
+Click the button <span class='button'>Open Anyway</span>, and <span class='app'>Arduino</span> should open.
+
+<figure>
+<img src="../../images/arduino_desktop_window.png">
+<figcaption> Arduino desktop.
+</figcaption>
+</figure>
 
 ### Test port access
 

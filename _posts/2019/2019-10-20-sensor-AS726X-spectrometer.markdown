@@ -12,6 +12,10 @@ date: '2019-10-20 11:27'
 modified: '2020-02-09 T18:17:25.000Z'
 comments: true
 share: true
+component: null
+sensor: null
+module: module-AS726X-spectrometer
+projectuno: project-AS726X-spectrometer-uno
 ---
 
 ### Introduction

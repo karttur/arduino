@@ -4,13 +4,13 @@ title: RGB led alternative
 categories: projects
 excerpt: "Wire and sketch for ELD with separate RGB"
 tags:
-  - bluetooth
+  - LED
+  - RGB
   - wire
   - sketch
-  - RGB led
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2020-02-06 11:27'
-modified: '2020-02-06 T18:17:25.000Z'
+date: '2020-02-02 11:27'
+modified: '2020-02-02 T18:17:25.000Z'
 comments: true
 share: true
 ---

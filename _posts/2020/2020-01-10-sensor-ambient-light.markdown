@@ -1,7 +1,7 @@
 ---
 layout: post
 title: BH1750FVI ambient light sensor
-categories: components
+categories: sensors
 excerpt: "BH1750FVI digital Ambient Light Sensor IC for I2C bus interface"
 tags:
   - ambient light
@@ -11,6 +11,10 @@ date: '2020-01-10 11:27'
 modified: '2020-01-10 T18:17:25.000Z'
 comments: true
 share: true
+component: null
+sensor: null
+module: module-ambient-light
+project: project-ambient-light
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 

@@ -16,7 +16,7 @@ share: true
 
 ## Introduction
 
-This post lists different sensors that can be planted in the soil and used for calibrating spectral data. The different sensors are
+This post lists different sensors that can be planted in the soil and used for calibrating spectral data. 
 
 ### AMS sensors
 

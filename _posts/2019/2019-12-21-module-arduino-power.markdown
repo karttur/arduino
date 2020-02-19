@@ -18,8 +18,6 @@ share: true
 
 Finding information on power solutions for Arduino stand alone projects was a bit tricky. perhaps the usual problem of not knowing the exact terminology to enter with google.
 
-
-
 ## 3.7 to 5v stepup
 
 [3.7 to 5v stepup at Banggood](https://www.banggood.com/20pcs-DC-DC-0_9V-5V-to-5V-600mA-USB-Step-Up-Power-Boost-Module-PFM-Control-Mini-Mobile-Booster-p-1590024.html?rmmds=detail-left-hotproducts__2&cur_warehouse=CN), at less tan 1 USD a piece.

@@ -16,12 +16,14 @@ share: true
 
 ### Introduction
 
-In this post you will use the Android app [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) by Kai Morich for connecting to your Arduino vi Bluetooth and receive serial data from a sensor. It will be like replacing the <span class='app'>Arduino IDE</span> terminal window with your Anrdoid device.
+![My Map](../../images/logo-serial-bluetooth-terminal.png){: .pull-right}
+
+In this post you will use the Android app [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) by Kai Morich for connecting to your Arduino with Bluetooth and receive serial data from a sensor. It will be like replacing the <span class='app'>Arduino IDE</span> terminal window with your Android device.
 
 ### Get started
 
-Got to [Google play store](https://play.google.com/store/apps) and search for "Serial Bluetooth Terminal". Install the app on your Andriod device.
+Go to [Google play store](https://play.google.com/store/apps) and search for "Serial Bluetooth Terminal". Install the app on your Andriod device.
 
 ### Pair
 
-If you now pair your Arduino bluetooth (whether classic of BLE does not matter) and your serial output will show up in the _Serial Bluetooth Terminal_ on your phone.
+If you now pair your Arduino bluetooth (whether classic of BLE does not matter), your serial output will show up in the _Serial Bluetooth Terminal_ on your phone.

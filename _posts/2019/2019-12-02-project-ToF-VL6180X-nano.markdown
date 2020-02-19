@@ -17,6 +17,11 @@ date: '2019-12-02 11:27'
 modified: '2019-12-02 T18:17:25.000Z'
 comments: true
 share: true
+component: null
+sensor: sensor-ToF-VL6180X
+module: module-ToF-VL6180X
+projectuno: module-ToF-VL6180X-uno
+multiproject: project-V6810X+BH1750-I2C
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 ### Introduction

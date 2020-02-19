@@ -1,0 +1,150 @@
+---
+layout: post
+title: "VL6180X + BH1750: Dual I2C sensors"
+categories: projects
+excerpt: "Project with two I2C modules: VL6180X Time of Flight plus BH1750FVI ambient light sensor"
+tags:
+  - ambient light
+  - Time of Flight
+  - ToF
+  - Dual I2C
+image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
+date: '2020-01-12 11:27'
+modified: '2020-01-12 T18:17:25.000Z'
+comments: true
+share: true
+---
+<script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
+
+### Introduction
+
+This post illustrates how two I2C components can be connected in parallel and serve data to an Arduino Nano board.
+
+### Modules
+
+The two modules that are used in this project are the [VL6810X Time of Flight (ToF) distance sensor](../../modules/module-ToF-VL6180X) and the [BH1750 ambient light sensor](../../module-ambient-light). Actually the VL6810X ToF sensor also contains an ambient light sensor, and the project can thus also be used for checking the consistency between these two sensors.
+
+#### Wiring
+
+<figure>
+<img src="../../images/nano-vl6180+bh1750_bb.png">
+<figcaption> Wiring of two I2C modules - VL6810X Time of Flight (ToF) distance sensor and BH1750 ambient light sensor, to an Arduino Nano board.</figcaption>
+</figure>
+
+#### Sketch
+
+The sketch is simply created by joining the individual sketches for the two modules.
+
+<button id= "toggleBH1750_01" onclick="hiddencode('BH1750_01')">Hide/Show sketch</button>
+
+<div id="BH1750_01" style="display:none">
+{% capture text-capture %}
+{% raw %}
+
+```
+#include <Wire.h>
+#include <VL6180X.h>
+#include <math.h>
+
+int BH1750address = 0x23; //i2c address
+
+byte buff[2];
+
+VL6180X sensor;
+
+void setup()
+{
+  Serial.begin(9600);
+  Wire.begin();
+
+  sensor.init();
+  sensor.configureDefault();
+
+  // Reduce range max convergence time and ALS integration
+  // time to 30 ms and 50 ms, respectively, to allow 10 Hz
+  // operation (as suggested by Table 6 ("Interleaved mode
+  // limits (10 Hz operation)") in the datasheet).
+  sensor.writeReg(VL6180X::SYSRANGE__MAX_CONVERGENCE_TIME, 30);
+  sensor.writeReg16Bit(VL6180X::SYSALS__INTEGRATION_PERIOD, 50);
+
+  sensor.setTimeout(500);
+
+   // stop continuous mode if already active
+  sensor.stopContinuous();
+  // in case stopContinuous() triggered a single-shot
+  // measurement, wait for it to complete
+  delay(300);
+  // start interleaved continuous mode with period of 100 ms
+  sensor.startInterleavedContinuous(100);
+
+}
+
+void loop()
+{
+    int i;
+  uint16_t val=0;
+  BH1750_Init(BH1750address);
+  delay(200);
+
+  if(2==BH1750_Read(BH1750address))
+  {
+    val=((buff[0]<<8)|buff[1])/1.2;
+    Serial.print(val,DEC);
+    Serial.println(" luxus");
+  }
+
+  Serial.print("Ambient: ");
+  Serial.print(sensor.readAmbientContinuous());
+  if (sensor.timeoutOccurred()) { Serial.print(" TIMEOUT"); }
+
+  Serial.print("\tRange: ");
+  Serial.print(sensor.readRangeContinuousMillimeters());
+  if (sensor.timeoutOccurred()) { Serial.print(" TIMEOUT"); }
+
+  Serial.println();
+
+  delay(150);
+}
+
+int BH1750_Read(int address) //
+{
+  int i=0;
+  Wire.beginTransmission(address);
+  Wire.requestFrom(address, 2);
+  while(Wire.available()) //
+  {
+    buff[i] = Wire.read();  // receive one byte
+    i++;
+  }
+  Wire.endTransmission();
+  return i;
+}
+
+void BH1750_Init(int address)
+{
+  Wire.beginTransmission(address);
+  Wire.write(0x10);//1lx reolution 120ms
+  Wire.endTransmission();
+}
+
+```
+{% endraw %}
+{% endcapture %}
+{% include widgets/toggle-code.html  toggle-text=text-capture  %}
+</div>
+
+To see the output, open the Serial Monitor of <span class='app'>Arduino</span> from the menu:
+
+<span class='menu'>Tools -> Serial Monitor</span>
+
+The lux reading from the BH1750 ambient light sensor is higher compared to the lux reported from the VL6180X ToF distance sensor. Unless you direct both sensors toward the light source, then they will be very similar. This indicates that the filed of view (FoV) of the BH1750 sensor is wider compared to the VL618X sensor.
+
+<figure>
+<img src="../../images/nano-vl6180+bh1750_monitor.png">
+<figcaption> Serial monitor showing the output from the sketch as the whole breadboard is tilted.</figcaption>
+</figure>
+
+<figure>
+<img src="../../images/nano-vl6180+bh1750_monitor-focused.png">
+<figcaption> Serial monitor showing the output from the sketch as the whole breadboard is directed towards the light source and with no object in between (Range = 255 = no ToF return signal).</figcaption>
+</figure>

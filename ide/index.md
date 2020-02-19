@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Arduino software
-excerpt: "An archive of useful Arduino modules."
+title: Arduino IDE
+excerpt: "An archive of posts on Arduinos Integrated Development Environment."
 image: std-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 search_omit: true
 ---
