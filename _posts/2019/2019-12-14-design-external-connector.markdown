@@ -1,7 +1,7 @@
 ---
 layout: post
 title: External & internal connector design
-categories: blog
+categories: design
 excerpt: "External and internal connectors for arduino senor unit"
 tags:
   - design

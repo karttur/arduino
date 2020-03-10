@@ -28,6 +28,18 @@
   url: /components/
   include: 'N'
 
+- title: Desgin
+  url: /design/
+  include: 'N'
+
+- title: IoT
+  url: /iot/
+  include: 'N'
+
+- title: Spectra
+  url: /spectra/
+  include: 'N'
+
 - title: Other
   url: /blog/
   include: 'N'
