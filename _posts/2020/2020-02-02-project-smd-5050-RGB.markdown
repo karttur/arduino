@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SMD 5050 RGB modules
-categories: module
+categories: project
 excerpt: "modules built on the SMD 5050 RGB modules"
 tags:
   - RGB
@@ -109,3 +109,5 @@ void loop() {
   }
 
 }
+
+```
