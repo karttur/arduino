@@ -1,7 +1,7 @@
 ---
 layout: post
 title: BH1750FVI ambient light sensor
-categories: modules
+categories: module
 excerpt: "Modules for BH1750FVI digital Ambient Light Sensor IC for I2C bus interface"
 tags:
   - ambient light

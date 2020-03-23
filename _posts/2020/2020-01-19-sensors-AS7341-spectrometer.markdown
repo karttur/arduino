@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AMS spectral sensor AS7341
-categories: sensors
+categories: sensor
 excerpt: "AMS 11-channel broad band sensors"
 tags:
   - spectrometer

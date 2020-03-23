@@ -6,8 +6,8 @@ excerpt: "Handheld miniature spectrometers available October 2019"
 tags:
   - spectrometer
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2019-10-21 11:27'
-modified: '2019-10-21 T18:17:25.000Z'
+date: '2019-10-22 11:27'
+modified: '2019-10-22 T18:17:25.000Z'
 comments: true
 share: true
 ---

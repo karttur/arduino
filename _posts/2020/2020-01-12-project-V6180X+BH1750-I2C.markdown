@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "VL6180X + BH1750: Dual I2C sensors"
-categories: projects
+categories: project
 excerpt: "Project with two I2C modules: VL6180X Time of Flight plus BH1750FVI ambient light sensor"
 tags:
   - ambient light

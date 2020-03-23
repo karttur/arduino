@@ -1,8 +1,8 @@
 ---
 layout: post
 title: SI1145 ambient light sensor
-categories: components
-excerpt: "PROXIMITY/UV/AMBIENT LIGHT SENSOR IC WITH I2C INTERFACE"
+categories: sensor
+excerpt: "Proximity/UV/ambient light sensor IC with I2C interface"
 tags:
   - ambient light
   - I2C

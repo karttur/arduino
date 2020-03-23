@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SMD 5050 RGB
-categories: components
+categories: component
 excerpt: "SMD 5050 LED red (R) green (G) Blue (B) component"
 tags:
   - LED

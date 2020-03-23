@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MQx series of gas sensors
-categories: sensors
+categories: sensor
 excerpt: "MQx series of gas sensors"
 tags:
   - MQ2

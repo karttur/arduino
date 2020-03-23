@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Capacitive Soil Moisture Sensor v1.2
-categories: modules
+categories: module
 excerpt: "Capacitive Soil Moisture Sensor v1.2"
 tags:
   - soil moisture

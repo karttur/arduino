@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VL6810X sketch and wiring - UNO
-categories: projects
+categories: project
 excerpt: "Wiring up the Pololu VL6180X Time Of Fight distance sensor"
 tags:
   - arduino

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blog with list of modules
-categories: modules
+categories: module
 excerpt: "Blog with list and reviews of modules for Arduino"
 tags:
   - arduino

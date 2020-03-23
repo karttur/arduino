@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Alcohol probe for arduino
-categories: sensors
+categories: sensor
 excerpt: "External connectors for arduino senor unit"
 tags:
   - probe

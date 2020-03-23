@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AMS AS726X spectrometer module
-categories: modules
+categories: module
 excerpt: "Breakout board with AMS AS726X spectrometer"
 tags:
   - spectrometer
@@ -17,6 +17,7 @@ share: true
 component: null
 sensor: sensor-AS726X-spectrometer
 module: null
+project: project-AS726X-spectrometer-nano
 projectuno: project-AS726X-spectrometer-uno
 ---
 

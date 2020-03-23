@@ -5,7 +5,7 @@
 			{% else %}
 			{% assign domain = site.url %}
 	{% endif %}
-	<a href="{{ domain }}/components/{{ page.sensor }}" class="btn" title="component">Component</a>
+	<a href="{{ domain }}/component/{{ page.component }}" class="btn" title="component">Component</a>
 {% endif %}
 
 {% if page.sensor %}
@@ -14,7 +14,7 @@
 			{% else %}
 			{% assign domain = site.url %}
 	{% endif %}
-	<a href="{{ domain }}/sensors/{{ page.sensor }}" class="btn" title="sensor">Sensor</a>
+	<a href="{{ domain }}/sensor/{{ page.sensor }}" class="btn" title="sensor">Sensor</a>
 {% endif %}
 
 {% if page.module %}
@@ -23,7 +23,7 @@
 			{% else %}
 			{% assign domain = site.url %}
 	{% endif %}
-	<a href="{{ domain }}/modules/{{ page.module }}" class="btn" title="module">Module</a>
+	<a href="{{ domain }}/module/{{ page.module }}" class="btn" title="module">Module</a>
 {% endif %}
 
 {% if page.project %}
@@ -32,7 +32,7 @@
 			{% else %}
 			{% assign domain = site.url %}
 	{% endif %}
-	<a href="{{ domain }}/projects/{{ page.project }}" class="btn" title="project nano">Project Nano</a>
+	<a href="{{ domain }}/project/{{ page.project }}" class="btn" title="project nano">Project Nano</a>
 {% endif %}
 
 {% if page.projectuno %}
@@ -41,7 +41,7 @@
 			{% else %}
 			{% assign domain = site.url %}
 	{% endif %}
-	<a href="{{ domain }}/projects/{{ page.projectuno }}" class="btn" title="project uno">Project Uno</a>
+	<a href="{{ domain }}/project/{{ page.projectuno }}" class="btn" title="project uno">Project Uno</a>
 {% endif %}
 
 {% if page.multiproject %}
@@ -50,5 +50,5 @@
 			{% else %}
 			{% assign domain = site.url %}
 	{% endif %}
-	<a href="{{ domain }}/projects/{{ page.multiproject }}" class="btn" title="multi project">Multi Project</a>
+	<a href="{{ domain }}/project/{{ page.multiproject }}" class="btn" title="multi project">Multi Project</a>
 {% endif %}

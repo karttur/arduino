@@ -1,8 +1,8 @@
 ---
 layout: post
 title: RGB led alternative
-categories: projects
-excerpt: "Wire and sketch for ELD with separate RGB"
+categories: project
+excerpt: "Wire and sketch for LED with separate RGB"
 tags:
   - LED
   - RGB

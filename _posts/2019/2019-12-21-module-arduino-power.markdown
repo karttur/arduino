@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Arduino power regulator modules
-categories: modules
+categories: module
 excerpt: "External connectors for arduino senor unit"
 tags:
   - probe

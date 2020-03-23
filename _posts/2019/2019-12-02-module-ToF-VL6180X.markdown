@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VL6810X distance and ambient light module
-categories: modules
+categories: module
 excerpt: "VL6180X Time-of-Flight distance and ambient light sensing"
 tags:
   - distance
@@ -20,7 +20,7 @@ component: null
 sensor: sensor-ToF-VL6180X
 module: null
 project: project-ToF-VL6180X-nano
-project uno: project-ToF-VL6180X-uno
+projectuno: project-ToF-VL6180X-uno
 multiproject: project-V6810X+BH1750-I2C
 ---
 
@@ -42,6 +42,6 @@ The price at [aliexpress.com](https://www.aliexpress.com) is down to 2-3 USD, bu
 
 ### Sketch and wire project
 
-The post on [VL6810X sketch and wiring project](../../projects/project-ToF-VL6180X-uno) contains instructions for how to wire the VL6810X module to an Arduino UNO board and links to libraries and codes. How to wire using an Arduino Nano board is outlined in the post [Arduino Nano project - distance](../../projects/project-ToF-VL6180X-nano/).
+The post on [VL6810X sketch and wiring project](../../project/project-ToF-VL6180X-uno) contains instructions for how to wire the VL6810X module to an Arduino UNO board and links to libraries and codes. How to wire using an Arduino Nano board is outlined in the post [Arduino Nano project - distance](../../projects/project-ToF-VL6180X-nano/).
 
 The [manual for Adafruit VL6180X Time of Flight Micro-LIDAR Distance Sensor Breakout](https://www.elfa.se/Web/Downloads/_t/ds/Adafruit_VL6180X_eng_tds.pdf?pid=30129217) contains some more illustrations on how to wire the VL6810X module with different boards.

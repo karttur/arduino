@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DS18B20 temperature module
-categories: modules
+categories: module
 excerpt: "KY-001 - the DS18B20 temperature module"
 tags:
   - temperature

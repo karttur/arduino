@@ -1,8 +1,8 @@
 ---
 layout: post
-title: AMD six band spectrometer project (UNO)
+title: AMD six band spectrometer project (nano)
 categories: project
-excerpt: "Wiring up the AMD as726x spectrometer with Arduino UNO"
+excerpt: "Wiring up the AMD as726x spectrometer with Arduino nano"
 tags:
   - arduino
   - spectrometer
@@ -17,24 +17,22 @@ share: true
 component: null
 sensor: sensor-AS726X-spectrometer
 module: module-AS726X-spectrometer
+project: null
 project: project-AS726X-spectrometer-nano
-projectuno: null
+projectuno: project-AS726X-spectrometer-uno
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 ### Introduction
 
-This small "project" post covers how to wire an integrated module with the [AMS AS72Sx 6 channel broad band spectrometer](../../modules/module-AS726X-spectrometer/) to an Arduino UNO board.
+This small "project" post covers how to wire an integrated module with the [AMS AS72Sx 6 channel broad band spectrometer](../../modules/module-AS726X-spectrometer/) to an Arduino UNO nano. The project post on [Arduino UNO](../project-AS726X-spectrometer-uno) contains more information.
 
 #### The I2C communication bus
 
 The spectrometer sends data for 6 (12 or 18) spectral bands using the [I2C communication bus](../../ide/ide-I2C).
 
-
 #### Preparing the Arduino IDE
 
-Your Arduino board must have the SDA and SCL ports required for the I2C communication bus. If you are using one of [Arduino's standard boards](https://www.arduino.cc/en/main/boards) they should be included with the latest version of <span class='app'>[Arduino IDE](https://www.arduino.cc/en/main/software)</span>. On smaller boards that lack dedicated SDA and SCL ports A4 is used for SDA and A5 for SCL. For boards that do not have A4 and A5, the alternative is to program the I2C board, outlines in [this GitHub repo](https://github.com/felias-fogg/SoftI2CMaster/blob/master/README.md),
-
-If you are using a board from a partner, you probably need to configure Arduino IDE for that particular board. As an example, you can look at the manuals for how to [configure Arduino for the Adafruit's Metro Express board](https://learn.adafruit.com/experimenters-guide-for-metro/configure-arduino-for-the-metro-express).
+Arduino nano uses A4 and A5 for I2C connections as outlined in [this GitHub repo](https://github.com/felias-fogg/SoftI2CMaster/blob/master/README.md),
 
 ### Adafruit or sparkfun
 
@@ -44,11 +42,10 @@ Breakout boards with the AMD AS72Sx sensor(s) are offered both by [Adafruit](../
 
 The wiring is (almost) the same regardless if you use the Adafruit or Sparkfun breakout boards. The Adafruit manual is [here](https://learn.adafruit.com/adafruit-as7262-6-channel-visible-light-sensor?view=all).
 
-The difference between Adafruit and Sparkfun is that the Sparkfun breakout board requires 3.3 v power, whereas the Adafruit breakout board can be powered with either 3.3 or 5 v.
-
+The difference between Adafruit and Sparkfun is that the Sparkfun breakout board requires 3.3 v power, whereas the Adafruit breakout board can be powered with either 3.3 or 5 v. The Adafruit breakout board also has an additional light source that must be individually wired.
 
 <figure>
-<img src="../../images/AS726Xx-UNO_bb.png">
+<img src="../../images/sparkfun-AS726Xx-nano-breadfree_bb.png">
 <figcaption> Wiring an AS726x 6-channel spectrometer. The Adafruit breakout board can be powered with either 3.3 or 5 v (as shown), whereas the Sparkfun board only have a connection for 3.3 v.</figcaption>
 </figure>
 
@@ -133,29 +130,3 @@ void loop() {
 {% endcapture %}
 {% include widgets/toggle-code.html  toggle-text=text-capture  %}
 </div>
-
-### Adafruit additional components
-
-[Adafruit TFT display 1.44 (240 x 135)](https://www.adafruit.com/product/4383), also available from [Elfa](https://www.elfa.se/sv/44-tums-tft-lcd-skaerm-adafruit-2088/p/30129195?channel=b2c&price_gs=176.25&wt_mc=se.cse.gshop.sv.-&source=googleps&ext_cid=shgooaqsesv-na&&gclid=Cj0KCQiA-4nuBRCnARIsAHwyuPo4YAQ16hq3lAwA2j1m6p-NhvISnPZBGCaRi5XegqPpJp5-LjVZA0MaAv2REALw_wcB).
-
-[Adafruit TFT display 0.96 (160 x 80)](https://www.elfa.se/sv/96-tums-160-80-tft-display-delning-adafruit-3533/p/30139159?q=Adafruit+0.96&pos=2&origPos=2&origPageSize=10&track=true).
-
-The board used in the Adafruits manual for [Arduino wiring of these components](https://learn.adafruit.com/adafruit-as7262-6-channel-visible-light-sensors/arduino-wiring-test) is the Adafruit METRO M0 Express, also available from [Elfa](https://www.elfa.se/sv/adafruit-metro-m0-express-adafruit-3505/p/30129229?q=Adafruit+Metro+M0+&pos=1&origPos=1&origPageSize=10&track=true). But an ordinary Arduino UNO board works as well.
-
-### Mikroelektronika (Mikroe)
-
-[Mikroe](https://www.mikroe.com) offers the [AS7261 RGB+NIR sensor](https://www.mikroe.com/spectral-click) as a breakout board, but not specifically for Arduino.
-
-University of Novi Sad have [demo project for creating a AS7261 XYZ Sensor - Colorimeter](https://www.optolab.ftn.uns.ac.rs/index.php/education/project-base/252-as7261-xyz-sensor-colorimeter). The project include wiring to an Arduino board, include a 3D-printed shell, and a [demo video on youtube](https://www.youtube.com/watch?v=f3F8kJKQuLE) and code written in [Laboratory Virtual Instrument Engineering Workbench (LabVIEW)](https://en.wikipedia.org/wiki/LabVIEW). The STL model is under the repo subfolder <span class='file'>stl</span> and the LabVIEW file under the directory <span class='file'>code/AS7261-VI</span>.
-
-<figure>
-<img src="../../images/AS7261-spectral-click-arduno.jpg">
-<figcaption> Arduino wiring of the Mikroe "Spectral Click" AS7261 spectrometer.
-</figcaption>
-</figure>
-
-<figure>
-<img src="../../images/AS7261-spectral-click-stl.png">
-<figcaption> STL model for casing to the Mikroe "Spectral Click" AS7261 spectrometer.
-</figcaption>
-</figure>

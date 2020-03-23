@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SHTxy moisture and temperature project
-categories: projects
+categories: project
 excerpt: "SHT1x and SHT3x moisture and temperature project"
 tags:
   - SHT10

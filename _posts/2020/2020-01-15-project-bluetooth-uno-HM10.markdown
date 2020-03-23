@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bluetooth BLE sketch and wiring Arduino UNO
-categories: projects
+categories: project
 excerpt: "Wire and sketch HM-10 Bluetooth module for  Arduino UNO"
 tags:
   - bluetooth
@@ -13,6 +13,9 @@ date: '2020-01-15 11:27'
 modified: '2020-01-15 T18:17:25.000Z'
 comments: true
 share: true
+module: module-bluetooth
+project: project-bluetooth-nano
+projectuno: project-bluetooth-uno
 ---
 
 ### Introduction

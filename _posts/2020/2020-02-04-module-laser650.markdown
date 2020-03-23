@@ -1,16 +1,19 @@
 ---
 layout: post
 title: Red laser 650nm
-categories: modules
+categories: module
 excerpt: "Module with red laser 650nm"
 tags:
-  - LED
-  - RGB
+- laser
+- red
+- 650nm
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2020-02-04 11:27'
 modified: '2020-02-04 T18:17:25.000Z'
 comments: true
 share: true
+component: component-laser650
+project: project-laser650
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 
@@ -19,4 +22,10 @@ share: true
 Red lasers at 650 nm are quite common as components or breakout boards (modules). Actually pinning down which laser it is, is not so easy. I have different versions, and I am not sure if they are 3 or 5 v, or 1 or 5 mW. They do differ slightly is diameter and also in the focus of the beam. So I think they are different.
 
 ### KY-008 Arduino Laser Module
-I got a [KY-008 Arduino Laser Module](https://www.instructables.com/id/Keyes-KY-008-Laser-Transmitter-Demystified/) as part of a [kit with 40 modules](https://rydepier.wordpress.com/2015/06/13/list-of-keyes-boardssensors-for-arduino/). If I study it under a looking glass it seems that resistor says 103, which should equal 10 kOhm. That is way too much. So I am lost again. The theoretical calculation, given that it is actually a 3v laser at 40 mW, is that it should require 50 Ohm rather.
+
+I got a [KY-008 Arduino Laser Module](https://arduinomodules.info/ky-008-laser-transmitter-module/) as part of a [kit with 40 modules](https://rydepier.wordpress.com/2015/06/13/list-of-keyes-boardssensors-for-arduino/).
+
+<figure>
+<img src="../../images/ky008_laser_module.png">
+<figcaption> Laser module Keyes ky 008. </figcaption>
+</figure>

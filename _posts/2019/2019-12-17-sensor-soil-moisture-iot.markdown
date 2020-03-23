@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Internet of Things soil moisturr probes
-categories: sensors
+categories: sensor
 excerpt: "External connectors for arduino senor unit"
 tags:
   - probe

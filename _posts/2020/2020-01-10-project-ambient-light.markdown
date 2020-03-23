@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ambient light sensor project
-categories: projects
+categories: project
 excerpt: "Projects for BH1750FVI digital Ambient Light Sensor IC for I2C bus interface"
 tags:
   - ambient light
@@ -11,6 +11,10 @@ date: '2020-01-10 11:27'
 modified: '2020-01-10 T18:17:25.000Z'
 comments: true
 share: true
+component: null
+sensor: sensor-ambient-light
+module: null
+project: project-ambient-light
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 
@@ -33,7 +37,12 @@ I2C adress: 0x23 (from [I2C scenner](../../ide/ide-scanner).
 
 <figure>
 <img src="../../images/nano-bh1750_bb.png">
-<figcaption> Wiring of the BH1750 ambient light sensor to an Arduino Nano board.</figcaption>
+<figcaption> Breadboard wiring of the BH1750 ambient light sensor to an Arduino Nano board.</figcaption>
+</figure>
+
+<figure>
+<img src="../../images/nano-bh1750-breadfree_bb.png">
+<figcaption> Direct wiring of the BH1750 ambient light sensor to an Arduino Nano board.</figcaption>
 </figure>
 
 #### Without specific library

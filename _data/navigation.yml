@@ -13,31 +13,23 @@
   include: 'N'
 
 - title: Projects
-  url: /projects/
+  url: /project/
   include: 'N'
 
 - title: Modules
-  url: /modules/
+  url: /module/
   include: 'N'
 
 - title: Sensors
-  url: /sensors/
+  url: /sensor/
   include: 'N'
 
 - title: Components
-  url: /components/
+  url: /component/
   include: 'N'
 
 - title: Desgin
   url: /design/
-  include: 'N'
-
-- title: IoT
-  url: /iot/
-  include: 'N'
-
-- title: Spectra
-  url: /spectra/
   include: 'N'
 
 - title: Other

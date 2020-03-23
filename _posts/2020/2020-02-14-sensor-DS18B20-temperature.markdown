@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DS18B20 temperature sensor
-categories: sensors
+categories: sensor
 excerpt: "DS18B20 temperature sensor"
 tags:
   - temperature

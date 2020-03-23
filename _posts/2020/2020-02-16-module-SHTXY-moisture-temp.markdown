@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SHTXY moisture and temperature sensor
-categories: modules
+categories: module
 excerpt: "SHTXY moisture and temperature sensor"
 tags:
   - SHT10

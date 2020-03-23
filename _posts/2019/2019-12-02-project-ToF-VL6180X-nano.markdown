@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VL6810X sketch and wiring - Nano
-categories: projects
+categories: project
 excerpt: "Wire and sketch the VL6180X distance sensor for Arduino Nano"
 tags:
   - arduino
@@ -41,8 +41,14 @@ Larger boards have dedicated connectors for SDA and SCL, but not the Nano board.
 
 <figure>
 <img src="../../images/nano-VL6180X-a4-a5_bb.png">
-<figcaption> Wiring for the L6180X Time of Flight and ambient light sensor.</figcaption>
+<figcaption> Breadboard wiring for the L6180X Time of Flight and ambient light sensor.</figcaption>
 </figure>
+
+<figure>
+<img src="../../images/nano-VL6180X-breadfree_bb.png">
+<figcaption> Direct wiring for the L6180X Time of Flight and ambient light sensor.</figcaption>
+</figure>
+
 
 #### Single shot measurement
 

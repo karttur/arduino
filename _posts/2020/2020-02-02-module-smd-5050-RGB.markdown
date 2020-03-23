@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SMD 5050 RGB modules
-categories: modules
+categories: module
 excerpt: "modules built on the SMD 5050 RGB modules"
 tags:
   - RGB

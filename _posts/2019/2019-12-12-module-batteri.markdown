@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Power solution for 3.7 volt Arduino
-categories: modules
+categories: module
 excerpt: "Power solution including regulator and Lithium Polymer battery for Arduino"
 tags:
   - arduino

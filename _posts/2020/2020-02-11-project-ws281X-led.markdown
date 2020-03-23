@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ws2811 5050 programmable rgb LED
-categories: projects
-excerpt: "Wire and sketch for single ws2811 5050 programmable rgb LED"
+title: Programmable rgb LED
+categories: project
+excerpt: "Wire and sketch project for WS2811/WS2812/WS2812B/APA104/APA106/SK6812 5050 programmable rgb LED"
 tags:
   - LED
   - RGB
@@ -10,23 +10,31 @@ tags:
   - wire
   - sketch
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2020-02-12 11:27'
-modified: '2020-02-11 T18:17:25.000Z'
+date: '2020-02-11 11:27'
+modified: '2020-02-12 T18:17:25.000Z'
 comments: true
 share: true
+component: component-ws281X-led
+module: module-ws281X-led
+project: null
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 ### Introduction
 
-
+The [LED components](../../component/component-ws281X-led) S2811/WS2812/WS2812B/APA104/APA106/SK6812 are available both as a single components, as modules with a single component, or as LED strips or matrices. They are very common. This post only shows how to wire a single LED.
 
 ### Wiring of single LED
 
-The SMD 5050 component is available both as a single component, and module with a single component. The figures below illustrate how to wire these alternatives. As all SMD 5050 components have the same controller chips, all sketches work for all components and modules.
+ The figures below illustrate how to wire single LED modules. As all SMD 5050 components have the same controller chips, the sketches should work for all components/modules.
 
 <figure>
 <img src="../../images/nano-ws2811-rgbled-single-5mm_bb.png">
-<figcaption> Wiring of a single SMD 5050 WS2811 component. </figcaption>
+<figcaption> Breadboard wiring of a single SMD 5050 WS2811 component. </figcaption>
+</figure>
+
+<figure>
+<img src="../../images/nano-ws2811-rgbled-single-5mm-breadfree_bb.png">
+<figcaption> Direct wiring of a single SMD 5050 WS2811 component. </figcaption>
 </figure>
 
 <figure>
@@ -35,7 +43,7 @@ The SMD 5050 component is available both as a single component, and module with 
 </figure>
 
 
-The sketch under the "Hide/Show" button works for both of the above wirings.
+The sketch under the "Hide/Show" button works for all of the above wirings. The sketch is written for testing the amount of reflected (emitted) light in different wavelengths.
 
 <button id= "toggleFastLED" onclick="hiddencode('FastLED')">Hide/Show sketch</button>
 
@@ -43,90 +51,98 @@ The sketch under the "Hide/Show" button works for both of the above wirings.
 {% capture text-capture %}
 {% raw %}
 ```
-// (c) Michael Schoeffler 2017, http://www.mschoeffler.de
+// Code for controlling single WS2812 LED, looping brightness for red, green, blue, yellow and white light
+// Written By Thomas Gumbricht, Karttur AB
+
 #include "FastLED.h"
 
-#define DATA_PIN 2
-#define LED_TYPE WS2811
-#define COLOR_ORDER GRB
+#define DATA_PIN 7
+#define LED_TYPE WS2812
+#define COLOR_ORDER RGB
 #define NUM_LEDS 1
 #define BRIGHTNESS 120
 
 CRGB leds[NUM_LEDS];
 
 void setup() {
-  delay(3000); // initial delay of a few seconds is recommended
+  Serial.begin(9600);
+  delay(1000); // initial delay is recommended
   FastLED.addLeds<LED_TYPE,DATA_PIN,COLOR_ORDER>(leds, NUM_LEDS).setCorrection(TypicalLEDStrip); // initializes LED strip
   FastLED.setBrightness(BRIGHTNESS);// global brightness
 }
 
-// switches off all LEDs
-void showProgramCleanUp(long delayTime) {
-  for (int i = 0; i < NUM_LEDS; ++i) {
-    leds[i] = CRGB::Black;
-  }
-  FastLED.show();
-  delay(delayTime);
-}
-
-// switches on all LEDs. Each LED is shown in random color.
-// numIterations: indicates how often LEDs are switched on in random colors
-// delayTime: indicates for how long LEDs are switched on.
-void showProgramRandom(int numIterations, long delayTime) {
-  for (int iteration = 0; iteration < numIterations; ++iteration) {
-    for (int i = 0; i < NUM_LEDS; ++i) {
-      leds[i] = CHSV(random8(),255,255); // hue, saturation, value
-    }
-    FastLED.show();
-    delay(delayTime);
-  }
-}
-
-// Shifts a single pixel from the start of strip to the end.
-// crgb: color of shifted pixel
-// delayTime: indicates how long the pixel is shown on each LED
-void showProgramShiftSinglePixel(CRGB crgb, long delayTime) {
-  for (int i = 0; i < NUM_LEDS; ++i) {
-    leds[i] = crgb;
-    FastLED.show();
-    delay(delayTime);
-    leds[i] = CRGB::Black;
-  }
-}
-
-// Shifts multiple pixel from the start of strip to the end. The color of each pixel is randomized.
-// delayTime: indicates how long the pixels are shown on each LED
-void showProgramShiftMultiPixel(long delayTime) {
-  for (int i = 0; i < NUM_LEDS; ++i) {
-    for (int j = i; j > 0; --j) {
-      leds[j] = leds[j-1];
-    }
-    CRGB newPixel = CHSV(random8(), 255, 255);
-    leds[0] = newPixel;
-    FastLED.show();
-    delay(delayTime);
-  }
-}
-
-// main program
 void loop() {
-  showProgramCleanUp(2500); // clean up
-  showProgramRandom(100, 100); // show "random" program
 
-  showProgramCleanUp(2500); // clean up
-  showProgramRandom(10, 1000); // show "random" program
+    // Loop red exponential brightness
+  Serial.println();
+  for (int x = 32; x <= 256; x = x * 2) {
+    Serial.print("Red:"); Serial.println(x-1);
+    FastLED.setBrightness(x-1);
+    //leds[0] = CRGB::Red;
+    leds[0] = CRGB( 255, 0, 0);
+    FastLED.show();
+    delay(500);
+    leds[0] = CRGB::Black;
+    FastLED.show();
+    delay(100);
+  }
 
-  showProgramCleanUp(2500); // clean up
-  showProgramShiftSinglePixel(CRGB::Blue, 250); // show "shift single pixel program" with blue pixel
+  // Loop green exponential brightness
+  Serial.println();
+  for (int x = 32; x <= 256; x = x * 2) {
+    Serial.print("Green:"); Serial.println(x-1);
+    FastLED.setBrightness(x-1);
+    //leds[0] = CRGB::Green;
+    leds[0] = CRGB( 0, 255, 0);
+    FastLED.show();
+    delay(500);
+    leds[0] = CRGB::Black;
+    FastLED.show();
+    delay(100);
+  }
 
-  showProgramCleanUp(2500); // clean up
-  showProgramShiftSinglePixel(CRGB::Maroon, 100); // show "shift single pixel program" with maroon pixel
+  // Loop blue exponential brightness
+  Serial.println();
+  for (int x = 32; x <= 256; x = x * 2) {
+    Serial.print("Blue:"); Serial.println(x-1);
+    FastLED.setBrightness(x-1);
+    //leds[0] = CRGB::Blue;
+    leds[0] = CRGB( 0, 0, 255);
+    FastLED.show();
+    delay(500);
+    leds[0] = CRGB::Black;
+    FastLED.show();
+    delay(100);
+  }
 
-  showProgramCleanUp(2500); // clean up
-  showProgramShiftMultiPixel(500); // show "shift multi pixel" program
+  // Loop yellow exponential brightness
+  Serial.println();
+  for (int x = 32; x <= 256; x = x * 2) {
+    Serial.print("Yellow:"); Serial.println(x-1);
+    FastLED.setBrightness(x-1);
+    //leds[0] = CRGB::Yellow;
+    leds[0] = CRGB( 255, 255, 0 );
+    FastLED.show();
+    delay(500);
+    leds[0] = CRGB::Black;
+    FastLED.show();
+    delay(100);
+  }
 
-  showProgramCleanUp(2500); // clean up
-  showProgramShiftMultiPixel(50); // show "shift multi pixel" program
+  // Loop white expontential brightness
+  Serial.println();
+  for (int x = 32; x <= 256; x = x * 2) {
+    Serial.print("White:"); Serial.println(x-1);
+    FastLED.setBrightness(x-1);
+    //leds[0] = CRGB::White;
+    leds[0] = CRGB( 255, 255, 255 );
+    FastLED.show();
+    delay(500);
+    leds[0] = CRGB::Black;
+    FastLED.show();
+    delay(100);
+  }
+
 }
 ```
 {% endraw %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hamamatsu micro-spectrometer
-categories: sensors
+categories: sensor
 excerpt: "Finger-tip sized, ultra-compact spectrometer head supporting high sensitivity and long wavelength region"
 tags:
   - spectrometer

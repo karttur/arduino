@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AMS spectral sensor
-categories: sensors
+categories: sensor
 excerpt: "AMS 6-channel broad band sensors"
 tags:
   - spectrometer

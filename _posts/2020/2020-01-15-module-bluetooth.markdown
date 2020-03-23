@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bluetooth modules for Arduino
-categories: modules
+categories: module
 excerpt: "Different generations and makes of bluetooth modules for Arduino"
 tags:
   - bluetooth
@@ -13,6 +13,8 @@ date: '2020-01-15 11:27'
 modified: '2020-01-15 T18:17:25.000Z'
 comments: true
 share: true
+project: project-bluetooth-nano
+projectuno: project-bluetooth-uno
 ---
 
 ### Introduction
@@ -29,14 +31,14 @@ If your master device (typically computer or mobile phone) does not connect to y
 
 The standard Arduino breakout boards for _Classic Bluetooth_ are HC-05 and HC-06. The HC-05 module can either be a master or slave which means that it can initiate connection to another device. The HC-06 module is a slave only and can only accept a connection from another device.
 
-Both HC-05 and HC-06 are produced by different vendors, and sold at almost every shop offering Arduino modules. In Sweden the best price and service might be from [pchshop.se](https://pchbutik.se).
+Both HC-05 and HC-06 are produced by different vendors, and sold at almost every shop offering Arduino modules. In Sweden the best price and service might be from [pchbutik.se](https://pchbutik.se).
 
-### Blutooth Low Energy (BLE)
+### Bluetooth Low Energy (BLE)
 
-At time of writing this (January 2020) BLE has not yet taken over from _Classic Bluetooth_, but it is on its way to happen. [pchshop.se](https://pchbutik.se) also have some alternatives for BLE modules.
+At time of writing this (January 2020) BLE has not yet taken over from _Classic Bluetooth_, but it is on its way to happen. [pchbutik.se](https://pchbutik.se) also has some alternatives for BLE modules.
 
 As usual it is cheaper to buy directly from China, [Banggood.com](https://www.banggood.com/buy/arduino-bluetooth-module.html) for instance.
 
 ### Sketch and wire
 
-The post on [Bluetooth sketch and wiring](../../projects/project-uno-bluetooth) contains instructions for how to wire a HC-06 module to an Arduino UNO board and links to libraries and codes. How to wire using an Arduino Nano board is outlined in the post [Arduino Nano project - bluetooth](../../projects/project-nano-bluetooth/).
+The post on [Bluetooth sketch and wiring](../../project/project-bluetooth-uno/) contains instructions for how to wire a Bluetooth module to an Arduino UNO board with links to libraries and codes. How to wire using an Arduino Nano board is outlined in the post [Arduino Nano project - bluetooth](../../project/project-bluetooth-nano/).
