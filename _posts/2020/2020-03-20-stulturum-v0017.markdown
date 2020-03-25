@@ -1,0 +1,48 @@
+---
+layout: post
+title: Spectrometer version 0.017
+categories: stulturum
+version: "v0.017"
+tags:
+  - spectrometer
+  - stulturum
+  - v0.017
+image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
+date: '2020-03-20 11:27'
+modified: '2020-03-20 T18:17:25.000Z'
+comments: true
+share: true
+---
+
+## Stulturum spectrometer version v0.017
+
+This is the first functional spectrometer in the Stulturum series. It was finished on 22 March 2020. It is built on an Arduino Nano board and 9 other modules (breakout boards or components) as shown in the wiring diagram below. All included modules/components are listed below.
+
+<figure>
+<img src="../../images/nano-spectro_v0017_breadfree_bb.png">
+<figcaption> Stulturum spectrometer version v0.017, the Bluetooth module should be BT12 (not HC05) but when writing this there is no fritzing component for BT12 available.</figcaption>
+</figure>
+
+### Spectrometer box
+
+The spectrometer box will become available as 3d print files (<span class=file>.stl</span>) shortly.
+
+<figure>
+<img src="../../images/spectra-stulturum_v0017d.png">
+<figcaption> Stulturum spectrometer box version v0.017.</figcaption>
+</figure>
+
+### Modules and components
+
+Apart from the Arduino Nano microcontroller, there are a total of nine different modules/components included in Stulturum's spectrometer version v0.017. To get more information, including the separate scripts for individual controls, follow the links.
+
+<ul class="post-list">
+{% for post in site.categories.stulturum %}
+  {% if post.startversion >= 0.017 and post.endversion <= 0.017 %}
+
+        <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a>
+        </article></li>
+
+  {% endif %}
+{% endfor %}
+</ul>

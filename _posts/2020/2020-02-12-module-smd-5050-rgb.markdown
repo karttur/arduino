@@ -12,6 +12,9 @@ date: '2020-02-02 11:27'
 modified: '2020-02-02 T18:17:25.000Z'
 comments: true
 share: true
+component: component-smd-5050-rgb
+module: null
+project: project-smd-5050-rgb
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 
@@ -24,6 +27,18 @@ Modules centered around the Light-emitting diode (LED) SMD 5050 RGB differ in ma
 ### KY-009 3-color full-color LED SMD
 
 The [KY-009 3-color full-color LED SMD module](https://tkkrlab.nl/wiki/Arduino_KY-009_3-color_full-color_LED_SMD_modules) component represent the simplest kind of module, where you have to [wire using separate and individual power, with resistors on each power](../../projects/project-rgb-led/).
+
+
+### Single encapsulated LED
+
+You can also got the SMD 5050 with an integrated controller as a signle encapsualted 8 mm led. The example below is form [pchbutik](https://pchbutik.se/komponenter/197-10-st-8-mm-led-med-inbyggt-ws2811-chip-rgb-pixel-rod-gr-n-bla.html) in Sweden.
+
+<figure>
+<img src="../../images/WS2811_8mm_frosted_led.png">
+<figcaption> SMD 5050 ws2811 8 mm LED.</figcaption>
+</figure>
+
+
 
 ###
 

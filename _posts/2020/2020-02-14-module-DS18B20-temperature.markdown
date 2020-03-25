@@ -1,15 +1,16 @@
 ---
 layout: post
-title: DS18B20 temperature module
+title: DS18B20 temperature
 categories: module
-excerpt: "KY-001 - the DS18B20 temperature module"
+excerpt: "DS18B20 temperature component integrated as breakout boards and as externally wired thermometer"
 tags:
   - temperature
   - sensor
   - DS18B20
+  - thermometer
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2020-02-14 11:27'
-modified: '2020-02-14 T18:17:25.000Z'
+modified: '2020-03-25 T18:17:25.000Z'
 comments: true
 share: true
 ---

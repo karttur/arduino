@@ -1,8 +1,8 @@
 ---
 layout: post
-title: DS18B20 temperature sensor
+title: DS18B20 temperature
 categories: project
-excerpt: "DS18B20 temperature sensor"
+excerpt: "Wiring and scripts for the DS18B20 temperature sensor"
 tags:
   - temperature
   - sensor
@@ -21,7 +21,7 @@ The DS18B20 digital thermometer provides 9-bit to 12-bit Celsius temperature mea
 
 ### Wiring
 
-Below are two different working, with a breakout board including the pull-up resistor, and with the pull up resistor added. The sketch is the same for both wiring alternatives.
+Below are two different wirings, with a breakout board including the pull-up resistor, and with the pull up resistor added. The sketch is the same for both wiring alternatives.
 
 #### KY-001
 

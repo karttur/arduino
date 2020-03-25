@@ -12,6 +12,9 @@ date: '2020-02-02 11:27'
 modified: '2020-02-02 T18:17:25.000Z'
 comments: true
 share: true
+component: component-smd-5050-rgb
+module: module-smd-5050-rgb
+project: null
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 

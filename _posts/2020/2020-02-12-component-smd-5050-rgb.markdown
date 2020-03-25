@@ -11,11 +11,13 @@ date: '2020-02-02 11:27'
 modified: '2020-02-02 T18:17:25.000Z'
 comments: true
 share: true
+component: null
+module: module-smd-5050-rgb
+project: project-smd-5050-rgb
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 
 ### Introduction
-
 
 https://www.waveformlighting.com/led-strip-lights
 

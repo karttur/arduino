@@ -25,7 +25,7 @@ Programmable LEDs come in many different module forms - strings, matrices like A
 
 I am primarily interested in using programmable LEDs as a light source for a handheld spectrometer, and that only requires a single LED. The versions I have tested include 5 mm encapsulated LEDs, a breakout board, and a strip that I cut into single units.
 
-### 5mm LEDs
+### 8 mm LEDs
 
 The ws281X series of addressable LEDs with inbuilt control chips are available as 5mm LEDs. They look similar to older LEDs, but work differently. In Sweden you can get these kind of LEDs from [pchbutik](https://pchbutik.se/komponenter/197-10-st-8-mm-led-med-inbyggt-ws2811-chip-rgb-pixel-rod-gr-n-bla.html?search_query=RGB&results=12) at about 0.50 USD each.
 

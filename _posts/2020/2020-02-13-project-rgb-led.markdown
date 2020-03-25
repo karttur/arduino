@@ -15,6 +15,7 @@ comments: true
 share: true
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
+
 ### Introduction
 
 Several products with separate light-emitting diodes (LED) for red (R) green (G) and blue (B) exists, and they require different wiring and sketching. This post goes through some of the RGB LEDs that are available, both as breakout boards and as simple components. This post is restricted to LEDs where each color is controlled by its own cord.

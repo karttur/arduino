@@ -20,7 +20,7 @@ projectuno: project-AS726X-spectrometer-uno
 
 ### Introduction
 
-The [AMS AS726x series of spectral sensing engines](https://ams.com/AS7261) are miniaturised broad band spectrometers, that are also available as [Arduino modules](../../modules/module-AS726X-spectrometer).
+The [AMS AS726x series of spectral sensing engines](https://ams.com/AS7261) are miniaturised broad band spectrometers, that are also available as [Arduino modules](../../modules/module-AS726X-spectrometer). AMS own [youtube video "ams Spectral ID iSPI Eval Kit"](https://www.youtube.com/watch?v=KKyHxXyaVPM) presents the spectrometers in detail, another AMS demo video on [AS7265x - Tricorder Mobile Demo](https://www.youtube.com/watch?v=y6ccmh24BXw&t=38s) and a third one on [Color Scanning Made Easy! ams AS7261 Spectral Sensor](https://www.youtube.com/watch?v=muxw1Sb2Kn0).
 
 ### Versions
 

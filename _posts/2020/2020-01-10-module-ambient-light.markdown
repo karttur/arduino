@@ -1,8 +1,8 @@
 ---
 layout: post
-title: BH1750FVI ambient light sensor
+title: Ambient light sensor
 categories: module
-excerpt: "Modules for BH1750FVI digital Ambient Light Sensor IC for I2C bus interface"
+excerpt: "Modules with Ambient light sensors for Arduino"
 tags:
   - ambient light
   - I2C

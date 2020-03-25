@@ -8,6 +8,10 @@
   url: /
   include: 'N'
 
+- title: Stulturum
+  url: /stulturum/
+  include: 'N'
+
 - title: IDE
   url: /ide/
   include: 'N'
