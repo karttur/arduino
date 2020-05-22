@@ -22,24 +22,4 @@ project: project-smd-5050-rgb
 
 Module with Light-emitting diode (LED) for red (R) green (G) and blue (B) with separate power for each and the potential to create all colors between blue and red as apparent output.
 
-Modules centered around the Light-emitting diode (LED) SMD 5050 RGB differ in many ways, selecting the best solution depends on your project. The simplest modules only contain a single [SMD 5050 RGB component](../../components/component-SMD-5050-RGB) with only connection points for red (R), green (G) and blue (B), plus ground (- or GND). For this kind of module you have to connect three separate and individually controlled power wires, including resistors for each, outlined below. At the other end there are breakout boards that include the resistors and that have three connectors, 5 v power (5v), ground (- or GND) and one for controll. Most of these kinds can also pass the connection on, and also have connectors for outgoing 5 v power (5v) and ground (- or GND). The third connections is then typically labelled DI and DO for data in and data out. You can connect these in almost endless series, as outlined below.
-
-### KY-009 3-color full-color LED SMD
-
-The [KY-009 3-color full-color LED SMD module](https://tkkrlab.nl/wiki/Arduino_KY-009_3-color_full-color_LED_SMD_modules) component represent the simplest kind of module, where you have to [wire using separate and individual power, with resistors on each power](../../projects/project-rgb-led/).
-
-
-### Single encapsulated LED
-
-You can also got the SMD 5050 with an integrated controller as a signle encapsualted 8 mm led. The example below is form [pchbutik](https://pchbutik.se/komponenter/197-10-st-8-mm-led-med-inbyggt-ws2811-chip-rgb-pixel-rod-gr-n-bla.html) in Sweden.
-
-<figure>
-<img src="../../images/WS2811_8mm_frosted_led.png">
-<figcaption> SMD 5050 ws2811 8 mm LED.</figcaption>
-</figure>
-
-
-
-###
-
-[LED STRIP LIGHTS EVERYTHING YOU NEED TO KNOW BEFORE YOU BUY](https://www.waveformlighting.com/led-strip-lights)
+Modules centered around the Light-emitting diode (LED) SMD 5050 RGB differ in many ways, selecting the best solution depends on your project.  At the other end there are breakout boards that include the resistors and that have three connectors, 5 v power (5v), ground (- or GND) and one for controll. Most of these kinds can also pass the connection on, and also have connectors for outgoing 5 v power (5v) and ground (- or GND). The third connections is then typically labelled DI and DO for data in and data out. You can connect these in almost endless series, as outlined below.

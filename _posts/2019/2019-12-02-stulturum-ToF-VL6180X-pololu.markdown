@@ -2,7 +2,6 @@
 layout: post
 title: Pololu VL6180X Time-of-Flight Distance Sensor and ambient light module
 categories: stulturum
-stulturum: True
 startversion: 0.017
 endversion: 0.017
 excerpt: Pololu VL6180X Time-of-Flight Distance Sensor and ambient light module
@@ -34,5 +33,3 @@ For more details on the module see the [Tutorial: STMicroelectronics VL6180X Tim
 In Sweden the Pololu component is available from [Lawicel](https://www.lawicel-shop.se).
 
 [Data sheet for VL6180X](https://www.pololu.com/file/0J961/VL6180X.pdf).
-
-The [manual for Adafruit VL6180X Time of Flight Micro-LIDAR Distance Sensor Breakout](https://www.elfa.se/Web/Downloads/_t/ds/Adafruit_VL6180X_eng_tds.pdf?pid=30129217) contains some more illustrations on how to wire the VL6810X module with different boards.

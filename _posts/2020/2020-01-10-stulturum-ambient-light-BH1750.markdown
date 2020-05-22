@@ -16,7 +16,7 @@ comments: true
 share: true
 component: null
 sensor: sensor-ambient-light
-module: null
+module: module-ambient-light
 project: project-ambient-light
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>

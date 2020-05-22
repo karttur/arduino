@@ -49,7 +49,6 @@ Larger boards have dedicated connectors for SDA and SCL, but not the Nano board.
 <figcaption> Direct wiring for the L6180X Time of Flight and ambient light sensor.</figcaption>
 </figure>
 
-
 #### Single shot measurement
 
 The code is just a copy from [Pololus GithHub repo on the VL6180x sensor](https://github.com/pololu/vl6180x-arduino/blob/master/examples/RangeSingleShot/RangeSingleShot.ino).

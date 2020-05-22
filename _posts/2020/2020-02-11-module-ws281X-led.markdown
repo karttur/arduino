@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Programmable rgb LED
+title: SMD 5050 Programmable RGB LED
 categories: module
 excerpt: "Modules with WS2811/WS2812/WS2812B/APA104/APA106/SK6812 5050 programmable rgb LED"
 tags:
@@ -21,17 +21,23 @@ project: project-ws281X-led
 
 ### Introduction
 
-Programmable LEDs come in many different module forms - strings, matrices like Adafruit's NeoPixels or the RGB123, or even 5mm LEDs. Note that while physically different (some are built into LEDs, some are separate chips), the WS2811/WS2812/WS2812B/APA104/APA106/SK6812 all work the same way electrically. The Youtube [LED Strips, what's the difference](https://www.youtube.com/watch?v=QnvircC22hU) explains some of the differences between these. it is a good point to start when selecting what kind to chose for your project.
+Programmable LEDs come in many different module forms - strings, matrices like Adafruit's NeoPixels or the RGB123, or even 5mm LEDs. Note that while physically different (some are built into LEDs, some are separate chips), the WS2811/WS2812/WS2812B/APA104/APA106/SK6812 all work the same way electrically. The Youtube [LED Strips, what's the difference](https://www.youtube.com/watch?v=QnvircC22hU) explains some of the differences between these. It is a good starting point when selecting what kind to chose for your project. If you prefer reading, try the page [LED strip lights - everything you need to know before you buy](https://www.waveformlighting.com/led-strip-lights).
 
 I am primarily interested in using programmable LEDs as a light source for a handheld spectrometer, and that only requires a single LED. The versions I have tested include 5 mm encapsulated LEDs, a breakout board, and a strip that I cut into single units.
 
+### KY-009 3-color full-color LED SMD
+
+The simplest modules only contain a single [SMD 5050 RGB component](../../components/component-SMD-5050-RGB) with connection points for red (R), green (G) and blue (B), plus ground (- or GND). For this kind of module you have to connect three separate and individually controlled power wires, including resistors for each.
+
+The [KY-009 3-color full-color LED SMD module](https://tkkrlab.nl/wiki/Arduino_KY-009_3-color_full-color_LED_SMD_modules) component represent the simplest kind of module, where you have to [wire using separate and individual power, with resistors on each power](../../projects/project-rgb-led/).
+
 ### 8 mm LEDs
 
-The ws281X series of addressable LEDs with inbuilt control chips are available as 5mm LEDs. They look similar to older LEDs, but work differently. In Sweden you can get these kind of LEDs from [pchbutik](https://pchbutik.se/komponenter/197-10-st-8-mm-led-med-inbyggt-ws2811-chip-rgb-pixel-rod-gr-n-bla.html?search_query=RGB&results=12) at about 0.50 USD each.
+The ws281X series of addressable LEDs with inbuilt control chips are available as 8 mm LEDs. They look similar to older LEDs, but work differently. In Sweden you can get these kind of LEDs from [pchbutik](https://pchbutik.se/komponenter/197-10-st-8-mm-led-med-inbyggt-ws2811-chip-rgb-pixel-rod-gr-n-bla.html?search_query=RGB&results=12) at about 0.50 USD each.
 
 <figure>
-<img src="../../images/WS2811_5mm.jpg">
-<figcaption> Single ws2811 5mm LED. The wiring is only indicative, different brands can have different wiring. </figcaption>
+<img src="../../images/WS2811_8mm_frosted_led.png">
+<figcaption> Single ws2811 8 mm LED. The wiring is only indicative, different brands can have different wiring. </figcaption>
 </figure>
 
 ### Breakout board

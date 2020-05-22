@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ambient light sensor
+title: Ambient light sensors
 categories: module
 excerpt: "Modules with Ambient light sensors for Arduino"
 tags:
