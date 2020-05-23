@@ -8,10 +8,6 @@
   url: /
   include: 'N'
 
-- title: Stulturum
-  url: /stulturum/
-  include: 'N'
-
 - title: IDE
   url: /ide/
   include: 'N'
@@ -32,8 +28,16 @@
   url: /component/
   include: 'N'
 
+- title: Spectrometers
+  url: /spectro/
+  include: 'N'
+
 - title: Desgin
   url: /design/
+  include: 'N'
+
+- title: Spectrolum
+  url: /stulturum/
   include: 'N'
 
 - title: Other

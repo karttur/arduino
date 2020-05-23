@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AMS spectral sensor
+title: AMS AS726X spectrometer
 categories: sensor
 excerpt: "AMS 6-channel broad band sensors"
 tags:
@@ -14,7 +14,9 @@ comments: true
 share: true
 component: null
 sensor: null
+sensor: null
 module: module-AS726X-spectrometer
+project: project-AS726X-spectrometer-nano
 projectuno: project-AS726X-spectrometer-uno
 ---
 

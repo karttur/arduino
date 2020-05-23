@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adafruit AS7262 6-Channel Visible Light / Color Sensor Breakout
+title: Adafruit AS7262 6-Channel Visible Light / Color Sensor Breakout Board
 categories: stulturum
 startversion: 0.017
 endversion: 0.017

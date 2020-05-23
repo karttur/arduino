@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spectroscopy magazines
-categories: spectra
+categories: spectro
 excerpt: "Open access spectroscopy magazines"
 tags:
   - spectroscopy

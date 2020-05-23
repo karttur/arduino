@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Arduino projects
-excerpt: "Arduino modules, projects and hints by Karttur"
+title: Arduino projects, modules, sensors and components
+excerpt: "Arduino projects, modules, sensors and components; hints by Karttur"
 image: rainfall-delta_3B43_trmm_2001-2016_mk-z-ts-model
 search_omit: true
 ---
 
-Arduino is an open-source hardware and software company,
-project and user community that designs and manufactures
+Arduino is an open-source hardware and software company, as well as a
+project and user community, that designs and manufactures
 single-board microcontrollers and microcontroller kits for
 building digital devices. Arduino boards are available
 in preassembled form or as do-it-yourself (DIY) kits.
@@ -18,7 +18,7 @@ and analog input/output (I/O) pins that may be interfaced to
 various expansion boards ('shields') breakout boards (pre-assembled electronic
 comonents) or prototyping breadboards and other circuits.
 
-In this repo, the focus is on developing envrion-sensing
+In this repo, the focus is on developing environ-sensing
 electronic devices using Arduino. In particular spactral analysis.
 The repo is thus divided in 6 main categories:
 <ul>
@@ -28,40 +28,71 @@ The repo is thus divided in 6 main categories:
   <li><a href="../modules/index.html">Modules (integrated electronic components, usually directly useful for Arduino wiring and sketching)</a></li>
   <li><a href="../sensors/index.html">Sensor (environmental senors, usually available as modules)</a></li>
   <li><a href="../components/index.html">Components (Other types of electronic components)</a></li>
+  <li><a href="../spectro/index.html">Spectrometers (Miniaturized spectrometers)</a></li>
+  <li><a href="../design/index.html">Design (Designing issues)</a></li>
+  <li><a href="../stulturum/index.html">Spectrolum (complete spectrometers and ancillary sensors and components)</a></li>
   <li><a href="../blog/index.html">Blog (information that does not fit the above)</a></li>
 </ul>
 
-<h4><a href="../projects/">Software related.</a><h4>
+<h4><a href="../ide/">IDE (Arduino Integrated Development Environment)</a><h4>
 <ul class="post-list">
 {% for post in site.categories.ide limit:5 %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
 
-<h4><a href="../projects/">Arduino projects incuding hardware and software integration.</a><h4>
+<h4><a href="../projects/">Projects (sketch and wiring tuorials for various modules)</a><h4>
 <ul class="post-list">
 {% for post in site.categories.project limit:5 %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
 
-<h4><a href="../modules/">Various arduino boards and modules</a><h4>
+<h4><a href="../modules/">Modules (integrated electronic components, usually directly useful for Arduino wiring and sketching)</a><h4>
 <ul class="post-list">
 {% for post in site.categories.module limit:5 %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
 
-<h4><a href="../components/">Arduino components (can be pats of modules or just electronic component I need to remember)</a><h4>
+<h4><a href="../sensors/">Sensors (environmental senors, usually available as modules)</a><h4>
+<ul class="post-list">
+{% for post in site.categories.sensor limit:5 %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>
+
+<h4><a href="../components/">Components (Other types of electronic components)</a><h4>
 <ul class="post-list">
 {% for post in site.categories.component limit:5 %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
 
-<h4><a href="../sensors/">Reviews and links to external sensors</a><h4>
+<h4><a href="../design/">Spectrometers Spectrometers (Miniaturized spectrometers)</a><h4>
 <ul class="post-list">
-{% for post in site.categories.sensor limit:5 %}
+{% for post in site.categories.spectro limit:5 %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>
+
+<h4><a href="../design/">Design (Designing issues)</a><h4>
+<ul class="post-list">
+{% for post in site.categories.design limit:5 %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>
+
+<h4><a href="../design/">Spectrolum (complete spectrometers and ancillary sensors and components)</a><h4>
+<ul class="post-list">
+{% for post in site.categories.stulturum limit:5 %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>
+
+<h4><a href="../design/">Blog (information that does not fit the above)</a><h4>
+<ul class="post-list">
+{% for post in site.categories.blog limit:5 %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>

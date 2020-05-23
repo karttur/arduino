@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Miniature spectrometers
-categories: spectra
+categories: spectro
 excerpt: "Handheld miniature spectrometers available October 2019"
 tags:
   - spectrometer
@@ -19,6 +19,10 @@ Scientific article
 [Portable Spectroscopy](https://journals.sagepub.com/doi/full/10.1177/0003702818809719). Includes a review of SCiO (not impressining)
 
 # Real miniature spectrometers
+
+## Hamamatsu C12880MA
+
+This sensor is directly useful with Arduino, and included as a [sensor](../../sensor/sensor-C12880MA-spectrometer) and a [module](../../module/sensor-C12880MA-spectrometer).
 
 ## In the pipeline
 

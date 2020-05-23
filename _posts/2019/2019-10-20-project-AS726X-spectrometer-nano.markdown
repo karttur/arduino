@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AMD six band spectrometer project (nano)
+title: AMS AS726X spectrometer (nano)
 categories: project
 excerpt: "Wiring up the AMD as726x spectrometer with Arduino nano"
 tags:
@@ -17,7 +17,6 @@ share: true
 component: null
 sensor: sensor-AS726X-spectrometer
 module: module-AS726X-spectrometer
-project: null
 project: project-AS726X-spectrometer-nano
 projectuno: project-AS726X-spectrometer-uno
 ---

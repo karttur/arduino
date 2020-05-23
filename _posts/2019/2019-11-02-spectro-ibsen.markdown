@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Ibsen grating spectrometer components
-categories: spectra
+categories: spectro
 excerpt: "Ibsen miniature grating spectrometer components"
 tags:
   - spectrometer
+  - Ibsen
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2019-11-01 11:27'
 modified: '2019-11-07 T18:17:25.000Z'

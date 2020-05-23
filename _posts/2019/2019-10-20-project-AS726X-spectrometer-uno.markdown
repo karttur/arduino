@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AMD six band spectrometer project (UNO)
+title: AMS AS726X spectrometer (UNO)
 categories: project
 excerpt: "Wiring up the AMD as726x spectrometer with Arduino UNO"
 tags:
