@@ -8,8 +8,8 @@ tags:
 - red
 - 650nm
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2020-02-03 11:27'
-modified: '2020-02-03 T18:17:25.000Z'
+date: '2020-02-04 11:27'
+modified: '2020-02-04 T18:17:25.000Z'
 comments: true
 share: true
 module: module-laser650

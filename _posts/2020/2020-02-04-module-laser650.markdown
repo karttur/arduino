@@ -13,6 +13,7 @@ modified: '2020-02-04 T18:17:25.000Z'
 comments: true
 share: true
 component: component-laser650
+module: null
 project: project-laser650
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>

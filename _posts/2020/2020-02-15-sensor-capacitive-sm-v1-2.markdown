@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Capacitive Soil Moisture Sensor v1.2
-categories: components
+categories: sensor
 excerpt: "Capacitive Soil Moisture Sensor v1.2"
 tags:
   - soil moisture
@@ -11,6 +11,9 @@ date: '2020-02-15 11:27'
 modified: '2020-02-15 T18:17:25.000Z'
 comments: true
 share: true
+sensor: null
+module: module-capacitive-sm-v1-2
+project: project-capacitive-sm-v1-2
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 

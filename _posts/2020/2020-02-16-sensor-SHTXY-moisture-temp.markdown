@@ -14,6 +14,9 @@ date: '2020-02-16 11:27'
 modified: '2020-02-16 T18:17:25.000Z'
 comments: true
 share: true
+sensor: null
+module: module-SHTXY-moisture-temp
+project: project-SHTXY-moisture-temp
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 

@@ -1,0 +1,77 @@
+---
+layout: post
+title: Spectrometer version 0.019
+categories: spectrolum
+version: "v0.019"
+tags:
+  - spectrometer
+  - stulturum
+  - v0.019
+image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
+date: '2020-05-25 11:27'
+modified: '2020-05-25 T18:17:25.000Z'
+comments: true
+share: true
+---
+
+## Stulturum spectrometer version v0.019
+
+This is the second functional spectrometer in the Stulturum series. It was finished on 25 May 2020. It is built on an Arduino Nano board and 9 other modules (breakout boards or components) as shown in the wiring diagram below. All included modules/components are listed below.
+
+<figure>
+<img src="../../images/nano-spectro_v019_breadfree_bb.png">
+<figcaption> Stulturum spectrometer version v0.019, the Bluetooth module should be BT10 (not HC05) but when writing this there is no fritzing component for BT10 available.</figcaption>
+</figure>
+
+### Spectrometer box
+
+Compared to the [previous version (0.017)](../spectrolum-v0017), version 0.019 has tilted light sources that focus 5 cm from the spectrometer. This is for allowing a more exact calibration using the solid sampler (see below).
+
+The spectrometer box will become available as 3d print files (<span class='file'>.stl</span>) shortly.
+
+<figure>
+<img src="../../images/spectra-stulturum_box_v0019.png">
+<figcaption> Stulturum spectrometer box version v0.019.</figcaption>
+</figure>
+
+### Spectrometer solid sampler
+
+The solid sampler fits on the front of the spectrometer box and assures that sampling is confined to the oval opening. All three integrated light sources, the strong led built into the [Adafruit 6-channel spectrometer](http://localhost:4000/stulturum/stulturum-AS7262-adafruit-spectrometer/), the [SMD 5050 RGB LED](http://localhost:4000/stulturum/stulturum-ws2811-8mm-led/), and the [red laser](http://localhost:4000/stulturum/stulturum-laser650-3v/) all point towards the oval opening.
+
+<figure>
+<img src="../../images/spectra-stulturum_soild-sampler_v0019.png">
+<figcaption> Stulturum spectrometer solid sampler v0.019.</figcaption>
+</figure>
+
+### Spectrometer cuvette holder
+
+Also the cuvette holder fits on the front of the spectrometer box. The steering of the light sources through liquid samples is not finalized.
+
+<figure>
+<img src="../../images/spectra-stulturum_cuvette-holder_v0019.png">
+<figcaption> Stulturum spectrometer cuvette holder v0.019.</figcaption>
+</figure>
+
+### Assembly
+
+<figure>
+<img src="../../images/spectrolum_v019c_photo.png">
+<figcaption> Stulturum spectrometer version v0.019.</figcaption>
+</figure>
+
+The neodymium magnet is too small to hold the soild sampler and cuvette holder in place. Assembling with crampon connectors is very tedious and also takes too much space inside the spectrometer box.
+
+### Modules and components
+
+Apart from the Arduino Nano microcontroller, there are a total of nine different modules/components included in Stulturum's spectrometer version v0.019. To get more information, including the separate scripts for individual controls, follow the links.
+
+<ul class="post-list">
+{% for post in site.categories.stulturum %}
+  {% if post.startversion <= 0.019 and post.endversion >= 0.019 %}
+
+        <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a>
+        </article></li>
+
+  {% endif %}
+{% endfor %}
+</ul>

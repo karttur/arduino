@@ -1,7 +1,7 @@
 ---
 layout: post
 title: APDS-9930 Digital Proximity and Ambient Light Sensor
-categories: module
+categories: sensor
 excerpt: "Digital Proximity and Ambient Light Sensor"
 tags:
   - distance

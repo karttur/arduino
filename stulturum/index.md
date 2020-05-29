@@ -7,7 +7,7 @@ search_omit: true
 ---
 
 <ul class="post-list">
-{% for post in site.categories.stulturum %}
+{% for post in site.categories.spectrolum %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.version }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} {% endif %}</a></article></li>
 {% endfor %}
 </ul>

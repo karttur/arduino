@@ -8,12 +8,13 @@ tags:
   - red
   - 650nm
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2020-02-07 11:27'
-modified: '2020-02-07 T18:17:25.000Z'
+date: '2020-02-04 11:27'
+modified: '2020-02-04 T18:17:25.000Z'
 comments: true
 share: true
 component: component-laser650
-project: project-laser650
+module: module-laser650
+project: null
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 
@@ -51,6 +52,7 @@ Wiring for a 3v laser that consumes 40 mA. The information available is vague. B
 The sketch is the same for all of the wiring above.
 
 ```
+// Laser, turn on/off
 
 int laserPin = 6;
 

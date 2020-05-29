@@ -4,7 +4,7 @@ title: DS18B20 temperature module
 categories: stulturum
 stulturum: True
 startversion: 0.017
-endversion: 0.017
+endversion: 0.019
 excerpt: "DS18B20 temperature component integrated as an externally wired thermometer"
 tags:
   - temperature

@@ -1,8 +1,10 @@
 ---
 layout: post
 title: TEMT6000 Ambient Light Sensor Module
-categories: module
-excerpt: "TEMT6000 Ambient Light Sensor Module "
+categories: stulturum
+excerpt: "TEMT6000 Ambient Light Sensor Module"
+startversion: 0.019
+endversion: 0.019
 tags:
   - ambient light
   - TEMT6000

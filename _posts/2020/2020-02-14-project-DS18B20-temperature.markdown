@@ -12,6 +12,10 @@ date: '2020-02-14 11:27'
 modified: '2020-02-14 T18:17:25.000Z'
 comments: true
 share: true
+component: null
+sensor: sensor-DS18B20-temperature
+module: module-DS18B20-temperature
+project: null
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 
@@ -25,7 +29,7 @@ Below are two different wirings, with a breakout board including the pull-up res
 
 #### KY-001
 
-The KY-001 Arduino Temperature Module](http://www.mikroblog.net/37-sensor-kit/ky-001-temperature-sensor-module.php) has a built-in pull-up resistor and you can wire it directly the 5 volt power supply as shown below.
+The [KY-001 Arduino Temperature Module](http://www.mikroblog.net/37-sensor-kit/ky-001-temperature-sensor-module.php) has a built-in pull-up resistor and you can wire it directly to the 5 volt power supply as shown below.
 
 <figure>
 <img src="../../images/nano-DS18B20-ky001_bb.png">
@@ -43,7 +47,7 @@ If your module lacks the pull-up resistor you must put a 4.7 kOhm resistore betw
 
 ### Sketch
 
-The sketch includes two libraries: _OneWire.h_ and _DallasTemperature.h_. You need to install both to your library as explained in the official Arduino page on [Installing Additional Arduino Libraries](https://www.arduino.cc/en/guide/libraries)
+The sketch includes two libraries: _OneWire.h_ and _DallasTemperature.h_. You need to install both to your library as explained in the official Arduino page on [Installing Additional Arduino Libraries](https://www.arduino.cc/en/guide/libraries). In this version I have put the analog sensor signal on port A1.
 
 <button id= "toggleDS18B20" onclick="hiddencode('DS18B20')">Hide/Show sketch</button>
 
@@ -57,8 +61,8 @@ The sketch includes two libraries: _OneWire.h_ and _DallasTemperature.h_. You ne
 #include <OneWire.h>
 #include <DallasTemperature.h>
 /********************************************************************/
-// Data wire is plugged into pin 2 on the Arduino
-#define ONE_WIRE_BUS 2
+// Data wire is plugged into pin 1 on the Arduino
+#define ONE_WIRE_BUS 1
 /********************************************************************/
 // Setup a oneWire instance to communicate with any OneWire devices  
 // (not just Maxim/Dallas temperature ICs)
@@ -71,7 +75,7 @@ void setup(void)
 {
  // start serial port
  Serial.begin(9600);
- Serial.println("Dallas Temperature IC Control Library Demo");
+ Serial.println("Dallas Temp. IC Control Library Demo");
  // Start up the library
  sensors.begin();
 }
@@ -80,11 +84,11 @@ void loop(void)
  // call sensors.requestTemperatures() to issue a global temperature
  // request to all devices on the bus
 /********************************************************************/
- Serial.print(" Requesting temperatures...");
+ Serial.print(" Requesting temp...");
  sensors.requestTemperatures(); // Send the command to get temperature readings
  Serial.println("DONE");
 /********************************************************************/
- Serial.print("Temperature is: ");
+ Serial.print("Temp (C) is: ");
  Serial.print(sensors.getTempCByIndex(0)); // Why "byIndex"?  
    // You can have more than one DS18B20 on the same bus.  
    // 0 refers to the first IC on the wire

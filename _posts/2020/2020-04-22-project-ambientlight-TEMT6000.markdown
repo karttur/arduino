@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TEMT6000 Ambient Light Sensor Module
-categories: module
-excerpt: "TEMT6000 Ambient Light Sensor Module "
+title: TEMT6000 Ambient Light
+categories: project
+excerpt: "TEMT6000 Ambient Light project"
 tags:
   - ambient light
   - TEMT6000
@@ -10,7 +10,7 @@ tags:
   - polulu
   - sparkfun
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2020-04-24 11:27'
+date: '2020-04-22 11:27'
 modified: '2020-04-22 T18:17:25.000Z'
 comments: true
 share: true

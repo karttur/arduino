@@ -7,7 +7,13 @@ search_omit: true
 ---
 
 <ul class="post-list">
-{% for post in site.categories.module %}
+{% for post in site.categories.component %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>
+
+<ul class="post-list">
+{% for post in site.categories.component %}
   {% if post.stulturum %}
     {% if post.startversion >= 0.017 and post.endversion <= 0.017 %}
 

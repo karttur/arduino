@@ -14,6 +14,9 @@ date: '2020-02-15 11:27'
 modified: '2020-02-15 T18:17:25.000Z'
 comments: true
 share: true
+sensor: sensor-capacitive-sm-v1-2
+module: module-capacitive-sm-v1-2
+project: null
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 
@@ -22,6 +25,8 @@ share: true
 Capacitive soil moisture sensors measures soil moisture levels by capacitive sensing rather than resistive sensing like the more common soil moisture sensors on the market. There are different brands, for instance [DFROBOT SKU SEN0 193](https://wiki.dfrobot.com/Capacitive_Soil_Moisture_Sensor_SKU_SEN0193)
 
 To learn about the advantages with capacitive soil moisture sensors, view the Youtube instruction [Why most Arduino Soil Moisture Sensors suck (incl. solution)](https://www.youtube.com/watch?v=udmJyncDvw0&t=134s), lesson \#207 by Andreas Spiess.
+
+I got the capacitive soil moisture from [pchbutik](https://pchbutik.se/kretskort/1237-jordfukt-sensor-kapacitiv-avkanning-analogt-utgang-passar-arduino.html?search_query=fukt&results=14) in Sweden.
 
 <figure>
 <img src="../../images/capacitive-sm-v1-2.png">
@@ -52,7 +57,7 @@ void setup() {
   Serial.begin(9600); // open serial port, set the baud rate to 9600 bps
 }
 void loop() {
-soilMoistureValue = analogRead(A0);  //put Sensor insert into soil
+soilMoistureValue = analogRead(A2);  //put Sensor at A2 port
 Serial.println(soilMoistureValue);
 soilmoisturepercent = map(soilMoistureValue, AirValue, WaterValue, 0, 100);
 if(soilmoisturepercent > 100)

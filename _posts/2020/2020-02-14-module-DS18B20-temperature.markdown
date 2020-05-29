@@ -13,6 +13,10 @@ date: '2020-02-14 11:27'
 modified: '2020-03-25 T18:17:25.000Z'
 comments: true
 share: true
+component: null
+sensor: sensor-DS18B20-temperature
+module: null
+project: project-DS18B20-temperature
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 
@@ -31,7 +35,7 @@ I got a [KY-001 Arduino Temperature Module](http://www.mikroblog.net/37-sensor-k
 
 ### Waterproof and cabled
 
-Several different online shops sell the DS18B20 temperature sensor encased in watertight metal and with a waterproof cable. I got mine form [pchbutik.se](https://pchbutik.se/komponenter/82-2-st-digital-vattentat-temperatur-givare-passar-arduino.html?search_query=temperatur&results=94). Most of these modules do **not** contain the 4.7 kOhm [pull up resistor](https://learn.sparkfun.com/tutorials/pull-up-resistors/all). Thus you must include that in the wiring, explained in the [project page for the DS18B20 sensor](../../projects/project-DS18B20-temperature).
+Several different online shops sell the DS18B20 temperature sensor encased in watertight metal and with a waterproof cable. I got mine form [pchbutik.se](https://pchbutik.se/komponenter/82-2-st-digital-vattentat-temperatur-givare-passar-arduino.html?search_query=temperatur&results=94). Most of these modules do **not** contain the 4.7 kOhm [pull up resistor](https://learn.sparkfun.com/tutorials/pull-up-resistors/all). Thus you must include that in the wiring, explained in the [project page for the DS18B20 sensor](../../project/project-DS18B20-temperature).
 
 <figure>
 <img src="../../images/waterproof-DS18B20-temperature.png">
