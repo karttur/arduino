@@ -38,63 +38,63 @@ Information on commerical spectrometers and spectral analysis suftware are in Ka
 
 <h4><a href="../ide/">IDE (Arduino Integrated Development Environment)</a><h4>
 <ul class="post-list">
-{% for post in site.categories.ide limit:5 %}
+{% for post in site.categories.ide %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
 
 <h4><a href="../projects/">Projects (sketch and wiring tuorials for various modules)</a><h4>
 <ul class="post-list">
-{% for post in site.categories.project limit:5 %}
+{% for post in site.categories.project %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
 
 <h4><a href="../modules/">Modules (integrated electronic components, usually directly useful for Arduino wiring and sketching)</a><h4>
 <ul class="post-list">
-{% for post in site.categories.module limit:5 %}
+{% for post in site.categories.module %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
 
 <h4><a href="../sensors/">Sensors (environmental senors, usually available as modules)</a><h4>
 <ul class="post-list">
-{% for post in site.categories.sensor limit:5 %}
+{% for post in site.categories.sensor %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
 
 <h4><a href="../components/">Components (Other types of electronic components)</a><h4>
 <ul class="post-list">
-{% for post in site.categories.component limit:5 %}
+{% for post in site.categories.component %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
 
 <h4><a href="../design/">Spectrometers Spectrometers (Miniaturized spectrometers)</a><h4>
 <ul class="post-list">
-{% for post in site.categories.spectro limit:5 %}
+{% for post in site.categories.spectro %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
 
 <h4><a href="../design/">Design (Designing issues)</a><h4>
 <ul class="post-list">
-{% for post in site.categories.design limit:5 %}
+{% for post in site.categories.design %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
 
 <h4><a href="../design/">Spectrolum (complete spectrometers and ancillary sensors and components)</a><h4>
 <ul class="post-list">
-{% for post in site.categories.stulturum limit:5 %}
+{% for post in site.categories.stulturum %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
 
 <h4><a href="../design/">Blog (information that does not fit the above)</a><h4>
 <ul class="post-list">
-{% for post in site.categories.blog limit:5 %}
+{% for post in site.categories.blog %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
