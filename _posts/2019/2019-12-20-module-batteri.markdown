@@ -12,20 +12,22 @@ tags:
   - charge control
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2019-12-12 11:27'
-modified: '2020-01-12 T18:17:25.000Z'
+modified: '2020-06-23 T18:17:25.000Z'
 comments: true
 share: true
 ---
 
 ### Introduction
 
-It seems that stand alone Arduino project must eventually run from a 3.3 volt system solution. To be powered it needs a charge regulator and a battery. And to run 5v components it would also need a stepup device that boosts from 3.7v to 5v.
+It seems that stand alone Arduino project must eventually run from a 3.3 volt system solution. To be powered it needs a charge regulator and a battery. And to run 5v components it would also need a stepup device that boosts from 3.7v to 5v if yu really can trust the device, otherwise between 7 and 12 volts.
 
 The battery should be charged using a standard usb-solution. For me the battery capacity is less important, my device will not consume much. The battery should be a Lithium Polymer (LiPo).
 
 ### Youtobe introduction
 
 A good, but also outdated, introduction is the youtube video by LessonStudio on [HOW TO: Use Lithium 3.7v batteries in small Arduino projects.](https://www.youtube.com/watch?v=nh9lEM5L28k). The video is outdated regarding the TP4056 module - the later versions can be used for power supply, as explained further down in this post. The part called 18650 in the video is now the new TP4056.
+
+The video is also not explaining how to actually power your arduino project. If you have very well regulated 5volt supply you can directly put the power from the regulator to the 5V port on the arduino. But if yuour power supply (battery) is not regulated, but vary, you should instead put the power to the Vin port on the Arduino, and then (7)9-12 volts is required, as explained on [stackexchange](https://arduino.stackexchange.com/questions/4458/what-are-the-5v-and-vin-pins-for).
 
 ### Battery control board
 

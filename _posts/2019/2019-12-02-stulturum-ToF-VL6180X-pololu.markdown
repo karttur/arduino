@@ -3,7 +3,7 @@ layout: post
 title: Pololu VL6180X Time-of-Flight Distance Sensor and ambient light module
 categories: stulturum
 startversion: 0.017
-endversion: 0.019
+endversion: 0.020
 excerpt: Pololu VL6180X Time-of-Flight Distance Sensor and ambient light module
 tags:
   - distance

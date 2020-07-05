@@ -26,7 +26,7 @@ The [Hamamatsu C12880MA micro-spectrometer](https://www.hamamatsu.com/eu/en/prod
 </figcaption>
 </figure>
 
-[GetLab of GroupGets](https://groupgets.com/manufacturers/getlab) has a [C12880MA Breakout Board](https://groupgets.com/manufacturers/getlab/products/c12880ma-breakout-board) for sale at about 400 USD.
+[GetLab of GroupGets](https://groupgets.com/manufacturers/getlab) has a [C12880MA Breakout Board](https://groupgets.com/manufacturers/getlab/products/c12880ma-breakout-board) for sale at about 400 USD. This module is also sold by [DigiKey](https://www.digikey.se/product-detail/en/groupgets-llc/BO-HAMA-2-C12880MA/2077-BO-HAMA-2-C12880MA-ND/10223724?_ga=2.167694782.107621040.1590226174-761197709.1590226174) (that also stock the module by [Seeed](https://www.digikey.se/product-detail/en/seeed-technology-co-ltd/114991292/114991292-ND/7622897)).
 
 [SeeedStudio](https://www.seeedstudio.com/Hamamatsu-C12880MA-MEMS-u-Spectrometer-and-Breakout-Board-p-2916.html) also produces as breakout board from the same sensor. it also sells for approximately 400 USD.
 

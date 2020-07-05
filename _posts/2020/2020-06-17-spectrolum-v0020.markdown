@@ -1,37 +1,38 @@
 ---
 layout: post
-title: Spectrometer version 0.019
+title: Spectrometer version 0.020
 categories: spectrolum
-version: "v0.019"
+version: "v0.020"
 tags:
   - spectrometer
   - stulturum
-  - v0.019
+  - v0.020
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2020-05-25 11:27'
-modified: '2020-05-25 T18:17:25.000Z'
+date: '2020-06-17 11:27'
+modified: '2020-06-17 T18:17:25.000Z'
 comments: true
 share: true
 ---
 
-## Stulturum spectrometer version v0.019
+## Stulturum spectrometer version v0.020
 
-This is the second functional spectrometer in the Stulturum series. It was finished on 25 May 2020. It is built on an Arduino Nano board and 9 other modules (breakout boards or components) as shown in the wiring diagram below. All included modules/components are listed below.
+This is the third functional spectrometer in the Stulturum series. It was finished on 17 june 2020. It is built on an Arduino Nano board and 9 other modules (breakout boards or components) as shown in the wiring diagram below. All included modules/components are listed below.
 
 <figure>
-<img src="../../images/nano-spectro_v019_breadfree_bb.png">
+<img src="../../images/nano-spectro_v020_breadfree_bb.png">
 <figcaption> Stulturum spectrometer version v0.019, the Bluetooth module should be BT10 (not HC05) but when writing this there is no fritzing component for BT10 available.</figcaption>
 </figure>
 
 ### Spectrometer box
 
-Compared to the [previous version (0.017)](../spectrolum-v0017), version 0.019 has tilted light sources that focus 5 cm from the spectrometer. This is for allowing a more exact calibration using the solid sampler (see below).
+The box holding all the components is similar to [version 0.019](../spectrolum-v0019), including
+tilted light sources that focus 5 cm from the spectrometer.
 
 The spectrometer box will become available as 3d print files (<span class='file'>.stl</span>) shortly.
 
 <figure>
-<img src="../../images/spectra-stulturum_box_v0019.png">
-<figcaption> Stulturum spectrometer box version v0.019.</figcaption>
+<img src="../../images/spectra-stulturum_box_v0020.png">
+<figcaption> Stulturum spectrometer box version v0.020.</figcaption>
 </figure>
 
 ### Spectrometer solid sampler
@@ -54,12 +55,29 @@ Also the cuvette holder fits on the front of the spectrometer box. The steering 
 
 ### Assembly
 
-<figure>
-<img src="../../images/spectrolum_v019c_photo.png">
-<figcaption> Stulturum spectrometer version v0.019.</figcaption>
+<figure class="half">
+	<a href="../../images/spectro_box_v0020_frontside.jpg">
+  <img src="../../images/spectro_box_v0020_frontside.jpg" alt="image">
+  </a>
+
+  <a href="../../images/spectro_box_v0020_inside.jpg">
+  <img src="../../images/spectro_box_v0020_inside.jpg" alt="image">
+  </a>
+
+  <a href="../../images/spectro_box_v0020_ambient-side.jpg"><img src="../../images/spectro_box_v0020_ambient-side.jpg" alt="image">
+  </a>
+
+  <a href="../../images/spectro_box_v0020_onoff-side.jpg">
+  <img src="../../images/spectro_box_v0020_onoff-side.jpg" alt="image">
+  </a>
+
+  <a href="../../images/spectro_box_v0020_external-side.jpg">
+  <img src="../../images/spectro_box_v0020_external-side.jpg" alt="image">
+  </a>
+
+	<figcaption>Stulturum spectrometer version v0.020.</figcaption>
 </figure>
 
-The neodymium magnet is too small to hold the solid sampler and cuvette holder in place. Assembling with crampon connectors is very tedious and also takes too much space inside the spectrometer box.
 
 ### Modules and components
 
@@ -67,7 +85,7 @@ Apart from the Arduino Nano microcontroller, there are a total of nine different
 
 <ul class="post-list">
 {% for post in site.categories.stulturum %}
-  {% if post.startversion <= 0.019 and post.endversion >= 0.019 %}
+  {% if post.startversion <= 0.020 and post.endversion >= 0.020 %}
 
         <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a>
         </article></li>

@@ -31,6 +31,11 @@ The [SHT1x series](https://www.sensirion.com/en/environmental-sensors/humidity-s
 <figcaption> The Adafruit SHT10 moisture and temperature sensor. </figcaption>
 </figure>
 
+Adafruit uses its [SHT10 sensor](https://www.adafruit.com/product/1298) for a [plant watering project](https://learn.adafruit.com/wireless-gardening-arduino-cc3000-wifi-modules) (including wifi connection), that also contains illustrations of the [wiring](https://learn.adafruit.com/wireless-gardening-arduino-cc3000-wifi-modules/connections).
+
+
+[DFrobot](https://www.dfrobot.com) also produces an encased version of the [SHT10 sensor](https://www.dfrobot.com/product-912.html). It is half price compared to the Adafruit version, and can also be bought via [digi-key](https://www.digikey.se/product-detail/sv/SEN0148/1738-1242-ND/7087139/?itemSeq=328391889)
+
 The new generation of [SHT3x sensors from Sensirion](https://www.sensirion.com/en/environmental-sensors/humidity-sensors/digital-humidity-sensors-for-various-applications/) are available as integrated breakout boards, e.g. from [Adafruit](https://www.adafruit.com/product/2857). The [SHT-30 Mesh-protected Weather-proof Temperature/Humidity Sensor](https://www.adafruit.com/product/4099) is actually half price compared to the old SHT10 model. Great, just have to get it.
 
 <figure>

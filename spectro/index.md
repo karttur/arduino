@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Spectrometers"
-excerpt: "Spectrometers."
+title: Spectrometers
+excerpt: "Archive of spectrometers."
 image: std-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 search_omit: true
 ---

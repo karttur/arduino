@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AMS AS726X spectrometer
+title: AMS AS726X spectrometer module
 categories: module
 excerpt: "Breakout board with AMS AS726X spectrometer"
 tags:
@@ -10,7 +10,7 @@ tags:
   - AS7262
   - AS7263
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2019-10-20 11:27'
+date: '2019-10-21 11:27'
 modified: '2019-11-07 T18:17:25.000Z'
 comments: true
 share: true
@@ -20,8 +20,6 @@ module: null
 project: project-AS726X-spectrometer-nano
 projectuno: project-AS726X-spectrometer-uno
 ---
-
-### Introduction
 
 ### Introduction
 

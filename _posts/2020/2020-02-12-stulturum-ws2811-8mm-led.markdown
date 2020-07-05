@@ -3,7 +3,7 @@ layout: post
 title: SMD 5050 ws2811 8 mm LED
 categories: stulturum
 startversion: 0.017
-endversion: 0.019
+endversion: 0.021
 excerpt: "8 mm RGB LED with builtin WS2811 chip and the SMD 5050"
 tags:
   - RGB

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: BT12 with Bluetooth dual-mode BLE4.0
+title: BT10 with Bluetooth dual-mode BLE4.0
 categories: stulturum
 startversion: 0.017
-endversion: 0.019
+endversion: 0.021
 excerpt: "BT10 with Bluetooth dual-mode BLE4.0 +2.0 Android"
 tags:
   - bluetooth
