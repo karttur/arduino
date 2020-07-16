@@ -20,7 +20,7 @@ This is the third functional spectrometer in the Stulturum series. It was finish
 
 <figure>
 <img src="../../images/nano-spectro_v020_breadfree_bb.png">
-<figcaption> Stulturum spectrometer version v0.019, the Bluetooth module should be BT10 (not HC05) but when writing this there is no fritzing component for BT10 available.</figcaption>
+<figcaption> Stulturum spectrometer version v0.020, the Bluetooth module should be BT10 (not HC05) but when writing this there is no fritzing component for BT10 available.</figcaption>
 </figure>
 
 ### Spectrometer box
@@ -28,7 +28,7 @@ This is the third functional spectrometer in the Stulturum series. It was finish
 The box holding all the components is similar to [version 0.019](../spectrolum-v0019), including
 tilted light sources that focus 5 cm from the spectrometer.
 
-The spectrometer box will become available as 3d print files (<span class='file'>.stl</span>) shortly.
+The spectrometer box will become available as 3D print files (<span class='file'>.stl</span>) shortly.
 
 <figure>
 <img src="../../images/spectra-stulturum_box_v0020.png">

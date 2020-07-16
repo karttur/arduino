@@ -1,0 +1,100 @@
+---
+layout: post
+title: Spectrometer version 0.021
+categories: spectrolum
+version: "v0.021"
+tags:
+  - spectrometer
+  - stulturum
+  - v0.020
+image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
+date: '2020-07-16 11:27'
+modified: '2020-07-16 T18:17:25.000Z'
+comments: true
+share: true
+---
+
+## Stulturum spectrometer version v0.021
+
+This is the fourth functional spectrometer in the Stulturum series. It was finished on 16 July 2020. Version v0.021 has the same components as v0.020 and also using the same ports. The difference is that v0.021 contains a battery and the breakout boards controlling the charging and drainage of the battery, a fixed DC to DC stepup module outputting 5 volt, and a power switch. This also means that the 3D printed box is somewhat different. All included modules/components are listed below.
+
+<figure>
+<img src="../../images/nano-spectro_v021_breadfree_bb.png">
+
+<img src="../../images/nano-TP4056+battery-stepup5v-switch_bb.png">
+
+<figcaption> Stulturum spectrometer version v0.021, the Bluetooth module should be BT10 (not HC05) but when writing this there is no fritzing component for BT10 available. The upper panel shows the sensor writing and the lower panel the power supply. As the power solution includes a DC-DC stepup module that outputs 5 volt, the power supply must by ported to the ordinary 5V and GND ports. Not to the VIN port that that requires above 7V. </figcaption>
+</figure>
+
+### Spectrometer box
+
+The box holding all the components is similar to previous versions, but with spaces arranged for the power supply and control.
+
+The spectrometer box will become available as 3d print files (<span class='file'>.stl</span>) shortly.
+
+<figure>
+<img src="../../images/spectra-stulturum_box_v0021.png">
+<figcaption> Stulturum spectrometer box version v0.021. This version is slightly deeper to hold the battery, has a carved out space for the DC-DC stepup module and a rectangular opening for the on-off switch.</figcaption>
+</figure>
+
+### Spectrometer solid sampler
+
+The solid sampler fits on the front of the spectrometer box and assures that sampling is confined to the oval opening. All three integrated light sources, the strong led built into the [Adafruit 6-channel spectrometer](http://localhost:4000/stulturum/stulturum-AS7262-adafruit-spectrometer/), the [SMD 5050 RGB LED](http://localhost:4000/stulturum/stulturum-ws2811-8mm-led/), and the [red laser](http://localhost:4000/stulturum/stulturum-laser650-3v/) all point towards the oval opening.
+
+<figure>
+<img src="../../images/spectra-stulturum_soild-sampler_v0019.png">
+<figcaption> Stulturum spectrometer solid sampler v0.019.</figcaption>
+</figure>
+
+### Spectrometer cuvette holder
+
+Also the cuvette holder fits on the front of the spectrometer box. The steering of the light sources through liquid samples is not finalized.
+
+<figure>
+<img src="../../images/spectra-stulturum_cuvette-holder_v0019.png">
+<figcaption> Stulturum spectrometer cuvette holder v0.019.</figcaption>
+</figure>
+
+### Assembly
+
+<figure class="half">
+	<a href="../../images/spectrobox_v021_front.jpg">
+  <img src="../../images/spectrobox_v021_front.jpg" alt="image">
+  </a>
+
+  <a href="../../images/spectrobox_v021_inside.jpg"><img src="../../images/spectrobox_v021_inside.jpg" alt="image">
+  </a>
+
+  <a href="../../images/spectrobox_v021_charging.jpg">
+  <img src="../../images/spectrobox_v021_charging.jpg" alt="image">
+  </a>
+
+  <a href="../../images/spectrobox_v021_fully-charged.jpg">
+  <img src="../../images/spectrobox_v021_fully-charged.jpg" alt="image">
+  </a>
+
+  <a href="../../images/spectrobox_v021_output-voltage.jpg">
+  <img src="../../images/spectrobox_v021_output-voltage.jpg" alt="image">
+    </a>
+
+	<figcaption>Stulturum spectrometer version v0.020.</figcaption>
+</figure>
+
+### Issues
+
+The DC-DC 5 volt stepup module does not boost the voltage all the way from the lithium battery 3.7 V to 5 V. It only reaches up to 4 V. With no load the stepup modules outputs 6 V. The best solution would be to have a more powerful DC-DC stepup module and connect the external power to the VIN port of the Arduino Nano board.
+
+### Modules and components
+
+Apart from the Arduino Nano microcontroller, there are a total of nine different modules/components included in Stulturum's spectrometer version v0.019. To get more information, including the separate scripts for individual controls, follow the links.
+
+<ul class="post-list">
+{% for post in site.categories.stulturum %}
+  {% if post.startversion <= 0.020 and post.endversion >= 0.020 %}
+
+        <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a>
+        </article></li>
+
+  {% endif %}
+{% endfor %}
+</ul>
