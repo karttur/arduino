@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Power solution for 3.7 volt Arduino
-categories: module
+categories: stulturum
+startversion: 0.021
+endversion: 0.021
 excerpt: "Power solution including regulator and Lithium Polymer battery for Arduino"
 tags:
   - arduino
@@ -43,7 +45,12 @@ Even if more and more small electronic modules and components tend to rely on 3.
 
  [With USB connection](https://www.banggood.com/20pcs-DC-DC-0_9V-5V-to-5V-600mA-USB-Step-Up-Power-Boost-Module-PFM-Control-Mini-Mobile-Booster-p-1590024.html?rmmds=detail-left-hotproducts__2&cur_warehouse=CN).
 
- [For soldering](https://www.banggood.com/DC-DC-1V-5V-to-5V-Converter-Step-Up-Power-Supply-Module-Boost-Adapter-Converter-Board-500MA-Voltage-Regulator-p-1578191.html?rmmds=search&cur_warehouse=CN)
+ [For soldering](https://www.banggood.com/DC-DC-1V-5V-to-5V-Converter-Step-Up-Power-Supply-Module-Boost-Adapter-Converter-Board-500MA-Voltage-Regulator-p-1578191.html?rmmds=search&cur_warehouse=CN).
+
+ <figure>
+ <img src="../../images/dc-dc-5v-stepup-500mA.png">
+ <figcaption> DC-DC 1V-5V to 5V Stepup converter.</figcaption>
+ </figure>
 
 ### Other solutions
 
