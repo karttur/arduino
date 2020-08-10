@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Xenon light with MOSFET regulation
-categories: project
+categories: component
 excerpt: "Xenon light with MOSFET regulation"
 tags:
   - xenon
@@ -20,9 +20,7 @@ project: project-mosfet-xenon
 
 ### Introduction
 
-A _metal oxide semiconductor field-effect transistor_, or MOSFET is a type of transistor that is used for opening and closing a circuit 
-
-The project described here used the _Mothorized pinwheel_ project (number 09) the from [Arduino Projects Book](https://bastiaanvanhengel.files.wordpress.com/2016/06/arduino_projects_book.pdf), as inspiration. All the online instructions and youtube videos I found were more or less confusing and all failed to present the required theoretical knowledge and the practical steps.
+A _metal oxide semiconductor field-effect transistor_, or MOSFET is a type of transistor that is used for opening and closing a circuit. MOSFETs are the most manufactured human artefact on the planet. In Arduino projects, MOSFETs are typically used for switching power consuming actuators between On and Off states. Typica actuators include motors and stronger light sources.
 
 ### MOSFET
 
@@ -37,14 +35,12 @@ The N-channel MOSFET supplied with the Arduino Projects Book is an IRF520. As th
 <figcaption> MOSFET IRF520. </figcaption>
 </figure>
 
-For this project, however, the IRF520 is too large. The power requirements of the [Barthelme](https://www.barthelme.de) xenon bulb is only around 300 mA, whereas the IRF520 can handle 9.2 A. For our project we are instead going to use the smaller, but equally popular, BS170 MOSFET.
+For more modest powre needs, the BS170 MOSFET able to conduct 500 mA at a maximum of 60 V is popular.
 
 <figure>
 <img src="../../images/MOSFET_BS170.png">
 <figcaption> MOSFET BS170. </figcaption>
 </figure>
-
-The BS170 has a maximum capacity of 500 mA and can handle 60 V. As the xenon light source is at 300 mA and only requires 3 Volt, the BS170 MOSFET will do just fine.
 
 Note how the positions of the __G__, __D__, __S__ pins differ between the IRF520 and BS170 MOSFETs. The wiring with the BS170 thus differs compared to the MOSFET project (_Mothorized pinwheel_) in the Arduino Projects Book.
 
@@ -56,33 +52,3 @@ The xenon high-pressure light bulb from [Barthelme](https://www.barthelme.de) is
 <img src="../../images/xenon-barthelme_3V-09W.png">
 <figcaption> Barthelme xenon bulb 3V, 300 mA, 0.90 W. </figcaption>
 </figure>
-
-### Wiring
-
-Apart from understanding how to connect G, D and S of the MOSFET to your Arduino board and the battery, there are two additional things you should keep in my mind. First you must connect the ground form the Arduino and the ground from the external power source (the battery). And secondly you also need a 2 Ohm resistor to reduce the 3.7 V from the battery to the 3.0 V required by the Xenon bulb. You could also use a pull-down resistor on the MOSFET gate, but I am not sure if that is really needed as the battery voltage is just 3.7 V, or how to calculate the required ohms.
-
-<figure>
-<img src="../../images/nano-xenon-mosfet-switch_breaded_bb.png">
-<figcaption> Wiring of a xenon light bulb using a MOSFET and and Ardunio Nano running from an external battery. The resistor at the xenon light bulb is 2 Ohm. </figcaption>
-</figure>
-
-
-### Sketch
-
-in the sketch below, the xenon light toggles between On and Off, with a 2 sec Off state and 0.2 sec On state.
-
-
-```
-const int xenonPin = 9;
-
-void setup() {
-  pinMode(xenonPin, OUTPUT);
-}
-
-void loop() {
- digitalWrite (xenonPin,LOW); // Turn xenon Off
- delay(2000);
- digitalWrite (xenonPin,HIGH); // Turn xenon On
- delay(200);
-}
-```
