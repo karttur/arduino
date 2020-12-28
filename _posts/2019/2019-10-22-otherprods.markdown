@@ -22,7 +22,7 @@ Scientific article
 
 ## Hamamatsu C12880MA
 
-This sensor is directly useful with Arduino, and included as a [sensor](../../sensor/sensor-C12880MA-spectrometer) and a [module](../../module/sensor-C12880MA-spectrometer).
+This sensor is directly useful with Arduino, and included as a [sensor](../../sensor/sensor-hamamatsu-C12880MA) and a [module](../../module/module-hamamatsu-C12880MA).
 
 ## In the pipeline
 

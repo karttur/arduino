@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Spectrometers
-excerpt: "Archive of spectrometers."
+title: Spectro
+excerpt: "Archive of posts related to Arduino compatible spetrometers."
 image: std-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 search_omit: true
 ---

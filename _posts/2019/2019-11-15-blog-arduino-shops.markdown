@@ -14,12 +14,6 @@ comments: true
 share: true
 ---
 
-Laser sensor som kunde funka:
-
-ToF10120
-
-VL53L0X: 940 nm distance laser
-
 ### Shopping
 
 This post is just an assembly of url links for shopping Arduino and related stuff.

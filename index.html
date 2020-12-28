@@ -19,7 +19,7 @@ various expansion boards ('shields') breakout boards (pre-assembled electronic
 comonents) or prototyping breadboards and other circuits.
 
 In this repo, the focus is on developing environ-sensing
-electronic devices using Arduino. In particular spactral analysis.
+electronic devices using Arduino. In particular spectral analysis projects.
 The repo is thus divided in the following main categories:
 <ul>
 
@@ -71,7 +71,7 @@ Information on commerical spectrometers and spectral analysis suftware are in Ka
 {% endfor %}
 </ul>
 
-<h4><a href="../design/">Spectrometers Spectrometers (Miniaturized spectrometers)</a><h4>
+<h4><a href="../spectro/">Spectrometers Spectrometers (Miniaturized spectrometers)</a><h4>
 <ul class="post-list">
 {% for post in site.categories.spectro %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
