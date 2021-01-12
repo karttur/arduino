@@ -11,13 +11,13 @@ tags:
   - SMD 5050 RGB
   - WS2811
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2020-02-11 11:27'
+date: '2020-02-12 11:27'
 modified: '2020-03-25 T18:17:25.000Z'
 comments: true
 share: true
-component: component-smd-5050-rgb
+component: null
 module: module-smd-5050-rgb
-project: project-smd-5050-rgb
+project: null
 ---
 <script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
 

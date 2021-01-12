@@ -16,7 +16,7 @@ share: true
 component: null
 sensor: null
 module: module-C12880MA-spectrometer
-project: null
+project: project-C12880MA-spectrometer
 projectuno: null
 ---
 
@@ -26,7 +26,7 @@ Hamamatsu's [C12880MA ultra-compact spectrometer](https://www.hamamatsu.com/jp/e
 
 ### Versions
 
-The C12880MA spectrometer is the second generation of this minituarized sensor. Here are the specs as listed on [Hamamatus's owp page]():
+The C12880MA spectrometer is the second generation of this minituarized sensor. Here are the specs as listed on [Hamamatus's own page](https://www.hamamatsu.com/eu/en/product/type/C12880MA/index.html):
 
 - Size: 20.1 × 12.5 × 10.1 mm
 - Weight: 5 g
@@ -35,7 +35,10 @@ The C12880MA spectrometer is the second generation of this minituarized sensor. 
 - Hermetic package
 - Wavelength conversion factor is listed on test result sheet.
 
-
 ### Breakout boards
 
 The C12880MA sensor is available as [Arduino breakout boards](../../modules/module-C12880MA-spectrometer).
+
+### Alternative
+
+[Hasun optoelectronics HK co., LTD](http://www.hasunopto.com) also offers the [C12880MA spectrometer](http://hasunoptokr.sell.everychina.com/p-110163030-c14486ga-c14214ma-c12880ma-c14384ma-01-c11708ma-c10988ma-01-c13053ma-c12666ma.html) and other Hamamatsu spectrometers.

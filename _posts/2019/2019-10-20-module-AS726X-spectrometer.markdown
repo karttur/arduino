@@ -5,16 +5,19 @@ categories: module
 excerpt: "Breakout board with AMS AS726X spectrometer"
 tags:
   - spectrometer
+  - broadband
+  - AMS
   - AS726X
   - AS7261
   - AS7262
   - AS7263
+  - AS7341
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2019-10-20 11:27'
-modified: '2019-11-07 T18:17:25.000Z'
+modified: '2021-01-06 T18:17:25.000Z'
 comments: true
 share: true
-component: null
+component: component-AS726X-spectrometer
 sensor: sensor-AS726X-spectrometer
 module: null
 project: project-AS726X-spectrometer-nano
@@ -23,13 +26,11 @@ projectuno: project-AS726X-spectrometer-uno
 
 ### Introduction
 
-### Introduction
+The [AMS AS726X series of spectral sensing engines](https://ams.com/AS7261) are miniaturised broad band spectrometers, that are also available as modules for use with e.g. Arduino. In 2020 AMS also launched an [11-channel version, AS7341](https://ams.com/as7341).
 
-The [AMS AS726X series of spectral sensing engines](https://ams.com/AS7261) are miniaturised broad band spectrometers, that are also available as modules for use with e.g. Arduino.
+Breakout boards, modules, with the AMS AS726X and AS7341 sensors are available from from both [Sparkfun](../../components/component-AS726X-spectrometer/) and [adafruit](../../components/component-AS726X-spectrometer/).
 
-Breakout boards, modules, with the AMS AS726X sensor are available from from both [Sparkfun](../../components/components-sparkfun-spectrometer/) and [adafruit](../../components/components-adafruit/). The main difference is that the Sparkfun components come with their [qwiic connectors](https://www.sparkfun.com/qwiic) that does not need soldering (unless you want to).
-
-[Cheaper alternative](https://www.ebay.co.uk/itm/143307220364), [alternative](https://shop.pimoroni.com/products/as7262-6-channel-spectral-sensor-spectrometer-breakout), from [Amazon](https://www.amazon.co.uk/AS7262-6-channel-Spectral-Spectrometer-Breakout/dp/B07RCGKNPQ).
+Cheaper [alternative 1](https://www.ebay.co.uk/itm/143307220364), [alternative 2](https://shop.pimoroni.com/products/as7262-6-channel-spectral-sensor-spectrometer-breakout), and from [Amazon](https://www.amazon.co.uk/AS7262-6-channel-Spectral-Spectrometer-Breakout/dp/B07RCGKNPQ).
 
 ### Adafruit
 
@@ -69,7 +70,7 @@ There is, at least, one more producer, [pimoroni.com](https://pimoroni.com), tha
 
 ### Mikroelektronika (Mikroe)
 
-[Mikroe](https://www.mikroe.com) offers the [AS7261 RGB+NIR sensor](https://www.mikroe.com/spectral-click) as a breakout board, but not specifically for Arduino.
+[Mikroe](https://www.mikroe.com) offers the [AS7261 RGB+NIR sensor](https://www.mikroe.com/spectral-click) as a breakout board, but not specifically for Arduino. They also offer the [11 channel AMS spectrometer, AS7341](https://www.mikroe.com/spectrometer-click) as a breakout board.
 
 University of Novi Sad have [demo project for creating a AS7261 XYZ Sensor - Colorimeter](https://www.optolab.ftn.uns.ac.rs/index.php/education/project-base/252-as7261-xyz-sensor-colorimeter). The project include wiring to an Arduino board, include a 3D-printed shell, and a [demo video on youtube](https://www.youtube.com/watch?v=f3F8kJKQuLE) and code written in [Laboratory Virtual Instrument Engineering Workbench (LabVIEW)](https://en.wikipedia.org/wiki/LabVIEW). The STL model is under the repo subfolder <span class='file'>stl</span> and the LabVIEW file under the directory <span class='file'>code/AS7261-VI</span>.
 

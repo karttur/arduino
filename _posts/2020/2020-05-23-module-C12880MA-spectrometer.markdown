@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hamamatsu C12880MA spectrometer
-categories: sensor
+categories: module
 excerpt: "Hamamatsu C12880MA miniaturised 288 band sensor"
 tags:
   - spectrometer
@@ -14,9 +14,9 @@ modified: '2020-05-23 T18:17:25.000Z'
 comments: true
 share: true
 component: null
-sensor: null
+sensor: sensor-C12880MA-spectrometer
 module: module-C12880MA-spectrometer
-project: null
+project: project-C12880MA-spectrometer
 projectuno: null
 ---
 
@@ -34,7 +34,6 @@ The C12880MA spectrometer is the second generation of this miniaturised sensor. 
 - Spectral resolution: 15 nm max.
 - Hermetic package
 - Wavelength conversion factor is listed on test result sheet.
-
 
 ### Breakout boards
 

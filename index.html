@@ -28,7 +28,7 @@ The repo is thus divided in the following main categories:
   <li><a href="../module/index.html">Modules (integrated electronic components, usually directly useful for Arduino wiring and sketching)</a></li>
   <li><a href="../sensor/index.html">Sensor (environmental senors, usually available as modules)</a></li>
   <li><a href="../component/index.html">Components (Other types of electronic components)</a></li>
-  <li><a href="../spectro/index.html">Spectrometers (Miniaturized spectrometers)</a></li>
+  <li><a href="../spectro/index.html">Spectrometers</a></li>
   <li><a href="../design/index.html">Design (Designing issues)</a></li>
   <li><a href="../stulturum/index.html">Spectrolum (complete spectrometers and ancillary sensors and components)</a></li>
   <li><a href="../blog/index.html">Blog (information that does not fit the above)</a></li>
@@ -71,7 +71,7 @@ Information on commerical spectrometers and spectral analysis suftware are in Ka
 {% endfor %}
 </ul>
 
-<h4><a href="../spectro/">Spectrometers Spectrometers (Miniaturized spectrometers)</a><h4>
+<h4><a href="../spectro/">Spectrometers (DIY arduino and commercial handheld)</a><h4>
 <ul class="post-list">
 {% for post in site.categories.spectro %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>

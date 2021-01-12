@@ -48,7 +48,7 @@ The solid sampler fits on the front of the spectrometer box and assures that sam
 
 ### Spectrometer cuvette holder
 
-Also the cuvette holder fits on the front of the spectrometer box. The steering of the light sources through liquid samples is not finalized.
+Also the cuvette holder fits on the front of the spectrometer box. Light is steered using fiber optic cables. Having evaluated different types of fiber optic cables I have started to develop a system where the light sources are instead integrated in the attached parts. Instead of the magnet holder the power connector is used for holding attachments in place.
 
 <figure>
 <img src="../../images/spectra-stulturum_cuvette-holder_v0019.png">

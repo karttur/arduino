@@ -21,7 +21,7 @@ share: true
 
 ### Introduction
 
-It seems that stand alone Arduino project must eventually run from a 3.3 volt system solution. To be powered it needs a charge regulator and a battery. And to run 5v components it would also need a stepup device that boosts from 3.7v to 5v if yu really can trust the device, otherwise between 7 and 12 volts.
+It seems that stand alone Arduino project must eventually run from a 3.3 volt system solution. To be powered it needs a charge regulator and a battery. And to run 5v components it would also need a stepup device that boosts from 3.7v to 5v if you really can trust the device, otherwise between 7 and 12 volts.
 
 The battery should be charged using a standard usb-solution. For me the battery capacity is less important, my device will not consume much. The battery should be a Lithium Polymer (LiPo).
 
