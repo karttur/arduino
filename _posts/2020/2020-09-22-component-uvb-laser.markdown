@@ -22,7 +22,7 @@ project: null
 
 ### Introduction
 
-In flourescence spectroscopy the sample, that can be a solid, a liquid or a gas, is excited with a high energy, short wave laser, and the glow that results is registered by spectral sensor. For liquid and gaseous samples, the laser beam is directed 90 degrees away from the spectral sensor in order for the glow to be the captured spectral signal. In this post I listed different ultra violet (UV) to blue laser light sources that I have found. Only lasers with wavelengths of 405 nm or shorter are listed. In fact, only lasers at 405 nm are listed as shorter wavelength lasers costs thousands of USD.
+In fluorescence spectroscopy the sample, that can be a solid, a liquid or a gas, is excited with a high energy, short wave laser, and the glow that results is registered by spectral sensor. For liquid and gaseous samples, the laser beam is directed 90 degrees away from the spectral sensor in order for the glow to be the captured spectral signal. In this post I listed different ultra violet (UV) to blue laser light sources that I have found. Only lasers with wavelengths of 405 nm or shorter are listed. In fact, only lasers at 405 nm are listed as shorter wavelength lasers costs thousands of USD.
 
 ### Laser diodes
 
@@ -30,7 +30,7 @@ In flourescence spectroscopy the sample, that can be a solid, a liquid or a gas,
 
 [Prophotonix](https://www.prophotonix.com/led-and-laser-products/laser-diodes/?gclid=EAIaIQobChMIiI2fqaz_6wIVQemyCh0IogMZEAAYAiAAEgKNh_D_BwE) offers a range of laser diodes from Ushio, Osram, Panasonic, QSI and Ondax. [Laserdiodesource](https://www.laserdiodesource.com/) is a similar marketplace for laser diodes.
 
-Other than red lasers, I have not really found any vendor in Sweden that sells neither green, not blue (or UV) laser components in Sweden. Some are avialble at [highcap.se](https://highcap.se/product_search.php?search_query=lasermodul), but at exaggerated prices. Laser pointers of different wavelengths are available from [ledmegastore.se](https://ledmegastore.se).
+Other than red lasers, I have not really found any vendor in Sweden that sells neither green, not blue (or UV) laser components in Sweden. Some are available at [highcap.se](https://highcap.se/product_search.php?search_query=lasermodul), but at exaggerated prices. Laser pointers of different wavelengths are available from [ledmegastore.se](https://ledmegastore.se).
 
 ### Blue lasers
 

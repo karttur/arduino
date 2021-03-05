@@ -3,7 +3,7 @@ layout: post
 title: On-off switsh
 categories: stulturum
 startversion: 0.021
-endversion: 0.021
+endversion: 0.059
 excerpt: "Single pole gliding power switch"
 tags:
 - 3pin switch

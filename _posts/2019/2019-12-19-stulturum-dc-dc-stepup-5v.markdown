@@ -3,7 +3,7 @@ layout: post
 title: DC-DC stepup 5 volt
 categories: stulturum
 startversion: 0.021
-endversion: 0.021
+endversion: 0.059
 excerpt: "DC-DC 1V-5V to 5V Stepup converter module allowing 500MA"
 tags:
   - arduino

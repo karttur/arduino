@@ -29,4 +29,6 @@ The [Hamamatsu C12880MA micro-spectrometer](https://www.hamamatsu.com/eu/en/prod
 [Link to post on Arduino compatible breakout boards with the Hamamatsu C12880MA MEMS micro-spectrometer](../../modules/module-hamamatsu-C12880MA)
 
 
+A [hackaday solution](https://hackaday.io/project/4141-c12666ma-micro-spectrometer).
+
 module-hamamatsu-C12880MA

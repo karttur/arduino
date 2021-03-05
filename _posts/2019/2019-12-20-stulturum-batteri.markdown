@@ -3,7 +3,7 @@ layout: post
 title: Power solution for 3.7 volt Arduino
 categories: stulturum
 startversion: 0.021
-endversion: 0.021
+endversion: 0.059
 excerpt: "Power solution including regulator and Lithium Polymer battery for Arduino"
 tags:
   - arduino
