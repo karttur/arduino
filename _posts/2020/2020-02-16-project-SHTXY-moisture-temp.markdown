@@ -85,3 +85,67 @@ void loop()
 {% endcapture %}
 {% include widgets/toggle-code.html  toggle-text=text-capture  %}
 </div>
+
+### Project with pin power
+
+An alternative wiring is to put the power supply on a digital pin, allowing turning the power to the sensor on/off.
+
+<figure>
+<img src="../../images/nano-SHT10-waterproof-cable_v2_bb.png">
+<figcaption> Wiring of the SHT1x moisture and temperature sensor using pin D7 for on/off power setting. The pull-up resistor is 1 kOhm. The wiring is set to pass through a 4-pin connector, that can also hold other sensors, and thus includes redundant pins.
+</figcaption>
+</figure>
+
+<button id= "toggleCapSMpowerD7" onclick="hiddencode('CapSMpowerD7')">Hide/Show sketch</button>
+
+<div id="CapSMpowerD7" style="display:none">
+{% capture text-capture %}
+{% raw %}
+
+```
+
+#include <SHT1x.h>
+
+// Specify data and clock connections and instantiate SHT1x object
+int probePowerPin = 7;
+#define dataPin  2
+#define clockPin 8
+
+SHT1x sht1x(dataPin, clockPin);
+
+void setup()
+{
+   Serial.begin(9600); // Open serial connection to report values to host
+   Serial.print("Starting up sht mositure+temperature ");
+   pinMode (probePowerPin, OUTPUT); // define the digital output
+}
+
+void loop()
+{
+  float temp_c;
+  float temp_f;
+  float humidity;
+
+  digitalWrite (probePowerPin, HIGH); // Turn sensor On
+
+  // Read values from the sensor
+  temp_c = sht1x.readTemperatureC();
+  temp_f = sht1x.readTemperatureF();
+  humidity = sht1x.readHumidity();
+
+  // Print the values to the serial port
+  Serial.print("Temperature: ");
+  Serial.print(temp_c, DEC);
+  Serial.print("C / ");
+  Serial.print(temp_f, DEC);
+  Serial.print("F. Humidity: ");
+  Serial.print(humidity);
+  Serial.println("%");
+
+  delay(2000);
+}
+```
+{% endraw %}
+{% endcapture %}
+{% include widgets/toggle-code.html  toggle-text=text-capture  %}
+</div>

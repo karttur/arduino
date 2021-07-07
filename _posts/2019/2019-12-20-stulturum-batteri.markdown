@@ -3,7 +3,7 @@ layout: post
 title: Power solution for 3.7 volt Arduino
 categories: stulturum
 startversion: 0.021
-endversion: 0.059
+endversion: 0.069
 excerpt: "Power solution including regulator and Lithium Polymer battery for Arduino"
 tags:
   - arduino
@@ -13,7 +13,7 @@ tags:
   - TP4056
   - charge control
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2019-12-12 11:27'
+date: '2019-12-20 11:27'
 modified: '2020-07-17'
 comments: true
 share: true

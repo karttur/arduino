@@ -4,7 +4,7 @@ title: Capacitive Soil Moisture Sensor v1.2
 categories: stulturum
 stulturum: True
 startversion: 0.017
-endversion: 0.021
+endversion: 0.069
 excerpt: "Capacitive Soil Moisture Sensor v1.2"
 tags:
   - soil moisture

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: On-off switsh
+title: On-off switch
 categories: stulturum
 startversion: 0.021
-endversion: 0.059
+endversion: 0.069
 excerpt: "Single pole gliding power switch"
 tags:
 - 3pin switch
@@ -22,7 +22,7 @@ Finding a neat power switch for the Spectrometer Arduino project turned out to b
 
 #### Single pole gliding power switch
 
-The [single pole gliding power switch](https://pchbutik.se/search?controller=search&orderby=position&orderway=desc&search_query=0751&submit_search=) fits more neatly into the spectrometer box. The orientation of the holes for the soldering also diminished the risk of short cuts.
+The [single pole gliding power switch](https://pchbutik.se/search?controller=search&orderby=position&orderway=desc&search_query=0751&submit_search=) fits more neatly into the spectrometer box. The orientation of the holes for the soldering also diminished the risk of short cuts. 
 
 <figure>
 <img src="../../images/pchbutik_single-pole-gliding-power-switch.png">

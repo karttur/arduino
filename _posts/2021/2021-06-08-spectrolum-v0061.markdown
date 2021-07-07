@@ -1,0 +1,123 @@
+---
+layout: post
+title: Spectrometer version 0.061d-AMS
+categories: spectrolum
+version: "v0.061"
+tags:
+  - spectrometer
+  - stulturum
+  - v0.061
+  - AMS
+image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
+date: '2021-06-08'
+modified: '2021-06-16'
+comments: true
+share: true
+---
+
+## Stulturum spectrometer version v0.061
+
+Version 0.06 is built using the Arduino [NANO IOT 33 board](http://localhost:4000/module/module-nano-iot-33/). Compared to the older NANO boards, NANO IOT 33 has a faster processor, inbuilt wifi and bluetooth connections and a 3-axis gyrometer. Despite these additions, the IOT 33 has the same form factor as earlier NANO boards. As with model versions 0.03 through 0.05, additional light sources are built into attachments and directly powered from the battery via a metal–oxide–semiconductor field-effect transistor (MOSFET), the [BS170](http://localhost:4000/component/component-mosfet-xenon/).
+
+Version 0.06 is built using the same components as version 0.05. But as we are now testing different spectrometer, with other component kept unchanged, we have added specifications for spectral sensor for each model. This article presents the model 0.061d-AMS, designed specifically for the [AMS 6-band sensor](http://localhost:4000/project/project-AS726X-spectrometer-nano/).
+
+0.061d-AMS contains a battery and breakout boards controlling the charging and drainage of the battery, a fixed DC to DC stepup module outputting 5 volt, and a power switch. All included modules/components are listed below.
+
+A difference compared to latter previous versions is that version 0.06 (as did versions 0.017 through 0.021) includes external probe connections. To make space for the external probes, and a larger battery, the version 0.061 container is larger compared to the predecessors. Further, one of the two external probes is now a BNC connector requiring a larger control (breakout) board. To be able to control the powering of the external probes, each external connection is powered with a different digital (D) port allowing the external devices to be turned on and off.
+
+<figure>
+<img src="../../images/nano33-IOT-spectro_v061_bb.png">
+<figcaption> Stulturum spectrometer version v0.061 with an Arduino NANO IOT 33 microcontroller. </figcaption>
+</figure>
+
+### Spectrometer box
+
+The container holding all the components is larger than earlier versions, approximately 95 x 55 mm. The openings at the far end is for the external probes.
+
+The spectrometer box (<span class='file'>.stl</span>) for 3D printing is available as [spectro-box_20210606_v061d.stl](../../stl/spectro-box_20210606_v061d.stl).
+
+<figure>
+<img src="../../images/spectra-stulturum_box_v0061.png">
+<figcaption> Stulturum spectrometer container version v0.061. </figcaption>
+</figure>
+
+![trx-connector](../../images/trx_connector_female-male.png)
+{: .pull-right}
+### Spectrometer sample and light source attachments
+
+The sample attachments for version 0.06 includes the required light sources. The samplers are attached to the spectrometer container using TRX connections. The light, samples and spectral sensor are thus always lined up in the most optimal manner regarding each sample type and light source.
+
+<figure class="third">
+<img src="../../images/spectro-solid-cyl_v061.png">
+<img src="../../images/spectro-cuvette_v061.png">
+<img src="../../images/spectro-cuvette-trx_v061.png">
+<figcaption> Spectrometer light and sampler attachments for version 0061; left is the solid sampler, center is the cuvette liquid sampler and right is the TRX foundation for the cuvette sampler (single model that links all cuvette samplers to the container).</figcaption>
+</figure>
+
+#### Direct sampling attachment
+
+Version 0.61 does neither contain any sensor for ambient light condition nor any distance sensor. Direct sensing of reflectance thus requires an attachment that secludes the sample from ambient light. The attachment is simply a cylinder that comes in four (4) different version, each with a different light source (links to <span class='file'>.stl</span> files):
+
+- [white LED light (VIS sensing)](../../stl/spectro-direct-cyl-led_20210606_v061d.stl)
+- [xenon light (VIS-NIR sensing)](../../stl/spectro-direct-cyl-xenon_20210606_v061d.stl)
+- [blue LED (VIS-NIR fluorescence)](../../stl/spectro-direct-cyl-led_20210606_v061d.stl)
+- [red/green laser (NIR Raman spectroscopy)](../../stl/spectro-direct-cyl-laser_20210606_v061d.stl)
+
+Application of the red or green laser Raman spectroscopy requires a controlled (indoor) environment with no or little ambient light condition.
+
+#### Controlled solid sampler
+
+The controlled grind (solid) sampler resembles the direct sampler, but with a longer cylinder and a sample holder that fits into the lower half of the cylinder. This gives a more controlled light environment compared to direct sampler. Additionally the use of reference reflectance samples can be used for instrument calibration in direct association with the sensing. The controlled soil sampler thus comes in the same four (4) versions as the solid sampler:
+
+- [white light (VIS sensing)](../../stl/spectro-solid-cyl-led_20210606_v061d.stl)
+- [xenon light (VIS-NIR sensing)](../../stl/spectro-solid-cyl-xenon_20210606_v061d.stl)
+- [blue led (VIS-NIR fluorescence)](../../stl/spectro-solid-cyl-led_20210606_v061d.stl)
+- [red/green laser (NIR Raman spectroscopy)](../../stl/spectro-solid-cyl-laser_20210606_v061d.stl)
+
+#### Cuvette sampler
+
+All cuvette samplers are built from two pieces, the cuvette holder, and the [foundation](spectro-cuvette-trx_202100606_v061d.stl) that attach to the spectrometer container. The foundation is the same for all cuvette holders. The cuvette holder comes in 5 versions:
+
+- [white LED front light (VIS sensing of opaque liquids)](../../stl/spectro-cuvette-front_20210606_v061d.stl)
+- [white LED back light (VIS sensing of transparent liquids)](../../stl/spectro-cuvette-backlight_20210606_v061d.stl)
+- [xenon back light (VIS-NIR sensing of transparent liquids)](../../stl/spectro-cuvette-xenon_20210606_v061d.stl)
+- [blue led side light (VIS-NIR fluorescence of transparent liquids)](../../stl/spectro-cuvette-blueled_20210606_v061d.stl)
+- [green laser side light (VIS-NIR Raman spectroscopy of transparent liquids)](../../stl/spectro-cuvette-green-laser_20210606_v061d.stl)
+- [red laser side light (NIR Raman spectroscopy of transparent liquids)](../../stl/spectro-cuvette-red-laser_20210606_v061d.stl)
+
+### Assembly
+
+<figure class="half">
+	<a href="../../images/spectrolum_v040_photo_inside1.png">
+  <img src="../../images/spectrolum_v040_photo_inside1.png" alt="image">
+  </a>
+
+  <a href="../../images/spectrolum_v040_photo_inside2.png">
+  <img src="../../images/spectrolum_v040_photo_inside2.png" alt="image">
+  </a>
+
+	<figcaption>Assembled electronics inside spectrometer box, Stulturum spectrometer version v0.051.</figcaption>
+</figure>
+
+<figure>
+	<a href="../../images/spectrolum_v051_photo_front+attachments.png">
+  <img src="../../images/spectrolum_v051_photo_front+attachments.png" alt="image">
+  </a>
+
+	<figcaption>Stulturum spectrometer version v0.051 with different attachment samplers.</figcaption>
+</figure>
+
+### Modules and components
+
+Apart from the Arduino Nano33 IoT microcontroller and the AMS spectrometer, there are several additional modules/components included in Stulturum's spectrometer version v0.061. To get more information, including the separate scripts for individual controls, follow the links below.
+
+<ul class="post-list">
+{% for post in site.categories.stulturum %}
+  {% if post.startversion <= 0.060 and post.endversion >= 0.069 %}
+
+        <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a>
+        </article></li>
+
+  {% endif %}
+{% endfor %}
+</ul>

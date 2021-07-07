@@ -25,8 +25,9 @@ In 2018 Arduino presented a [new family of the popular NANO micro controller boa
 
 A comparison is presented by [makerguide](https://www.makerguides.com/arduino-nano/).
 
+Of these boards, the [NANO IOT 33 board](https://store.arduino.cc/arduino-nano-33-iot) is the most versatile (I think). A good summary of its capabilities has been published by [ITP Physical Computing](https://itp.nyu.edu/physcomp/introduction-to-the-nano-33-iot/).
 
-The Arduino [NANO IOT 33 board](https://store.arduino.cc/arduino-nano-33-iot) was presented in 2019. A good summary of its capabilities has been published by [ITP Physical Computing](https://itp.nyu.edu/physcomp/introduction-to-the-nano-33-iot/). Compared to the older NANO boards, the NANO IOT 33 has a faster processor, inbuilt wifi and bluetooth connections and a 3-axis gyrometer. Despite these additions, the IOT 33 has the same form factor as earlier NANO boards.
+Compared to the older NANO boards, the NANO IOT 33 has a faster processor, inbuilt wifi and bluetooth connections and a 3-axis gyrometer. Despite these additions, the IOT 33 has the same form factor as earlier NANO boards.
 
 <figure>
 <img src="../../images/arduino_nano_iot_33.png">

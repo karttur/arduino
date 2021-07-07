@@ -3,7 +3,7 @@ layout: post
 title: Adafruit AS7262 6-Channel Visible Light / Color Sensor Breakout Board
 categories: stulturum
 startversion: 0.017
-endversion: 0.019
+endversion: 0.069
 excerpt: "Adafruit Breakout board with AMS AS7262 spectrometer"
 tags:
   - spectrometer

@@ -4,7 +4,7 @@ title: SHT10 moisture and temperature sensor
 categories: stulturum
 stulturum: True
 startversion: 0.017
-endversion: 0.021
+endversion: 0.069
 excerpt: "SHTXY moisture and temperature sensor"
 tags:
   - SHT10

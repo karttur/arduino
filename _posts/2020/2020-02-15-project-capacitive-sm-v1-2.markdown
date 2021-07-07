@@ -11,7 +11,7 @@ tags:
   - capacitive
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2020-02-15 11:27'
-modified: '2020-02-15 T18:17:25.000Z'
+modified: '2021-07-07 T18:17:25.000Z'
 comments: true
 share: true
 sensor: sensor-capacitive-sm-v1-2
@@ -74,6 +74,64 @@ else if(soilmoisturepercent >0 && soilmoisturepercent < 100)
   Serial.println("%");
 }
 delay(250);
+}
+```
+{% endraw %}
+{% endcapture %}
+{% include widgets/toggle-code.html  toggle-text=text-capture  %}
+</div>
+
+### Project with pin power
+
+An alternative wiring is to put the power supply on a digital pin, allowing turning the power to the sensor on/off.
+
+<figure>
+<img src="../../images/nano-capacitive-sm-v1-2_d7-power_bb.png">
+<figcaption> Wiring of the Capacitive moisture and temperature sensor using pin D7 for on/off power setting. The wiring is set to pass through a 4-pin connector, that can also hold other sensors, and thus includes redundant pins.
+</figcaption>
+</figure>
+
+<button id= "toggleCapSMpowerD7" onclick="hiddencode('CapSMpowerD7')">Hide/Show sketch</button>
+
+<div id="CapSMpowerD7" style="display:none">
+{% capture text-capture %}
+{% raw %}
+
+```
+int probePowerPin = 7;
+
+const int AirValue = 620;   //you need to replace this value with Value_1
+const int WaterValue = 310;  //you need to replace this value with Value_2
+int soilMoistureValue = 0;
+int soilmoisturepercent=0;
+
+void setup ()
+{
+   Serial.begin(9600);
+   pinMode (probePowerPin, OUTPUT); // define the digital output
+
+}
+
+void loop () {
+   // turn on external probe power
+   digitalWrite (probePowerPin, HIGH); // Turn external probe power On
+  soilMoistureValue = analogRead(A1);  //put Sensor at A1 port
+  Serial.println(soilMoistureValue);
+  soilmoisturepercent = map(soilMoistureValue, AirValue, WaterValue, 0, 100);
+  if(soilmoisturepercent > 100)
+  {
+    Serial.println("100 %");
+  }
+  else if(soilmoisturepercent <0)
+  {
+    Serial.println("0 %");
+  }
+  else if(soilmoisturepercent >0 && soilmoisturepercent < 100)
+  {
+    Serial.print(soilmoisturepercent);
+  Serial.println("%");
+  }
+  delay(250);
 }
 ```
 {% endraw %}

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Sparkfun AS7263 6-Channel inrfared spectrometer
+title: Sparkfun AS7263 6-Channel infrared spectrometer
 categories: stulturum
 startversion: 0.020
-endversion: 0.051
+endversion: 0.069
 excerpt: "Sparkfun Breakout board with AMS AS7263 infrared spectrometer"
 tags:
   - spectrometer

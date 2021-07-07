@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On-off switsh
+title: On-off switch
 categories: component
 excerpt: "Single pole gliding power switch"
 tags:

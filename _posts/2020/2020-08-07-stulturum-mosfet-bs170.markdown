@@ -3,7 +3,7 @@ layout: post
 title: BS-170 MOSFET
 categories: stulturum
 startversion: 0.031
-endversion: 0.059
+endversion: 0.069
 excerpt: "BS-170 MOSFET transistor for switching power on/off"
 tags:
 - MOSFET

@@ -21,7 +21,7 @@ project: null
 
 ### Introduction
 
-In Raman spectroscopy the sample, that can be a solid, a liquid or a gas, is excited with a high energy, short wave laser, and the glow that results is registered by a spectral sensor. For liquid and gaseous samples, the laser beam is directed 90 degrees away from the spectral sensor in order for the glow to be the captured spectral signal. In this post I listed different green laser light sources that I have found.
+In Raman spectroscopy the sample, that can be a solid, a liquid or a gas, is excited with a green to red/red edge laser, and the glow that results is registered by a spectral sensor. For liquid and gaseous samples, the laser beam is directed 90 degrees away from the spectral sensor in order for the glow to be the captured spectral signal. In this post I listed different green laser light sources that I have found.
 
 ### Laser diodes
 
