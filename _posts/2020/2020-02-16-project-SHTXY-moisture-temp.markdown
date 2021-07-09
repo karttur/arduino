@@ -11,7 +11,7 @@ tags:
   - humidity
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2020-02-16 11:27'
-modified: '2020-02-16 T18:17:25.000Z'
+modified: '2021-07-07 T18:17:25.000Z'
 comments: true
 share: true
 sensor: sensor-SHTXY-moisture-temp

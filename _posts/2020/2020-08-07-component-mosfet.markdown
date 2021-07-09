@@ -53,5 +53,10 @@ Having switched to the arduino [Nano33 system](../../module/module-nano-iot-33),
 
 [IRLML2502TRPBF](https://www.infineon.com/dgdl/irlml2502pbf.pdf?fileId=5546d462533600a401535668048e2606) is yet another SOT-23 packaged N-channel MOSFET, available from [digi-key](https://www.digikey.se/product-detail/en/infineon-technologies/IRLML2502TRPBF/IRLML2502TRPBFCT-ND/812502?utm_adgroup=Semiconductor%20Modules&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_Product&utm_term=&productid=&gclid=CjwKCAjwuIWHBhBDEiwACXQYsbtAMSVRv3U0dAIrJABa2HObk9QIcP3aNyweCfX9kDCGoZC7Y2cJGBoCf10QAvD_BwE) but also [fyndiq.se](https://fyndiq.se/produkt/50st-irlml2502trpbf-stromforsorjning-ny-och-original-n-kanal-pa-f8a34e4bc99342e1/).
 
+<figure>
+<img src="../../images/MOSFET_FQP30N06L.png">
+<figcaption> MOSFET FQP30N06L. </figcaption>
+</figure>
+
 Looking for an alternative in a "TO" (three legged) package, I could only find T0-220 alternatives (and no TO-92 like the BS170). The price for a _TO_ compared to _SOT_ packaged MOSFET is about an order of magnitude.
-[FQP30N06L](https://cdn.sparkfun.com/datasheets/Components/General/FQP30N06L.pdf) is avalialbe from [fyndiq.se](https://fyndiq.se/produkt/10st-fqp30n06l-fqp-30n06l-60v-logik-n-kanal-mosfet-to-220-0-one-size-2bbde9ae34e94730/). 
+[FQP30N06L](https://cdn.sparkfun.com/datasheets/Components/General/FQP30N06L.pdf) is available from [fyndiq.se]https://fyndiq.se/produkt/10st-fqp30n06l-fqp-30n06l-60v-logik-n-kanal-mosfet-to-220-0-one-size-2bbde9ae34e94730/). The gate opens fully at 2.5 volt.

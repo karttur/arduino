@@ -17,7 +17,7 @@ share: true
 
 ### Introduction
 
-For steering and capturing light for my handheld spectrometer I started to look for fiber (or light) optical cables. There are many alternative materials and solutions for light transmission using optical cables. This post is an attempt to come to grips with these alternatives.
+For steering and capturing light for my handheld spectrometer I started to look for fibre (or light) optical cables. There are many alternative materials and solutions for light transmission using optical cables. This post is an attempt to come to grips with these alternatives.
 
 A good page with [Q and A from thefiberopticstore](https://thefiberopticstore.com/faqs/).
 
@@ -37,7 +37,7 @@ If you search for fibre optical cables the chances are your result will be some 
 </figcaption>
 </figure>
 
-While these cables do their job, the amount of light that passes is very small. The quality is high but the losses along the cable can be large. A second problem is that the light cone exiting the TOSlink is not focused but dispersed, and the already quite small amount of light disperse even further. There is simply too little light available from this solution.
+While these cables do their job, the amount of light that passes is very small. The quality is high but the losses along the cable can be large. A second problem is that the light cone exiting the TOSlink is not focused but dispersed, and the already quite small amount of light disperse even further.
 
 ### Optical light cable
 
@@ -60,11 +60,12 @@ Materials include PMMA plastic ...
 
 ### Buying
 
-In Sweden I can only find [LedVision AB](http://www.ledvision.se/fiberoptisk-belysning/) that sell light optical cables. The cables they sell are  PMMA.
+In Sweden I can only find [LedVision AB](http://www.ledvision.se/fiberoptisk-belysning/) that sell light optical cables. The cables they sell are PMMA.
 
 [LedVision AB](http://www.ledvision.se/fiberoptisk-belysning/fiberoptiska-kristallerlinser/) saluför också linser/kristaller att sätta på änden för olika ändamål.
 
-I do not think it necessary, but you can get holders for optical fibres from for instance [elfa](https://www.elfa.se/sv/ljusledare-42-mm-mentor-1216-1005/p/17540032?channel=b2c&price_gs=11.3&wt_mc=se.cse.gshop.sv.-&source=googleps&ext_cid=shgooaqsesv-blcss&kw=%7Bkeyword%7D&ext_cid=shgooaqsesv-P-CSS-Shopping-MainCampaign-Optoelectronics&gclid=CjwKCAjwg6b0BRBMEiwANd1_SLFdRp4MHmu55ULyQ70fchJ9Zp9UX4gugj3b5ikxsMQoRfF1R51Y_hoCY3oQAvD_BwE) ([or here]https://www.elfa.se/sv/ljusledare-mentor-1316-2001/p/11055283?channel=b2c&price_gs=36.375&wt_mc=se.cse.gshop.sv.-&source=googleps&ext_cid=shgooaqsesv-blcss&kw=%7Bkeyword%7D&ext_cid=shgooaqsesv-P-CSS-Shopping-MainCampaign-Optoelectronics&gclid=CjwKCAjwg6b0BRBMEiwANd1_SOysNX86CkA7_mTNt0XN9FHUsvwil_QXWlhcdIYoD5mcn2VZMZ88YBoCAzwQAvD_BwE)and conrad(https://www.conrad.se/p/fiberoptiskt-kontaktdon-cliff-cp30218-2109232). To search for the holders in Swedish use the term "ljusledare".
+I do not think it necessary, but you can get holders for optical fibres from for instance [elfa](https://www.elfa.se/sv/ljusledare-42-mm-mentor-1216-1005/p/17540032?channel=b2c&price_gs=11.3&wt_mc=se.cse.gshop.sv.-&source=googleps&ext_cid=shgooaqsesv-blcss&kw=%7Bkeyword%7D&ext_cid=shgooaqsesv-P-CSS-Shopping-MainCampaign-Optoelectronics&gclid=CjwKCAjwg6b0BRBMEiwANd1_SLFdRp4MHmu55ULyQ70fchJ9Zp9UX4gugj3b5ikxsMQoRfF1R51Y_hoCY3oQAvD_BwE) ([or here]https://www.elfa.se/sv/ljusledare-mentor-1316-2001/p/11055283?channel=b2c&price_gs=36.375&wt_mc=se.cse.gshop.sv.-&source=googleps&ext_cid=shgooaqsesv-blcss&kw=%7Bkeyword%7D&ext_cid=shgooaqsesv-P-CSS-Shopping-MainCampaign-Optoelectronics&gclid=CjwKCAjwg6b0BRBMEiwANd1_SOysNX86CkA7_mTNt0XN9FHUsvwil_QXWlhcdIYoD5mcn2VZMZ88YBoCAzwQAvD_BwE)
+and [Conrad.se](https://www.conrad.se/p/fiberoptiskt-kontaktdon-cliff-cp30218-2109232). To search for the holders in Swedish use the term "ljusledare".
 
 ### Cutting
 
