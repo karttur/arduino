@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Adafruit Feather nRF52840
-categories: microcontroller
-excerpt: "Adafruit Feather nRF52840"
+title: SMA905 fibre optic connector
+categories: spectro
+excerpt: "SMA905 fibre optic connector"
 tags:
-  - Adafruit Feather nRF52840
-  - BLE
+  - fibre optics
+  - SMA905
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2021-06-16 11:27'
 modified: '2021-06-16 T18:17:25.000Z'
@@ -24,6 +24,22 @@ https://www.alibaba.com/product-detail/Metal-SMA905-FC-PC-Fiber-Optic_6217493823
 
 And the fibre cable to go along:
 
-https://www.alibaba.com/product-detail/SMA905-For-spectrum-detection-optical-fiber_60772592518.html?spm=a2700.details.0.0.5f97d278C6wvSs
+https://www.alibaba.com/product-detail/SMA905-For-spectrum-detection-optical-fiber_60772592518.html
 
 31 USD per piece
+
+### Cheaper alterantive
+
+fibre cable:
+
+https://www.alibaba.com/product-detail/Fiber-Optic-Cable-JFOPT-Wholesale-Finished_1600234860719.html?spm=a2700.galleryofferlist.normal_offer.d_title.52752320n5XDT5&s=p
+
+https://www.alibaba.com/product-detail/holmium-fibra-yag-sma-905-FC_1600232076685.html?spm=a2700.galleryofferlist.normal_offer.d_image.7e5844dfX50kwR
+
+10 USD
+
+female
+
+https://www.alibaba.com/product-detail/SMA-905-Adapter-Fiber-Optical-Adaptor_60816218817.html?spm=a2700.galleryofferlist.normal_offer.d_image.68344f483OCobp
+
+4 usd

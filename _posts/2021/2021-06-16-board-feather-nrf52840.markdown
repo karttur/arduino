@@ -17,7 +17,6 @@ share: true
 
 [https://www.inesarex.com/electrode/](https://www.inesarex.com/electrode/)
 
-
 Building a 3.7v LiPo 1200mAh battery powered project using Arduino Nano and Arduino Nano33 IoT ([spectrolum version 61](../../spectrolum/spectrolum-v0061/)), I could not get the AMS spectrometer started while on battery power only. As long as the usb power is connected, the AMS spectrometer initiates and captures the incident light. If only on battery power, the AMS spectrometer flickers a single blue flare, but never initiates. Strangely, if the usb is connected and the AMS allowed to start, the usb can be pulled out and the AMD continues to register the light conditions while on battery power only.
 
 I also tried with an external power supply (9v, 2A) but the behaviour is the same when on battery power. Also reported by [others](https://forum.arduino.cc/t/unable-to-run-my-project-on-battery/702514/7). All hints I could find online point towards insufficient power supply being the culprit while on battery power. It is also reported that sketch (programmatic) errors can cause similar behavior.
@@ -26,7 +25,7 @@ As Arduino Nano and Arduino Nano33 IoT does not have any battery charge or drain
 
 ### Adafruit Feather nRF52840
 
-Among the many alternative Feather boards, I opted for the [nRF52840]().
+Among the many alternative Feather boards, I opted for the [nRF52840](https://learn.adafruit.com/introducing-the-adafruit-nrf52840-feather/downloads).
 
 #### Setup IDE
 
