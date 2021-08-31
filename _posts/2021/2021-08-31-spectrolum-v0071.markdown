@@ -1,0 +1,136 @@
+---
+layout: post
+title: Spectrometer version 0.71-HAMA
+categories: spectrolum
+version: "v0.71"
+tags:
+  - spectrometer
+  - stulturum
+  - v0.71
+  - AMS
+image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
+date: '2021-08-31'
+modified: '2021-08-31'
+comments: true
+share: true
+---
+
+## Stulturum spectrometer version v0.71
+
+Version 0.7 is built using the Arduino [NANO IOT 33 board](http://localhost:4000/module/module-nano-iot-33/). Compared to version 0.06 (or 0.6), version 0.7 uses the Hamamatsu [C12880MA sensor](../../sensor/sensor-C12880MA-spectrometer/) **without** any breakout board. Additionally, the aviation plug is upgraded to a 6-pin version, to allow for 4 digital channels from an [RS-485 MODBUS breakout board](#) (note that the RS-485 breakout board is enclosed with the external sensor and not part of the wiring here). As with model versions 0.3 through 0.6, additional light sources are built into attachments and directly powered from the battery via a metal–oxide–semiconductor field-effect transistor (MOSFET).
+
+Note that version 7 is not intended for production, but is built as a template for designing and testing the wiring of a purpose built shield to fit with an arduino type microcontroller. Not necessarily the Ardiono [NANO IOT 33 board](http://localhost:4000/module/module-nano-iot-33/).
+
+#### Light sources
+
+One of the major shortcomings with the solution of all versions from 0.3 (0.03) is the power supply for the electromagnetic emitter. The voltage and current supplied from the spectrometer to the muzzle with the loght source depends on the charge level of the battery, and is regulated by a simple resistor in the muzzle unit. As the battery potential can vary between around 3 volt (low charge) to 4.2 volt (fully charged) the emitter is not generating a constant field. Further the resistor is a poor solution that wastes battery power, does not adjust for the potential and generates heat. A new solution is needed, and for that purpose the light sources to be used with forthcoming versions are listed here
+
+- [xenon bulb, 3.0 V, 300 mA](https://www.conrad.se/p/barthelme-20710330-xenonlampa-3-v-090-w-sockel-bi-pin-127-mm-1-st-584939)
+- [IR broad band emitter (LED), 2.25 - 3.0 V, max 500 mA](https://www.osram.com/ecat/OSLON®%20P1616%20SFH%204737/com/en/class_pim_web_catalog_103489/prd_pim_device_10751075/)
+- [Neutral white led, 2.75 V, 65 - 200 mA(?)](https://www.digikey.com/en/products/detail/samsung-semiconductor-inc/SPMWHT541ML5XATMS6/6569429)
+- [Alt. neutral white led, 3.0 V, 60 mA](https://www.digikey.com/en/products/detail/luminus-devices-inc/MP-2016-1100-40-80/4807631)
+- [Blue laser, 4.8-5.6 V, 35 - 60 mA](https://www.civillaser.com/index.php?main_page=product_info&products_id=78)
+- [Green laser, 5.0 V, 45 mA](https://www.civillaser.com/index.php?main_page=product_info&products_id=2291)
+- [red laser, 2.2-2.4 V, 20 mA](https://www.civillaser.com/index.php?main_page=product_info&products_id=87)
+- [UV led, 3.5 V, 20 mA](https://www.conrad.se/p/uv-saendare-405-nm-5-mm-radiellt-ihopkopplade-5004pch02-1565915?searchSuggest=product&searchTerm=001565915&searchType=suggest)
+- Standard LEDs @ 3 - 3.3 V and 20 mA (in different wavelengths)
+
+Table 1. Emission sources
+
+| source | type | min potential | max potential| min current | max current | connection |
+| - | - | V | V | mA | mA | - |
+| Xenon | VIS+NIR | 1.6 | 3.0 | 200 | 300 | Bi-Pin 1.27 mm |
+| IR led  | VIS+NIR | 2.25 | 3.0 | 300 | 500 | surface mount |
+| White LED 1 | VIS | 2.75 | 2.75 | 65 | 200 | surface mount |
+| White LED 2 | VIS | 3.0 | 3.0 | 60 | 120 | surface mount |
+| Blue | laser | 4.8 | 5.6 | 35 | 60 | 3-pin TO-18 |
+| Green  | laser | 5.0 | 6.6 | 45 | 75 | 3-pin TO-18 |
+| Red  | laser | 2.2 | 2.5 | 20 | 22 | 3-pin TO-18 |
+| UV led | monochrom | 3.2 | 3.5 | 20 | 20 | catod/anod |
+| Blue led | monochrom | 3.3| 3.3 | 20 | 20 | catod/anod |
+| Green led | monochrom | 2.5 | 3.5 | 10 | 20 | catod/anod |
+
+Except for the xenon and IR broad band emitter, there are different altrnatives.
+
+To cover the spectral range of interest, both with broadband emitters as well as single wavelength LED and laser emitters, at least 3 different forward current solutions are presumably required:
+
+1. 3.3 V and 20 mA for any standard 2-pin (cathode/anode) LED emitters and red lasers, whether broadband or single wavelength,
+2. 5.0 V and 45 mA for short wave (blue to green) laser diodes,
+3. 3.0 V and 300 mA for xenon, IR broad band emitter and neutral white LED emitters.
+
+Version 0.7 contains a battery and breakout boards controlling the charging and drainage of the battery, a fixed DC to DC stepup module outputting 5 volt, and a power switch. All included modules/components are listed below.
+
+<figure>
+<img src="../../images/nano33-IOT-spectro_v071a_HAMA-VIS_bb.png">
+<figcaption> Stulturum spectrometer version v0.7 HAMA VIS with an Arduino NANO IOT 33 microcontroller. </figcaption>
+</figure>
+
+### Spectrometer box
+
+The container holding all the components is larger than earlier versions, approximately 95 x 55 mm. The openings at the far end is for the external probes.
+
+The spectrometer box (<span class='file'>.stl</span>) for 3D printing is available as [spectro-box-HAMA-VIS_20210831_v071a.stl](../../stl/spectro-box-HAMA-VIS_20210831_v071a.stl).
+
+<figure>
+<img src="../../images/spectra-stulturum_box_v071.png">
+<figcaption> Stulturum spectrometer container version v0.71. </figcaption>
+</figure>
+
+![trx-connector](../../images/trx_connector_female-male.png)
+{: .pull-right}
+### Spectrometer sample and light source attachments
+
+The sample attachments for version 0.06 includes the required light sources. The samplers are attached to the spectrometer container using TRX connections. The light, samples and spectral sensor are thus always lined up in the most optimal manner regarding each sample type and light source.
+
+<figure class="third">
+<img src="../../images/spectro-solid-cyl_v061.png">
+<img src="../../images/spectro-cuvette_v061.png">
+<img src="../../images/spectro-cuvette-trx_v061.png">
+<figcaption> Spectrometer light and sampler attachments for version 0061; left is the solid sampler, center is the cuvette liquid sampler and right is the TRX foundation for the cuvette sampler (single model that links all cuvette samplers to the container).</figcaption>
+</figure>
+
+#### Direct sampling probe
+
+The muzzle attachments containing the emitters and holding the samples, are the same as for v0.6x:
+
+- [white LED light (VIS sensing)](../../stl/spectro-direct-cyl-led_20210606_v061d.stl)
+- [xenon light (VIS-NIR sensing)](../../stl/spectro-direct-cyl-xenon_20210606_v061d.stl)
+- [blue LED (VIS-NIR fluorescence)](../../stl/spectro-direct-cyl-led_20210606_v061d.stl)
+- [red/green laser (NIR Raman spectroscopy)](../../stl/spectro-direct-cyl-laser_20210606_v061d.stl)
+
+Application of the red or green laser Raman spectroscopy requires a controlled (indoor) environment with no or little ambient light condition.
+
+#### Controlled solid sampler
+
+The controlled grind (solid) muzzles resemble the direct muzzles, but with a longer cylinder and a sample holder that fits into the lower half of the cylinder. This gives a more controlled light environment compared to direct sampler. Additionally the use of reference reflectance samples can be used for instrument calibration in direct association with the sensing. The controlled soil sampler thus comes in the same four (4) versions as the solid sampler:
+
+- [white light (VIS sensing)](../../stl/spectro-solid-cyl-led_20210606_v061d.stl)
+- [xenon light (VIS-NIR sensing)](../../stl/spectro-solid-cyl-xenon_20210606_v061d.stl)
+- [blue led (VIS-NIR fluorescence)](../../stl/spectro-solid-cyl-led_20210606_v061d.stl)
+- [red/green laser (NIR Raman spectroscopy)](../../stl/spectro-solid-cyl-laser_20210606_v061d.stl)
+
+#### Cuvette sampler
+
+All cuvette samplers are built from two pieces, the cuvette holder, and the [foundation](spectro-cuvette-trx_202100606_v061d.stl) that attach to the spectrometer container. The foundation is the same for all cuvette holders. The cuvette holder comes in 5 versions:
+
+- [white LED front light (VIS sensing of opaque liquids)](../../stl/spectro-cuvette-front_20210606_v061d.stl)
+- [white LED back light (VIS sensing of transparent liquids)](../../stl/spectro-cuvette-backlight_20210606_v061d.stl)
+- [xenon back light (VIS-NIR sensing of transparent liquids)](../../stl/spectro-cuvette-xenon_20210606_v061d.stl)
+- [blue led side light (VIS-NIR fluorescence of transparent liquids)](../../stl/spectro-cuvette-blueled_20210606_v061d.stl)
+- [green laser side light (VIS-NIR Raman spectroscopy of transparent liquids)](../../stl/spectro-cuvette-green-laser_20210606_v061d.stl)
+- [red laser side light (NIR Raman spectroscopy of transparent liquids)](../../stl/spectro-cuvette-red-laser_20210606_v061d.stl)
+
+### Modules and components
+
+Apart from the Arduino Nano33 IoT microcontroller and the Hamamatsu C12880MA spectrometer, there are several additional modules/components included in Stulturum's spectrometer version v0.061. To get more information, including the separate scripts for individual controls, follow the links below.
+
+<ul class="post-list">
+{% for post in site.categories.stulturum %}
+  {% if post.startversion <= 0.071 and post.endversion >= 0.071 %}
+
+        <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a>
+        </article></li>
+
+  {% endif %}
+{% endfor %}
+</ul>

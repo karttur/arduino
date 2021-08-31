@@ -23,6 +23,8 @@ https://www.seeedstudio.com/blog/2021/05/19/modbus-rtu-rs485-soil-moisture-senso
 
 [DIY Soil EC Salinity Meter using Arduino & Soil EC Sensor](https://how2electronics.com/diy-soil-ec-salinity-meter-using-arduino-soil-ec-sensor/)
 
+[Soil NPK Sensor with Arduino and Android Cell Phone](https://www.youtube.com/watch?v=_93m1JdFhiY)
+
 https://www.distrelec.de/en/industrial-soil-moisture-temperature-sensor-modbus-rtu-rs485-2v-analogue-ip68-seeed-studio-101990668/p/30215414
 
 https://www.distrelec.de/en/industrial-soil-moisture-temperature-electrical-conductivity-sensor-modbus-rtu-rs485-ip68-seeed-studio-101990667/p/30215413

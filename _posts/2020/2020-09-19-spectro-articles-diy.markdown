@@ -52,6 +52,8 @@ The [288-channel Hamamatsu spectral sensor](../../sensor/sensor-hamamatsu-C12880
 
 In April 2020, the scientific journal HardwareX published an [article (Portable low-cost open-source wireless spectrophotometer for fast and reliable measurements)](https://www.sciencedirect.com/science/article/pii/S246806722030016X) (https://doi.org/10.1016/j.ohx.2020.e00108) on both how to build a handheld spectrometer using the Hamamatsu C12880MA spectral sensor, and also evaluated its performance. The article is open source, and code, <span class='file'>.stl</span> (3D print files) and sketches are available online at [https://doi.org/10.17605/OSF.IO/RBFSE.](https://doi.org/10.17605/OSF.IO/RBFSE.).
 
+[Low-cost setup developed for C12880MA micro-spectrometer](https://www.hamamatsu.com/eu/en/news/featured-products_technologies/2017/20170510045237.html). The system [details](https://impfs.github.io/review/) revleas that it is setup is for [Adafruit Fruit](https://www.adafruit.com/category/943) and also operatinal with other microcontrollers. The microcontroller interfaces directly with the Hamamatsu spectral sensor.
+
 ### DIY Ibsen
 
 [Ibsen](https://shop.ibsen.com/product/freedom-arduino-kit/) offers a visible band Arduino spectrometer base don an Hamamatsu spectral sensor with 2048 pixels.

@@ -3,7 +3,7 @@ layout: post
 title: Xenon light with MOSFET regulation
 categories: stulturum
 startversion: 0.060
-endversion: 0.069
+endversion: 0.071
 excerpt: "Xenon light with MOSFET regulation"
 tags:
   - xenon

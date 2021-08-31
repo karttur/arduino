@@ -3,7 +3,7 @@ layout: post
 title: FQP30N06L MOSFET
 categories: stulturum
 startversion: 0.031
-endversion: 0.061
+endversion: 0.071
 excerpt: "FQP30N06L MOSFET transistor for switching power on/off"
 tags:
 - MOSFET

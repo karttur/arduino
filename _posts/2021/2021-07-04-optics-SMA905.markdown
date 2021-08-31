@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SMA905 fibre optic connector
-categories: spectro
+categories: optics
 excerpt: "SMA905 fibre optic connector"
 tags:
   - fibre optics
