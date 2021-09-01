@@ -17,13 +17,13 @@ share: true
 
 ## Stulturum spectrometer version v0.71
 
-Version 0.7 is built using the Arduino [NANO IOT 33 board](http://localhost:4000/module/module-nano-iot-33/). Compared to version 0.06 (or 0.6), version 0.7 uses the Hamamatsu [C12880MA sensor](../../sensor/sensor-C12880MA-spectrometer/) **without** any breakout board. Additionally, the aviation plug is upgraded to a 6-pin version, to allow for 4 digital channels from an [RS-485 MODBUS breakout board](#) (note that the RS-485 breakout board is enclosed with the external sensor and not part of the wiring here). As with model versions 0.3 through 0.6, additional light sources are built into attachments and directly powered from the battery via a metal–oxide–semiconductor field-effect transistor (MOSFET).
+Version 0.7 is built using the Arduino [NANO IOT 33 board](../../module/module-nano-iot-33/). Compared to version 0.06 (or 0.6), version 0.7 uses the Hamamatsu [C12880MA sensor](../../sensor/sensor-C12880MA-spectrometer/) **without** any breakout board. Additionally, the aviation plug is upgraded to a 6-pin version, to allow for 4 digital channels from an [RS-485 MODBUS breakout board](../../module-seeed-modbus-soil-moisture/) (note that the RS-485 breakout board is enclosed with the external sensor and not part of the wiring here). As with model versions 0.3 through 0.6, additional light sources are built into attachments and directly powered from the battery via a metal–oxide–semiconductor field-effect transistor (MOSFET).
 
-Note that version 7 is not intended for production, but is built as a template for designing and testing the wiring of a purpose built shield to fit with an arduino type microcontroller. Not necessarily the Ardiono [NANO IOT 33 board](http://localhost:4000/module/module-nano-iot-33/).
+Note that version 7 is not intended for production, but is built as a template for designing and testing the wiring of a purpose built shield to fit with an arduino type microcontroller. Not necessarily the Ardiono [NANO IOT 33 board](../../module/module-nano-iot-33/).
 
-#### Light sources
+#### Emission sources
 
-One of the major shortcomings with the solution of all versions from 0.3 (0.03) is the power supply for the electromagnetic emitter. The voltage and current supplied from the spectrometer to the muzzle with the loght source depends on the charge level of the battery, and is regulated by a simple resistor in the muzzle unit. As the battery potential can vary between around 3 volt (low charge) to 4.2 volt (fully charged) the emitter is not generating a constant field. Further the resistor is a poor solution that wastes battery power, does not adjust for the potential and generates heat. A new solution is needed, and for that purpose the light sources to be used with forthcoming versions are listed here
+One of the major shortcomings with the solution of all versions from 0.3 (0.03) is the power supply for the electromagnetic emitter. The voltage and current supplied from the spectrometer to the muzzle with the light source depends on the charge level of the battery, and is regulated by a simple resistor in the muzzle unit. As the battery potential can vary between around 3 volt (low charge) to 4.2 volt (fully charged) the emitter is not generating a constant field. Further the resistor is a poor solution that wastes battery power, does not adjust for the potential and generates heat. A new solution is needed, and for that purpose the light sources to be used with forthcoming versions are listed here and summarised in table 1:
 
 - [xenon bulb, 3.0 V, 300 mA](https://www.conrad.se/p/barthelme-20710330-xenonlampa-3-v-090-w-sockel-bi-pin-127-mm-1-st-584939)
 - [IR broad band emitter (LED), 2.25 - 3.0 V, max 500 mA](https://www.osram.com/ecat/OSLON®%20P1616%20SFH%204737/com/en/class_pim_web_catalog_103489/prd_pim_device_10751075/)
@@ -35,7 +35,7 @@ One of the major shortcomings with the solution of all versions from 0.3 (0.03) 
 - [UV led, 3.5 V, 20 mA](https://www.conrad.se/p/uv-saendare-405-nm-5-mm-radiellt-ihopkopplade-5004pch02-1565915?searchSuggest=product&searchTerm=001565915&searchType=suggest)
 - Standard LEDs @ 3 - 3.3 V and 20 mA (in different wavelengths)
 
-Table 1. Emission sources
+Table 1. Emission sources for the xSpectre spectrometer.
 
 | source | type | min potential | max potential| min current | max current | connection |
 | - | - | V | V | mA | mA | - |
@@ -50,7 +50,7 @@ Table 1. Emission sources
 | Blue led | monochrom | 3.3| 3.3 | 20 | 20 | catod/anod |
 | Green led | monochrom | 2.5 | 3.5 | 10 | 20 | catod/anod |
 
-Except for the xenon and IR broad band emitter, there are different altrnatives.
+Except for the xenon and IR broad band emitter, other altrnatives are available.
 
 To cover the spectral range of interest, both with broadband emitters as well as single wavelength LED and laser emitters, at least 3 different forward current solutions are presumably required:
 
