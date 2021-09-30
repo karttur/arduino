@@ -17,9 +17,7 @@ share: true
 
 ## Stulturum spectrometer version v0.061
 
-Version 0.06 is built using the Arduino [NANO IOT 33 board](http://localhost:4000/module/module-nano-iot-33/). Compared to the older NANO boards, NANO IOT 33 has a faster processor, inbuilt wifi and bluetooth connections and a 3-axis gyrometer. Despite these additions, the IOT 33 has the same form factor as earlier NANO boards. As with model versions 0.03 through 0.05, additional light sources are built into attachments and directly powered from the battery via a metal–oxide–semiconductor field-effect transistor (MOSFET), the [BS170](http://localhost:4000/component/component-mosfet-xenon/).
-
-Version 0.06 is built using the same components as version 0.05. But as we are now testing different spectrometer, with other component kept unchanged, we have added specifications for spectral sensor for each model. This article presents the model 0.061d-AMS, designed specifically for the [AMS 6-band sensor](http://localhost:4000/project/project-AS726X-spectrometer-nano/).
+Version 0.06 is built using the same components as version 0.05, based on the Arduino [NANO IOT 33 board](http://localhost:4000/module/module-nano-iot-33/). But as we are now testing different spectrometer, with other component kept unchanged, we have added specifications for spectral sensor for each model. This article presents the model 0.061d-AMS, designed specifically for the [AMS 6-band sensor](http://localhost:4000/project/project-AS726X-spectrometer-nano/).
 
 0.061d-AMS contains a battery and breakout boards controlling the charging and drainage of the battery, a fixed DC to DC stepup module outputting 5 volt, and a power switch. All included modules/components are listed below.
 
@@ -87,16 +85,20 @@ All cuvette samplers are built from two pieces, the cuvette holder, and the [fou
 
 ### Assembly
 
-<figure class="half">
-	<a href="../../images/spectrolum_v040_photo_inside1.png">
-  <img src="../../images/spectrolum_v040_photo_inside1.png" alt="image">
+<figure class="thrid">
+	<a href="../../images/xspectre_spectrometer_v062-AMS_front.png">
+  <img src="../../images/xspectre_spectrometer_v062-AMS_front.png" alt="image">
   </a>
 
-  <a href="../../images/spectrolum_v040_photo_inside2.png">
-  <img src="../../images/spectrolum_v040_photo_inside2.png" alt="image">
+  <a href="../../images/xspectre_spectrometer_v062-AMS_inside-2.png">
+  <img src="../../images/xspectre_spectrometer_v062-AMS_inside-2.png" alt="image">
   </a>
 
-	<figcaption>Assembled electronics inside spectrometer box, Stulturum spectrometer version v0.051.</figcaption>
+  <a href="../../images/xspectre_spectrometer_v062_muzzles-moisture+ph.png">
+  <img src="../../images/xspectre_spectrometer_v062_muzzles-moisture+ph.png" alt="image">
+  </a>
+
+	<figcaption>xSpectre spectrometer version v0.06x.</figcaption>
 </figure>
 
 <figure>
