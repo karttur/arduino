@@ -14,6 +14,8 @@ comments: true
 share: true
 ---
 
+Version 0.017 is outdated.
+
 ## Stulturum spectrometer version v0.017
 
 This is the first functional spectrometer in the Stulturum series. It was finished on 22 March 2020. It is built on an Arduino Nano board and 9 other modules (breakout boards or components) as shown in the wiring diagram below. All included modules/components are listed below.
@@ -25,7 +27,7 @@ This is the first functional spectrometer in the Stulturum series. It was finish
 
 ### Spectrometer box
 
-The spectrometer box will become available as 3d print files (<span class='file'>.stl</span>) shortly.
+The spectrometer box is a 3D printed drawing created in <span class='app'>Blender</span>.
 
 <figure>
 <img src="../../images/spectra-stulturum_v0017d.png">

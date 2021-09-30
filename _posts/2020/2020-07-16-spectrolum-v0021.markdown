@@ -14,6 +14,8 @@ comments: true
 share: true
 ---
 
+Version 0.021 is outdated.
+
 ## Stulturum spectrometer version v0.021
 
 This is the fourth functional spectrometer in the Stulturum series. It was finished on 16 July 2020. Version v0.021 has the same components as v0.020 and also using the same ports. The difference is that v0.021 contains a battery and the breakout boards controlling the charging and drainage of the battery, a fixed DC to DC stepup module outputting 5 volt, and a power switch. This also means that the 3D printed box is somewhat different. All included modules/components are listed below.
@@ -29,8 +31,6 @@ This is the fourth functional spectrometer in the Stulturum series. It was finis
 ### Spectrometer box
 
 The box holding all the components is similar to previous versions, but with spaces arranged for the power supply and control.
-
-The spectrometer box will become available as 3d print files (<span class='file'>.stl</span>) shortly.
 
 <figure>
 <img src="../../images/spectra-stulturum_box_v0021.png">

@@ -14,6 +14,8 @@ comments: true
 share: true
 ---
 
+Version 0.019 is outdated.
+
 ## Stulturum spectrometer version v0.019
 
 This is the second functional spectrometer in the Stulturum series. It was finished on 25 May 2020. It is built on an Arduino Nano board and 9 other modules (breakout boards or components) as shown in the wiring diagram below. All included modules/components are listed below.
@@ -26,8 +28,6 @@ This is the second functional spectrometer in the Stulturum series. It was finis
 ### Spectrometer box
 
 Compared to the [previous version (0.017)](../spectrolum-v0017), version 0.019 has tilted light sources that focus 5 cm from the spectrometer. This is for allowing a more exact calibration using the solid sampler (see below).
-
-The spectrometer box will become available as 3d print files (<span class='file'>.stl</span>) shortly.
 
 <figure>
 <img src="../../images/spectra-stulturum_box_v0019.png">

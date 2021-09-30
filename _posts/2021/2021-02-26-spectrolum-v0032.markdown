@@ -8,11 +8,13 @@ tags:
   - stulturum
   - v0.032
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2021-01-31 11:27'
-modified: '2021-01-31'
+date: '2021-02-26 11:27'
+modified: '2021-05-28'
 comments: true
 share: true
 ---
+
+Version 0.032 is outdated.
 
 ## Stulturum spectrometer version v0.032
 
@@ -34,7 +36,6 @@ As the additional light sources require different voltage, each attached light c
 
 The box holding all the components is changed to accommodate the female TRX connector.
 
-
 <figure>
 <img src="../../images/spectra-stulturum_box_v0032.png">
 <figcaption> Stulturum spectrometer box version v0.021. This version is slightly deeper to hold the battery, has a carved out space for the DC-DC stepup module and a rectangular opening for the on-off switch.</figcaption>
@@ -42,23 +43,39 @@ The box holding all the components is changed to accommodate the female TRX conn
 
 ### Spectrometer sample and light source attachments
 
-The sample holders for version 0.032 also include the required light sources. As explained above, the samplers are attached to the spectrometer box using TRX connections. The light, samples and spectral sensor are thus always lines up in the most optimal manner regarding each sample type and light source.
+The sample holders for version 0.03x also include the required light sources. As explained above, the samplers are attached to the spectrometer box using TRX connections. The light, samples and spectral sensor are thus always lines up in the most optimal manner regarding each sample type and light source.
 
 <figure class="third">
 <img src="../../images/spectro-solid-cyl_v32.png">
 <img src="../../images/spectro-cuvette_v32.png">
 <img src="../../images/spectro-cuvette-trx_v32.png">
-<figcaption> Spectrometer light and sampler attacchment for version 0032; left is the solid sampler, center is the cuvette liquid sampler and right is the TRX foot for the cuvette sampler. The two samplers each come in three versions for different light sources</figcaption>
+<figcaption> Spectrometer light and sampler attacchment for version 003x; left is the solid sampler, center is the cuvette liquid sampler and right is the TRX foot for the cuvette sampler. The two samplers each come in three versions for different light sources</figcaption>
 </figure>
 
 ### Assembly
 
+The figures below show version 0.033 assembled in May 2021.
+
 <figure class="half">
-	<a href="../../images/spectrobox_v021_front.jpg">
-  <img src="../../images/spectrobox_v021_front.jpg" alt="image">
+	<a href="../../images/xspectre_spectrometer_v033_front.png">
+  <img src="../../images/xspectre_spectrometer_v033_front.png" alt="image">
   </a>
 
-  <a href="../../images/spectrobox_v021_inside.jpg"><img src="../../images/spectrobox_v021_inside.jpg" alt="image">
+  <a href="../../images/xspectre_spectrometer_v033_inside.png"><img src="../../images/xspectre_spectrometer_v033_inside.png" alt="image">
+  </a>
+
+  <a href="../../images/xspectre_spectrometer_v033_front+muzzle-blueled.png">
+  <img src="../../images/xspectre_spectrometer_v033_front+muzzle-blueled.png" alt="image">
+  </a>
+
+  <a href="../../images/xspectre_spectrometer_v033_front+muzzle-cuvette.png"><img src="../../images/xspectre_spectrometer_v033_front+muzzle-cuvette.png" alt="image">
+  </a>
+
+  <a href="../../images/xspectre_spectrometer_v033_front+muzzle-redlaser.png">
+  <img src="../../images/xspectre_spectrometer_v033_front+muzzle-redlaser.png" alt="image">
+  </a>
+
+  <a href="../../images/xspectre_spectrometer_v033_front+muzzles.png"><img src="../../images/xspectre_spectrometer_v033_front+muzzles.png" alt="image">
   </a>
 
 	<figcaption>Stulturum spectrometer version v0.032.</figcaption>
