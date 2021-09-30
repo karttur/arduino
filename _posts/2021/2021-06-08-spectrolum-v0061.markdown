@@ -102,7 +102,7 @@ All cuvette samplers are built from two pieces, the cuvette holder, and the [fou
 <img src="../../images/xspectre_spectrometer_v062_muzzles-moisture+ph.png" alt="image">
 </a>
 
-	<figcaption>Stulturum spectrometer version v0.051 with different attachment samplers.</figcaption>
+	<figcaption>Stulturum spectrometer version v0.06x with different attachment samplers.</figcaption>
 </figure>
 
 ### Modules and components
