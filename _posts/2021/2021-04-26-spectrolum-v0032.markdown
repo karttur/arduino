@@ -1,0 +1,101 @@
+---
+layout: post
+title: Spectrometer version 0.032
+categories: spectrolum
+version: "v0.032"
+tags:
+  - spectrometer
+  - stulturum
+  - v0.032
+image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
+date: '2021-04-26 11:27'
+modified: '2021-05-28'
+comments: true
+share: true
+---
+
+Version 0.032 is outdated.
+
+## Stulturum spectrometer version v0.032
+
+
+![trx-connector](../../images/trx_connector_female-male.png)
+{: .pull-right}
+The new idea for version 0.03 has been to move all the light sources to the external attachments. This also led to the idea of replacing the magnet for holding the attachments in place and instead look for a connector that could be used both for powering the external light and for holding attachments in place. The solution I came up with was to use a TRX connector (shown to the right), with the female sitting in the box and the male in the attachment.
+
+As the additional light sources require different voltage, each attached light contains a resistor adjusting the power, plus the light source. This simplifies the wiring on the electronics inside the box itself. Also v0.032 contains a battery and the breakout boards controlling the charging and drainage of the battery, a fixed DC to DC stepup module outputting 5 volt, and a power switch.
+
+<figure>
+<img src="../../images/nano-spectro_v032_trx_bb.png">
+
+
+<figcaption> Stulturum spectrometer version v0.032 with an external light sources connected via a TRX connecto - the example shows the wiring with a red laser light source. The laser and the resistor are connected via TRX connectors.</figcaption>
+</figure>
+
+### Spectrometer box
+
+The box holding all the components is changed to accommodate the female TRX connector.
+
+<figure>
+<img src="../../images/spectra-stulturum_box_v0032.png">
+<figcaption> Stulturum spectrometer box version v0.021. This version is slightly deeper to hold the battery, has a carved out space for the DC-DC stepup module and a rectangular opening for the on-off switch.</figcaption>
+</figure>
+
+### Spectrometer sample and light source attachments
+
+The sample holders for version 0.03x also include the required light sources. As explained above, the samplers are attached to the spectrometer box using TRX connections. The light, samples and spectral sensor are thus always lines up in the most optimal manner regarding each sample type and light source.
+
+<figure class="third">
+<img src="../../images/spectro-solid-cyl_v32.png">
+<img src="../../images/spectro-cuvette_v32.png">
+<img src="../../images/spectro-cuvette-trx_v32.png">
+<figcaption> Spectrometer light and sampler attacchment for version 003x; left is the solid sampler, center is the cuvette liquid sampler and right is the TRX foot for the cuvette sampler. The two samplers each come in three versions for different light sources</figcaption>
+</figure>
+
+### Assembly
+
+The figures below show version 0.033 assembled in May 2021.
+
+<figure class="half">
+	<a href="../../images/xspectre_spectrometer_v033_front.png">
+  <img src="../../images/xspectre_spectrometer_v033_front.png" alt="image">
+  </a>
+
+  <a href="../../images/xspectre_spectrometer_v033_inside.png"><img src="../../images/xspectre_spectrometer_v033_inside.png" alt="image">
+  </a>
+
+  <a href="../../images/xspectre_spectrometer_v033_front+muzzle-blueled.png">
+  <img src="../../images/xspectre_spectrometer_v033_front+muzzle-blueled.png" alt="image">
+  </a>
+
+  <a href="../../images/xspectre_spectrometer_v033_front+muzzle-cuvette.png"><img src="../../images/xspectre_spectrometer_v033_front+muzzle-cuvette.png" alt="image">
+  </a>
+
+  <a href="../../images/xspectre_spectrometer_v033_front+muzzle-redlaser.png">
+  <img src="../../images/xspectre_spectrometer_v033_front+muzzle-redlaser.png" alt="image">
+  </a>
+
+  <a href="../../images/xspectre_spectrometer_v033_front+muzzles.png"><img src="../../images/xspectre_spectrometer_v033_front+muzzles.png" alt="image">
+  </a>
+
+	<figcaption>Stulturum spectrometer version v0.032.</figcaption>
+</figure>
+
+### Issues
+
+The DC-DC 5 volt stepup module does not boost the voltage all the way from the lithium battery 3.7 V to 5 V. It only reaches up to 4 V. With no load the stepup modules outputs 6 V. The best solution would be to have a more powerful DC-DC stepup module and connect the external power to the VIN port of the Arduino Nano board.
+
+### Modules and components
+
+Apart from the Arduino Nano microcontroller, there are a total of X different modules/components included in Stulturum's spectrometer version v0.019. To get more information, including the separate scripts for individual controls, follow the links.
+
+<ul class="post-list">
+{% for post in site.categories.stulturum %}
+  {% if post.startversion <= 0.032 and post.endversion >= 0.032 %}
+
+        <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a>
+        </article></li>
+
+  {% endif %}
+{% endfor %}
+</ul>
