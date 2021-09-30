@@ -85,7 +85,7 @@ All cuvette samplers are built from two pieces, the cuvette holder, and the [fou
 
 ### Assembly
 
-<figure class="thrid">
+<figure class="half">
 	<a href="../../images/xspectre_spectrometer_v062-AMS_front.png">
   <img src="../../images/xspectre_spectrometer_v062-AMS_front.png" alt="image">
   </a>
@@ -94,17 +94,13 @@ All cuvette samplers are built from two pieces, the cuvette holder, and the [fou
   <img src="../../images/xspectre_spectrometer_v062-AMS_inside-2.png" alt="image">
   </a>
 
-  <a href="../../images/xspectre_spectrometer_v062_muzzles-moisture+ph.png">
-  <img src="../../images/xspectre_spectrometer_v062_muzzles-moisture+ph.png" alt="image">
-  </a>
-
 	<figcaption>xSpectre spectrometer version v0.06x.</figcaption>
 </figure>
 
 <figure>
-	<a href="../../images/spectrolum_v051_photo_front+attachments.png">
-  <img src="../../images/spectrolum_v051_photo_front+attachments.png" alt="image">
-  </a>
+<a href="../../images/xspectre_spectrometer_v062_muzzles-moisture+ph.png">
+<img src="../../images/xspectre_spectrometer_v062_muzzles-moisture+ph.png" alt="image">
+</a>
 
 	<figcaption>Stulturum spectrometer version v0.051 with different attachment samplers.</figcaption>
 </figure>
