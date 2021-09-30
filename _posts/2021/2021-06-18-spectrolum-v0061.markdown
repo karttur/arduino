@@ -9,8 +9,8 @@ tags:
   - v0.061
   - AMS
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2021-06-08'
-modified: '2021-06-16'
+date: '2021-06-18'
+modified: '2021-06-18'
 comments: true
 share: true
 ---

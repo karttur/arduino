@@ -8,8 +8,8 @@ tags:
   - stulturum
   - v0.021
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2021-03-05'
-modified: '2021-03-05'
+date: '2021-06-08'
+modified: '2021-06-08'
 comments: true
 share: true
 ---
