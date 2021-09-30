@@ -17,7 +17,7 @@ share: true
 
 ## Stulturum spectrometer version v0.062
 
-Version 0.06 is built using the Arduino [NANO IOT 33 board](http://localhost:4000/module/module-nano-iot-33/). Compared to the older NANO boards, NANO IOT 33 has a faster processor, inbuilt wifi and bluetooth connections and a 3-axis gyrometer. Despite these additions, the IOT 33 has the same form factor as earlier NANO boards. As with model versions 0.03 through 0.05, additional light sources are built into attachments and directly powered from the battery via a metal–oxide–semiconductor field-effect transistor (MOSFET). Model version 0.062, however, contains an upgraded MOSFET that can handle a larger current and has a lower gate threshold that allows it to open fully at 2.5 v, [FQP30N06L](../../stulturum/stulturum-mosfet-FQP30N06L). Version 0.62 also connects both the spectrometer and the BNC contact directly to the 3.3 volt pin on the microcontroller.
+Version 0.06 is built using the same components as version 0.05, based on the Arduino [NANO IOT 33 board](http://localhost:4000/module/module-nano-iot-33/). But as we are now testing different spectrometer, with other component kept unchanged, we have added specifications for spectral sensor for each model. This article presents the model 0.061d-AMS, designed specifically for the [AMS 6-band sensor](http://localhost:4000/project/project-AS726X-spectrometer-nano/).
 
 Version 0.06 is built using the same components as version 0.05. But as we are now testing different spectrometer, with other component kept unchanged, we have added specifications for spectral sensor for each model. This article presents the model 0.062a-AMS, designed specifically for the [AMS 6-band sensor](../../project/project-AS726X-spectrometer-nano/).
 
@@ -32,7 +32,7 @@ A difference compared to latter previous versions is that version 0.06 (as did v
 
 ### Spectrometer box
 
-The container holding all the components is larger than earlier versions, approximately 95 x 55 mm. The openings at the far end is for the external probes. 
+The container holding all the components is larger than earlier versions, approximately 95 x 55 mm. The openings at the far end is for the external probes.
 
 The spectrometer box (<span class='file'>.stl</span>) for 3D printing is available as [spectro-box-AMS_20210705_v062a.stl](../../stl/spectro-box-AMS_20210705_v062a.stl).
 
@@ -88,23 +88,23 @@ All cuvette samplers are built from two pieces, the cuvette holder, and the [fou
 ### Assembly
 
 <figure class="half">
-	<a href="../../images/spectrolum_v040_photo_inside1.png">
-  <img src="../../images/spectrolum_v040_photo_inside1.png" alt="image">
+	<a href="../../images/xspectre_spectrometer_v062-AMS_front.png">
+  <img src="../../images/xspectre_spectrometer_v062-AMS_front.png" alt="image">
   </a>
 
-  <a href="../../images/spectrolum_v040_photo_inside2.png">
-  <img src="../../images/spectrolum_v040_photo_inside2.png" alt="image">
+  <a href="../../images/xspectre_spectrometer_v062-AMS_inside-2.png">
+  <img src="../../images/xspectre_spectrometer_v062-AMS_inside-2.png" alt="image">
   </a>
 
-	<figcaption>Assembled electronics inside spectrometer box, Stulturum spectrometer version v0.051.</figcaption>
+	<figcaption>xSpectre spectrometer version v0.06x.</figcaption>
 </figure>
 
 <figure>
-	<a href="../../images/spectrolum_v051_photo_front+attachments.png">
-  <img src="../../images/spectrolum_v051_photo_front+attachments.png" alt="image">
-  </a>
+<a href="../../images/xspectre_spectrometer_v062_muzzles-moisture+ph.png">
+<img src="../../images/xspectre_spectrometer_v062_muzzles-moisture+ph.png" alt="image">
+</a>
 
-	<figcaption>Stulturum spectrometer version v0.051 with different attachment samplers.</figcaption>
+	<figcaption>Stulturum spectrometer version v0.06x with different attachment samplers.</figcaption>
 </figure>
 
 ### Modules and components
