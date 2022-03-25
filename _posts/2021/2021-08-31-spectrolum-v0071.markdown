@@ -65,6 +65,28 @@ Version 0.7 contains a battery and breakout boards controlling the charging and 
 <figcaption> Stulturum spectrometer version v0.7 HAMA VIS with an Arduino NANO IOT 33 microcontroller. </figcaption>
 </figure>
 
+The table below outlines the pins on the Hamamatsu C12880MA mini spectrometer; the figure shows the pin layout.
+
+<figure>
+<figcaption> Hamamatsu C12880MA mini spectrometer pin connections </figcaption>
+| pin | symbol | id | I/O | comment |
+| 1 | +Vs | Vin | I| 5 V input |
+| 2  |  GND | Ground  | -  | Ground  |
+| 3 | +Vs | Vin | I| 5 V input |
+| 4  | CLK | Clock pulse | I | Sensor clock pulse |
+| 5 | Case  | Case | - | Case connection |
+| 6 | ST | Start pulse | I | Sensor start pulse |
+| 7 | TRG | Trigger pulse | O | Pulse for capturing sensor video signals |
+| 8 | - | Fastening | - | Do not connect! |
+| 9 | EOS | End Of Scan | O | Sensor scan end  |
+| 10 | Video | Video output | O | Sensor video output |
+</figure>
+
+<figure>
+<img src="../../images/hamamatsu_C12880MA-pin-drawing.png">
+<figcaption> Connection pins for the Hamamatsu C12880MA mini spectrometer. </figcaption>
+</figure>
+
 ### Spectrometer box
 
 The container holding all the components is larger than earlier versions, approximately 95 x 55 mm. The openings at the far end is for the external probes.
