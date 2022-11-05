@@ -1,0 +1,104 @@
+{
+  "spectrometer": {
+    "brand": "Hamamatsu",
+    "model": "c1438ma",
+    "id": "xyz",
+    "SPEC_CHANNELS": 255,
+    "START_CHANNEL": 64,
+    "END_CHANNEL": 255,
+    "Wavelengths:": [
+      {
+        "FIRST_CHANNEL": 64,
+        "LAST_CHANNEL": 200,
+        "FIRST_WAVELENGHT": 640,
+        "LAST_WAVELENGTH": 800
+      },
+      {
+        "FIRST_CHANNEL": 201,
+        "LAST_CHANNEL": 255,
+        "FIRST_WAVELENGHT": 820,
+        "LAST_WAVELENGTH": 1050
+      }
+    ]
+  },
+  "spectralsensing": {
+    "SPEC_INTEGRATION_TIME": 300,
+    "SPEC_READINGS": 6,
+    "DARK_READINGS": 6
+  },
+  "BNCsensing": {
+    "PH": false,
+    "N03": false,
+    "NH3": false,
+    "CL": false,
+    "S": false
+  },
+  "BNCparams": {
+    "PH": {
+      "PH_OFFSET_mV": 1650,
+      "PH_GAIN": 3,
+      "PH_mV_PER_PH": -59.194,
+      "PH_OFFSET_PH": 7
+    }
+  },
+  "GXsensing": {
+    "ANALOG": {
+      "CAPACITIVE_SOILMOISTURE": false
+    },
+    "MODBUS": {
+      "SEEED_SOILMOISTURE": false
+    },
+    "I2C": {
+      "AMS_6CHANNEL_NIR": false,
+      "AMS_6CHANNEL_VIS": false
+    }
+  },
+  "GXparams": {
+    "ANALOG": {
+      "CAPACITIVE_SOILMOISTURE": {
+        "DRY": 2500,
+        "WET": 1060
+      }
+    },
+    "MODBUS": {
+      "SEEED_SOILMOISTURE": {
+        "X": "X",
+        "Y": "Y"
+      }
+    },
+    "I2C": {
+      "AMS_6CHANNEL_NIR": {
+        "brand": "AMS",
+        "model": "6CHANNEL_NIR",
+        "id": "NA",
+        "SPEC_CHANNELS": 6,
+        "START_CHANNEL": 1,
+        "END_CHANNEL": 6,
+        "Wavelengts:": [
+          {
+            "FIRST_CHANNEL": 1,
+            "LAST_CHANNEL": 6,
+            "FIRST_WAVELENGHT": 640,
+            "LAST_WAVELENGTH": 1050
+          }
+        ]
+      },
+      "AMS_6CHANNEL_VIS": {
+        "brand": "AMS",
+        "model": "6CHANNEL_VIS",
+        "id": "NA",
+        "SPEC_CHANNELS": 6,
+        "START_CHANNEL": 1,
+        "END_CHANNEL": 6,
+        "Wavelengts:": [
+          {
+            "FIRST_CHANNEL": 1,
+            "LAST_CHANNEL": 6,
+            "FIRST_WAVELENGHT": 350,
+            "LAST_WAVELENGTH": 650
+          }
+        ]
+      }
+    }
+  }
+}

@@ -25,7 +25,7 @@ In 2018 Arduino presented the [MKR 1000 wifi controller board](https://store.ard
 
 ### Adafruit feather alternative
 
-The [Adafruit feather series]() of microcontroller boards offers a range of different boards. The alternative to MKR 1000 wifi include:
+The [Adafruit feather series](https://www.adafruit.com/category/943) of microcontroller boards offers a range of different boards. The alternative to MKR 1000 wifi include:
 
 - [Adafruit Feather 32u4 Bluefruit LE](https://www.adafruit.com/product/2829)
 - [Adafruit Feather Huzzah ESP8266](https://www.adafruit.com/product/2821)
@@ -57,7 +57,7 @@ In Sweden you can get it at [PchButik](https://pchbutik.se/kretskort/1587-arduin
 [Elektrokit](https://www.electrokit.com) offers the [Adafruit Feather 32u4 Bluefruit LE](https://www.electrokit.com/produkt/adafruit-feather-32u4-bluefruit-le/?gclid=CjwKCAiAkJKCBhAyEiwAKQBCkoBoqowAdjpvC_s3Gi0RiOOaHy-nlQ-LpS80_zQMV670vWxjz2-_VxoCE1QQAvD_BwE) at 389 SEK, [Elfa](https://www.elfa.se/sv/adafruit-feather-32u4-bluefruit-le-adafruit-2829/p/30091201?channel=b2c&price_gs=376.25&wt_mc=se.cse.gshop.sv.-&source=googleps&ext_cid=shgooaqsesv-blcss&kw=%7Bkeyword%7D&ext_cid=shgooaqsesv-P-CSS-Shopping-NGRAM&gclid=CjwKCAiAkJKCBhAyEiwAKQBCkpnrPD3cbFv75glwHqmkoX2yH45y8pjd1oSYzXmr7rOHPSFkMY8a0BoCEpYQAvD_BwE) offers the same board at 376 SEK. A better options is the [Feather nRF52840 Express](https://www.elfa.se/en/feather-nrf52840-express-adafruit-4062/p/30139226) that cost 300 SEK (incl VAT) at Elfa.
 
 
-Ar Electrokit Adafruit [Feather Huzzah ESP8266]((https://www.electrokit.com/produkt/adafruit-feather-huzzah-esp8266/?gclid=CjwKCAiAkJKCBhAyEiwAKQBCktUufYTwWsVPMWBp9mKPeINelK1p64kdupgb71d2aysMg7gNtOubiRoCnAMQAvD_BwE) cost 229 SEK.
+Ar Electrokit Adafruit [Feather Huzzah ESP8266](https://www.electrokit.com/produkt/adafruit-feather-huzzah-esp8266/?gclid=CjwKCAiAkJKCBhAyEiwAKQBCktUufYTwWsVPMWBp9mKPeINelK1p64kdupgb71d2aysMg7gNtOubiRoCnAMQAvD_BwE) cost 229 SEK.
 
 ### Banggood
 

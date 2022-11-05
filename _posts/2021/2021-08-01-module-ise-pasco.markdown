@@ -21,7 +21,7 @@ share: true
 
 ### Introduction
 
-Ion Selective Electrodes (ISE) from [Pasco](https://www.pasco.com) for Arduino. These ISE are sold in Sweden by [Sagitta](). All sensor fit the coaxial (BNC) connector that comes witch Pasco's pH-meter.
+Ion Selective Electrodes (ISE) from [Pasco](https://www.pasco.com) for Arduino. These ISE are sold in Sweden by [Sagitta](https://www.sagitta.se). All sensor fit the coaxial (BNC) connector that comes with Pasco's pH-meter.
 
 All prices are give excluding VAt.
 
@@ -44,7 +44,7 @@ PASCO offers an [ISE for calcium (ps-3518)](https://www.pasco.com/products/senso
 
 ### PASCO Chloride sensor
 
-PASCO offers an [ISE for calcium (ps-3519)](https://www.pasco.com/products/sensors/wireless/ps-3519) that fits directly with the same BNC connection as the PASCO pH-meter. In Sweden this ISE probe is sold by [Sagitta](https://www.sagitta.se/artikel/chloride-ise-cl-probe?sok=ps-3519#.YQZ45y0RrOQ)  for 3500 SEK (around 400 USD). In other countries the price for the PASCO instrument is around 3000 SEK. Cheaper alternatives are sold from [alibaba.com](https://www.alibaba.com).
+PASCO offers an [ISE for chloride (ps-3519)](https://www.pasco.com/products/sensors/wireless/ps-3519) that fits directly with the same BNC connection as the PASCO pH-meter. In Sweden this ISE probe is sold by [Sagitta](https://www.sagitta.se/artikel/chloride-ise-cl-probe?sok=ps-3519#.YQZ45y0RrOQ)  for 3500 SEK (around 400 USD). In other countries the price for the PASCO instrument is around 3000 SEK. Cheaper alternatives are sold from [alibaba.com](https://www.alibaba.com).
 
 ### PASCO Potassium sensor
 
@@ -56,16 +56,16 @@ PASCO offers an [ISE for carbon dioxide (ps-3517)](https://www.pasco.com/product
 
 ### Alibaba alternatives
 
-REX
-ISE-921 Ammonium ion selective electrode ISE electrode NH4+
-ISE-922 Nitrate ion selective electrode ISE electrode NO3
-ISE-923 Calcium ion selective electrode ISE electrode Ca2+
-ISE-2911 Chloride ion selective combination electrode ISE electrode Cl-
-ISE-910 Fluoride ion selective electrode ISE electrode F-
+[Shanghai Rex technologu Co (Alibaba)](https://shrex.en.alibaba.com/minisiteentrance.html?spm=a2700.details.0.0.b2092b79sAS4YE&from=detail&productId=1600229164961)
+- ISE electrode NH4+
+- ISE-922 Nitrate ion selective electrode ISE electrode NO3
+- ISE-923 Calcium ion selective electrode ISE electrode Ca2+
+- ISE-2911 Chloride ion selective combination electrode ISE electrode Cl-
+- ISE-910 Fluoride ion selective electrode ISE electrode F-
 
-Shanghai Measuretech Instrument
-ISE-2923 Calcium ion selective electrode ISE electrode
-ISE-2921H Ammonium ion selective electrode ISE electrode
-ISE-2920 Potassium ion selective electrode ISE electrode K+
-ISE-2922 NO3- Nitrate ion selective electrode ISE electrode
-ISE-2910 Fluriode ion selective electrode ISE electrode
+[Shanghai Measuretech Instrument](http://www.measureteq.com/electrode-and-sensor/)
+- ISE-2923 Calcium ion selective electrode ISE electrode
+- ISE-2921H Ammonium ion selective electrode ISE electrode
+- ISE-2920 Potassium ion selective electrode ISE electrode K+
+- ISE-2922 NO3- Nitrate ion selective electrode ISE electrode
+- ISE-2910 Fluriode ion selective electrode ISE electrode

@@ -38,7 +38,7 @@ Integrated modules with the APDS-9930 are available from [diymore](https://www.d
 
 I can not find any vendor offering the APDS-9930 in Sweden, neither the sensor nor as a module.
 
-I got my modules for [Banggood.com](https://www.banggood.com/10pcs-CJMCU-9930-APDS-9930-Proximity-and-Non-Contact-Gesture-Recognition-Detection-Attitude-Sensor-p-1104981.html?utm_design=131&utm_email=1585396804_2324_08&utm_source=emarsys&utm_medium=Shipoutinform190813&utm_campaign=trigger-emarsys&utm_content=Gakki&sc_src=email_2671705&sc_eh=9a59c5efb8cf9f481&sc_llid=20461599&sc_lid=104858042&sc_uid=53Z60pdPrF&cur_warehouse=CN).
+I got my modules from [Banggood.com](https://www.banggood.com/10pcs-CJMCU-9930-APDS-9930-Proximity-and-Non-Contact-Gesture-Recognition-Detection-Attitude-Sensor-p-1104981.html?utm_design=131&utm_email=1585396804_2324_08&utm_source=emarsys&utm_medium=Shipoutinform190813&utm_campaign=trigger-emarsys&utm_content=Gakki&sc_src=email_2671705&sc_eh=9a59c5efb8cf9f481&sc_llid=20461599&sc_lid=104858042&sc_uid=53Z60pdPrF&cur_warehouse=CN).
 
 ### Meta data
 

@@ -16,7 +16,7 @@ comments: true
 share: true
 ---
 
-konstantström generator
+Constant power generators:
 
 https://forum.arduino.cc/t/build-a-high-constant-current-battery-discharge-circuit/585884
 
@@ -24,4 +24,4 @@ https://electronics.stackexchange.com/questions/157705/help-please-i-need-to-giv
 
 https://www.sparkfun.com/tutorials/379
 
-Adafruit Feather microcontroller power manageent: https://learn.adafruit.com/adafruit-feather-32u4-basic-proto/power-management
+Adafruit Feather microcontroller power management: https://learn.adafruit.com/adafruit-feather-32u4-basic-proto/power-management

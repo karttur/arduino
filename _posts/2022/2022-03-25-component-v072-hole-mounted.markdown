@@ -1,0 +1,103 @@
+---
+layout: post
+title: Components v0.71
+categories: component
+excerpt: "Non-surface mounted components for spectrometer v0.71"
+tags:
+  - components
+  - hole mounted
+  - v07
+image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
+date: '2022-03-25'
+modified: '2022-03-25'
+comments: true
+share: true
+---
+
+### Introduction
+
+This post lists alternative non-surface mounted components for [version 072](../../spectrolum/spectrolum-v0071/) of xSpectre's handheld spectrometer.
+
+### Spectral sensor
+
+As [version 072](../../spectrolum/spectrolum-v0071/) is intended for having a variety of spectral sensors, the mounting differs dependent on the sensor.
+
+#### Hamamatsu C12880MA
+
+For the [Hamamatsu C12880MA](../../sensor/sensor-hamamatsu-C12880MA/) sensor a 14 pin (2*7) DIP IC connection socket is required. Dependent on depth and quality, alternatives include:
+[digikey 2.54 mm](https://www.digikey.se/en/products/detail/preci-dip/115-87-314-41-003101/3757295),
+[digikey 0 mm](https://www.digikey.se/en/products/detail/mill-max-manufacturing-corp/0531-0-15-15-31-27-10-0/4879975?s=N4IgTCBcDaIAQAYCsBmAjAWgRtSd-QzAHYdsEQBdAXyA)  (14 individual required per sensor) and
+[ELFA 2.54 mm](https://www.elfa.se/en/precision-ic-socket-dil-14-copper-beryllium-preci-dip-110-87-314-41-001101/p/14814800?track=true&no-cache=true&marketingPopup=false)
+
+<figure class="third">
+<img src="../../images/Hamamatsu_C12880MA.png">
+<img src="../../images/2*7_DIP_IC_connection.png">
+<img src="../../images/CONN_PIN_RCPT.png">
+<figcaption> The Hamamatsu C12880MA spectral sensor, 14 pin (2*7) DIP IC connection socket and single pin RCPT connector (14 required for each C12880MA sensor)..</figcaption>
+</figure>
+
+### Microprocessor
+
+![NRF52840](../../images/adafruit_feather_NRF52840.png)
+{: .pull-left}
+
+[Version 072](../../spectrolum/spectrolum-v0072/) is built on the [Adafruit Feather NRF52840 Express](https://learn.adafruit.com/introducing-the-adafruit-nrf52840-feather?view=all) microcontroller. It is available from [Digi-digikey](https://www.digikey.se/sv/products/detail/adafruit-industries-llc/4062/9843410).
+<br />
+<br />
+<br />
+<br />
+<br />
+
+### Pogo pin
+
+The bayonet solution requires a 5-pin pogo connector with a 90 degree angle. I have not been able to find that through the ordinary channels I use, instead I ordered a batch of 20 from [aliexpress](https://www.aliexpress.com/item/32937109716.html?spm=a2g0o.seodetail.topbuy.1.179d3abcJQZEB0) (for approx. 30 USD). These right angle bend spring probes are usually soldered directly the the PCB, [Version 07](../../spectrolum/spectrolum-v0071/) or the spectrometer, however, requires a larger distance. To achieve that a connection socket is needed. The height of the socket depends on the spectrometer socket and the spectrometer itself, as well as other components. 5 Pos SIP Connections sockets are available from [Digikey](https://www.digikey.se/sv/products/detail/aries-electronics/05-0513-10T/2638189). To find more alternatives use the search string "CONN SOCKET SIP 5POS TIN".
+
+<figure class="half">
+<img src="../../images/pogopin5pos_rightangle.png">
+<img src="../../images/connsocket5pin_sip.png">
+<figcaption> 5-position pogo connector with a 90 degree angle, and single row 5 positions connection socket (distance holder).</figcaption>
+</figure>
+
+### GX12/16 aviation plug and connections
+
+[Version 071](../../spectrolum/spectrolum-v0071/) of the spectrometer is equipped with a general purpose GX12 aviation plug with 6 pins. I get these from [Amazon.se](https://www.amazon.se/Walfront-Aviation-Connector-Strömkontakt-Nickelpläterad/dp/B09VPN5N2P/ref=sr_1_2_sspa?crid=1XWUBTCG72T8U&keywords=GX12+6+pin&qid=1648279577&sprefix=gx12+6+pin%2Caps%2C144&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUE0WjlNVDZOTE5UVjEmZW5jcnlwdGVkSWQ9QTA1NzQwNTkxVlpXSjlMWldHQVU2JmVuY3J5cHRlZEFkSWQ9QTAzMjQwODkxUlJGSU1WODVNRDhaJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==). They need to be manually soldered, but using a prepared [cable assembly with 8 Positions rectangular socket](https://www.digikey.se/en/products/detail/jst-sales-america-inc/A08SUR08SUR32W51A/6009352) that then attaches to the [surface mounted connector header](https://www.digikey.se/en/products/detail/jst-sales-america-inc/BM08B-SURS-TF-LF-SN/9921980?s=N4IgTCBcDaIEIFkAMAOOBaAygVQEogF0BfIA).
+
+<figure class="third">
+<img src="../../images/GX12_6pin_aviator-plug.png">
+<img src="../../images/8pos_cable-assembly_rect.png">
+<img src="../../images/8pos_sufmount-conn_rect.png">
+<figcaption>GX12 6-pin aviation plug, cable assembly and surface mounted connector header.</figcaption>
+</figure>
+
+Starting with versions 0.72 the GX12 plug is replaced with its larger sibling, GX16. GX16 can hold up to 10 pins, but the design is for 8-pins. The post [J3 GX connections](../../spectrolum/spectrolum-v078-J3-GX-connections) gives all the details on the connection of the GX16 expansion.
+
+### BNC connector
+
+![BNCconn](../../images/BNC-connector_rightangle.png)
+{: .pull-left}
+
+For the Ion Selective Electrodes (ISEs) (pH, nitrate, ammonia etc) a [right angle jack BNC connector](https://www.digikey.se/sv/products/detail/linx-technologies-inc/CONBNC002/16013841?s=N4IgTCBcDaIMIHkByAhJcAMGIF0C%2BQA) is required.
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+### Battery
+
+Finding a battery that fits snugly and comes with 2 pi JST connector, turned out to be more demanding than I anticipated.
+
+[Kjell.com](https://www.kjell.com/se/produkter/el-verktyg/arduino/arduino-tillbehor/luxorparts-li-po-batteri-37-v-med-kontakt-1200-mah-p87924) has a nearly perfect battery at 1200 mAh, except it is slightly too long, forcing an increased box.
+
+[Electrokit.com](https://www.electrokit.com/produkt/batteri-lipo-3-7v-1500mah/?gclid=Cj0KCQjw0PWRBhDKARIsAPKHFGg-sMzmvKPf7JuKHLs2GjzEvJN8NfIr5wZiwKYVbr9QIUsoWaMkk90aAoMCEALw_wcB) has a 1500 mAh alternative that has better dimensions. But a bit more expensive.
+
+Best option is maybe Amazon, the Swedish site has some alternatives:
+
+[4 pieces @ 1100 mAh](https://www.amazon.se/stycken-litiumbatteri-skyddskort-isoleringstejp-utvecklingskort/dp/B087LTZW61) for 315 SEK. Or [single EEMB, also @ 1100 mAh](https://www.amazon.se/EEMB-uppladdningsbart-litiumpolymerjon-batteripaket-JST-kontakt/dp/B08FD39Y5R/ref=sr_1_2?crid=2O2AZ8Z1W2KWK&keywords=EEMB&qid=1648227212&sprefix=eemb%2Caps%2C93&sr=8-2&th=1) for 106 SEK. It says that you can get discount on bulk, but I cannot find that.
+
+[EEMB 3,7 V 1 100 mAh 603449 Lipo battery ](https://www.amazon.se/EEMB-uppladdningsbart-litiumpolymerjon-batteripaket-JST-kontakt/dp/B08FD39Y5R/ref=sr_1_2?crid=2O2AZ8Z1W2KWK&keywords=EEMB&qid=1648227212&sprefix=eemb%2Caps%2C93&sr=8-2&th=1)

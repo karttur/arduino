@@ -1,0 +1,220 @@
+{
+  "spectrometer": {
+    "activate": true,
+    "brand": "Hamamatsu",
+    "model": "c1438ma",
+    "id": "xyz",
+    "SPEC_CHANNELS": 255,
+    "START_CHANNEL": 64,
+    "END_CHANNEL": 255,
+    "channels": [
+      64,
+      255
+    ],
+    "wavelengths": [
+      640,
+      1050
+    ],
+    "spectralsensing": {
+      "SPEC_INTEGRATION_TIME": 300,
+      "SPEC_READINGS": 6,
+      "DARK_READINGS": 6
+    }
+  },
+  "BNCsensing": {
+    "BNCactivate": {
+      "PH": false,
+      "CA": false,
+      "NO3": false,
+      "NH4": false,
+      "CL": false,
+      "S": false
+    },
+    "BNCparams": {
+      "PH": {
+        "OFFSET_mV": 1650,
+        "GAIN": 3,
+        "mV_PER_UNIT": -59.194,
+        "OFFSET_UNIT": 7
+      },
+      "CA": {
+        "OFFSET_mV": 1650,
+        "GAIN": 3,
+        "mV_PER_UNIT": -59.194,
+        "OFFSET_UNIT": 7
+      },
+      "NO3": {
+        "OFFSET_mV": 1650,
+        "GAIN": 3,
+        "mV_PER_UNIT": -59.194,
+        "OFFSET_UNIT": 7
+      },
+      "NH4": {
+        "OFFSET_mV": 1650,
+        "GAIN": 3,
+        "mV_PER_UNIT": -59.194,
+        "OFFSET_UNIT": 7
+      },
+      "CL": {
+        "OFFSET_mV": 1650,
+        "GAIN": 3,
+        "mV_PER_UNIT": -59.194,
+        "OFFSET_UNIT": 7
+      },
+      "S": {
+        "OFFSET_mV": 1650,
+        "GAIN": 3,
+        "mV_PER_UNIT": -59.194,
+        "OFFSET_UNIT": 7
+      }
+    }
+  },
+  "GXsensing": {
+    "GXactivate": {
+      "ANALOG": {
+        "CAPACITIVE_SOILMOISTURE": false
+      },
+      "MODBUS": {
+        "SEEED_SOILMOISTURE": false
+      },
+      "I2C": {
+        "AMS_6CHANNEL_NIR": true,
+        "AMS_6CHANNEL_VIS": false,
+        "AMS_6CHANNEL_XTR": false
+      }
+    }
+  },
+  "GXparams": {
+    "ANALOG": {
+      "CAPACITIVE_SOILMOISTURE": {
+        "DRY": 2500,
+        "WET": 1060
+      }
+    },
+    "MODBUS": {
+      "SEEED_SOILMOISTURE": {
+        "registers": {
+          "0x0001": {
+            "activate": true,
+            "item": "temperature",
+            "serial": 1,
+            "buffer": "0x00"
+          },
+          "0x0002": {
+            "activate": true,
+            "item": "soilmoisture",
+            "serial": 1,
+            "buffer": "0x00"
+          },
+          "0x0003": {
+            "activate": true,
+            "item": "salinity",
+            "serial": 1,
+            "buffer": "0x00"
+          },
+          "0x0004": {
+            "activate": true,
+            "item": "something",
+            "serial": 1,
+            "buffer": "0x00"
+          },
+          "0x0005": {
+            "activate": true,
+            "item": "epsilon",
+            "serial": 1,
+            "buffer": "0x00"
+          }
+        }
+      }
+    },
+    "I2C": {
+      "AMS_6CHANNEL_NIR": {
+        "brand": "AMS",
+        "model": "AS7263",
+        "id": "NA",
+        "SPEC_CHANNELS": 6,
+        "START_CHANNEL": 1,
+        "END_CHANNEL": 6,
+        "channels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "wavelengths": [
+          610,
+          680,
+          730,
+          760,
+          810,
+          860
+        ],
+        "spectralsensing": {
+          "SPEC_INTEGRATION_TIME": 300,
+          "SPEC_READINGS": 6,
+          "DARK_READINGS": 6
+        }
+      },
+      "AMS_6CHANNEL_VIS": {
+        "brand": "AMS",
+        "model": "AS7262",
+        "id": "NA",
+        "SPEC_CHANNELS": 6,
+        "START_CHANNEL": 1,
+        "END_CHANNEL": 6,
+        "channels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "wavelengths": [
+          450,
+          500,
+          550,
+          570,
+          600,
+          650
+        ],
+        "spectralsensing": {
+          "SPEC_INTEGRATION_TIME": 300,
+          "SPEC_READINGS": 6,
+          "DARK_READINGS": 6
+        }
+      },
+      "AMS_6CHANNEL_XTR": {
+        "brand": "AMS",
+        "model": "AS7261",
+        "id": "NA",
+        "SPEC_CHANNELS": 6,
+        "START_CHANNEL": 1,
+        "END_CHANNEL": 6,
+        "channels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "wavelengths": [
+          610,
+          680,
+          730,
+          760,
+          810,
+          860
+        ],
+        "spectralsensing": {
+          "SPEC_INTEGRATION_TIME": 300,
+          "SPEC_READINGS": 6,
+          "DARK_READINGS": 6
+        }
+      }
+    }
+  }
+}

@@ -11,8 +11,8 @@ tags:
   - AS7263
   - AS7341
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2019-10-20 11:27'
-modified: '2019-11-07 T18:17:25.000Z'
+date: '2019-10-20'
+modified: '2022-11-04'
 comments: true
 share: true
 component: null
@@ -23,6 +23,10 @@ projectuno: project-AS726X-spectrometer-uno
 ---
 
 ### Introduction
+
+The Austrian company [AMS](https://ams.com) produce filter based miniature spectrometers. When I first wrote this post in 2019 AMS produced three miniature spectrometers, each with 6 bands.
+
+The [AMS AS7341 11-band spectral sensor](https://ams.com/ko/as7341?fbclid=IwAR3RyybhA7qlqQo8N8hP6GgB0USwy7JsjBKn_7Tohk5hR1qRGd4WeozAuhA) was launched in 2019 and became available in 2020 as breakout board from [Adafruit](https://learn.adafruit.com/adafruit-as7341-10-channel-light-color-sensor-breakout). and [Mikroe](https://www.mikroe.com/spectrometer-click). In February 2022 AMS presented a 14-band filter based visible (VIS) to Near Infra Red (NIR) sensor - the [AMS AS7343 Spectral Sensor](https://ams.com/AS7343).
 
 ### Sparkfun
 

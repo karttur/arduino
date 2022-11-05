@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Spectrometer version 0.71-HAMA
+title: xSpectre v0.71
 categories: spectrolum
 version: "v0.71"
 tags:
   - spectrometer
   - stulturum
   - v0.71
-  - AMS
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2021-08-31'
 modified: '2021-08-31'
@@ -17,11 +16,11 @@ share: true
 
 ## Stulturum spectrometer version v0.71
 
-Version 0.7 is built using the Arduino [NANO IOT 33 board](../../module/module-nano-iot-33/). Compared to version 0.06 (or 0.6), version 0.7 uses the Hamamatsu [C12880MA sensor](../../sensor/sensor-C12880MA-spectrometer/) **without** any breakout board. Additionally, the aviation plug is upgraded to a 6-pin version, to allow for 4 digital channels from an [RS-485 MODBUS breakout board](../../module/module-seeed-modbus-soil-moisture/) (note that the RS-485 breakout board is enclosed with the external sensor and not part of the wiring here). As with model versions 0.3 through 0.6, additional light sources are built into attachments and directly powered from the battery via a metal–oxide–semiconductor field-effect transistor (MOSFET).
+Version 0.71 is built using the Arduino [NANO IOT 33 board](../../module/module-nano-iot-33/). Compared to version 0.06 (or 0.6), version 0.71 uses the Hamamatsu [C12880MA sensor](../../sensor/sensor-C12880MA-spectrometer/) **without** any breakout board. Additionally, the aviation plug is upgraded to a 6-pin version, to allow for 4 digital channels from an [RS-485 MODBUS breakout board](../../module/module-seeed-modbus-soil-moisture/) (note that the RS-485 breakout board is enclosed with the external sensor and not part of the wiring here). As with model versions 0.3 through 0.6, additional light sources are built into attachments and directly powered from the battery via a metal–oxide–semiconductor field-effect transistor (MOSFET).
 
-Note that version 7 is not intended for production, but is built as a template for designing and testing the wiring of a purpose built shield to fit with an arduino type microcontroller. Not necessarily the Ardiono [NANO IOT 33 board](../../module/module-nano-iot-33/).
+Note that version 0.71 is not intended for production, but is built as a template for designing and testing the wiring of a purpose built shield to fit with an arduino type microcontroller. Not necessarily the Ardiono [NANO IOT 33 board](../../module/module-nano-iot-33/).
 
-#### Emission sources
+#### Light emission sources
 
 One of the major shortcomings with the solution of all versions from 0.3 (0.03) is the power supply for the electromagnetic emitter. The voltage and current supplied from the spectrometer to the muzzle with the light source depends on the charge level of the battery, and is regulated by a simple resistor in the muzzle unit. As the battery potential can vary between around 3 volt (low charge) to 4.2 volt (fully charged) the emitter is not generating a constant field. Further the resistor is a poor solution that wastes battery power, does not adjust for the potential and generates heat. A new solution is needed, and for that purpose the light sources to be used with forthcoming versions are listed here and summarised in table 1:
 
@@ -58,29 +57,26 @@ To cover the spectral range of interest, both with broadband emitters as well as
 2. 5.0 V and 45 mA for short wave (blue to green) laser diodes,
 3. 3.0 V and 300 mA for xenon, IR broad band emitter and neutral white LED emitters.
 
-Version 0.7 contains a battery and breakout boards controlling the charging and drainage of the battery, a fixed DC to DC stepup module outputting 5 volt, and a power switch. All included modules/components are listed below.
+Version 0.71 contains a battery and breakout boards controlling the charging and drainage of the battery, a fixed DC to DC stepup module outputting 5 volt, and a power switch. All included modules/components are listed below.
 
 <figure>
 <img src="../../images/nano33-IOT-spectro_v071a_HAMA-VIS_bb.png">
-<figcaption> Stulturum spectrometer version v0.7 HAMA VIS with an Arduino NANO IOT 33 microcontroller. </figcaption>
+<figcaption> Stulturum spectrometer version v0.71 HAMA VIS with an Arduino NANO IOT 33 microcontroller. </figcaption>
 </figure>
 
-The table below outlines the pins on the Hamamatsu C12880MA mini spectrometer; the figure shows the pin layout.
-
-<figure>
 <figcaption> Hamamatsu C12880MA mini spectrometer pin connections </figcaption>
+
 | pin | symbol | id | I/O | comment |
-| 1 | +Vs | Vin | I| 5 V input |
+| 1 | +Vs | Vin | I | 5 V input |
 | 2  |  GND | Ground  | -  | Ground  |
 | 3 | +Vs | Vin | I| 5 V input |
-| 4  | CLK | Clock pulse | I | Sensor clock pulse |
+| 4 | CLK | Clock pulse | I | Sensor clock pulse |
 | 5 | Case  | Case | - | Case connection |
 | 6 | ST | Start pulse | I | Sensor start pulse |
-| 7 | TRG | Trigger pulse | O | Pulse for capturing sensor video signals |
+| 7 | TRG | Trigger pulse | O | Pulse for signals |
 | 8 | - | Fastening | - | Do not connect! |
 | 9 | EOS | End Of Scan | O | Sensor scan end  |
 | 10 | Video | Video output | O | Sensor video output |
-</figure>
 
 <figure>
 <img src="../../images/hamamatsu_C12880MA-pin-drawing.png">

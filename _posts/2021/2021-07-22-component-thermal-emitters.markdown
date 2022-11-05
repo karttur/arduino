@@ -19,7 +19,6 @@ share: true
 
 Identifying a suitable thermal emitter for the mid-IR (MIR) regions has turned out to be difficult. A good introduction is given in the article [Match the Emitter to the Task](https://www.photonics.com/Articles/Match_the_Emitter_to_the_Task/a35272) by Brian Elias, Cal Sensors Iin, published by [Photonics](https://www.photonics.com). A more practical guide, including links to different products is the [Pyreos](https://pyreos.com) article [Guide to building mid-infrared spectral analysis system using Pyreos technology (milk example)](https://pyreos.com/wp-content/uploads/2020/11/Pyreos-Guide-to-building-a-mid-infrared-spectrometer-using-Pyreos-milk-example.pdf).
 
-
 ## Selecting IR emitter
 
 The following parameters should be considered when selecting an IR emitter:
@@ -69,10 +68,14 @@ Steady state emitter examples:
 
 1. [Axetris](https://www.axetris.com/en/infrared-sources/products) Recommended: [EMIRS 200](https://www.axetris.com/en/irs/products/emirs200) (no prices given)
 2. [Hawkeye Technologies](http://www.hawkeyetechnologies.com/source-selection/#pulsable) Recommended: [IR-75](https://shop.boselec.com/products/ir-70) @ $75 + UPS breakout board (driver: @ $525.
-3. [Micro-Hybrid](https://www.micro-hybrid.de/en/products/ir-components-and-systems/ir-sources.html) Recommended: JSIR350-4 (no prices given)
+3. [Micro-Hybrid](https://www.micro-hybrid.de/en/products/ir-components-and-systems/ir-sources.html) Recommended: JSIR350-4 (see the special post on [micro-hybrid](../../sensor/sensor-microhybrid01))
 
 ### Specific suppliers
 
 ### http://www.ibsg-st-petersburg.com
 
 [IBSG](http://www.ibsg-st-petersburg.com) (Independent Business Scientific Group) Mid infrared optoelectronics is a Russian producer (S:t Petersburg).
+
+### Micro-Hybrid
+
+I bought both emitters and sensors from [micro-hybrid](../../sensor/sensor-microhybrid01) in December 2021.

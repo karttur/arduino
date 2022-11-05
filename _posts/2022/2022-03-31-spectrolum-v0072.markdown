@@ -1,0 +1,95 @@
+---
+layout: post
+title: xSpectre v0.72
+categories: spectrolum
+version: "v0.72"
+tags:
+  - spectrometer
+  - v0.72
+  - hamamatsu
+  - C12880MA
+image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
+date: '2022-03-31'
+modified: '2022-03-31'
+comments: true
+share: true
+---
+
+Note that v0.72 was neither intended for production, nor ever produced. v0.72 was done for defining the functions, components and ports required when designing a customised Printed Circuit Board (PCB), replacing all the break out boards of the earlier versions, including [v0.71](../spectrolum-v0071).
+
+## xSpectre spectrometer version v0.72
+
+Version 0.72 of xSpectre's handheld spectrometer is a redesigned version preparing for shifting from break out boards to a customised PCB. Compared to earlier versions, the most important changes include:
+- PCB that replaces all breakout boards,
+- new micro-processor with inbuilt LiPo battery support,
+- bayonet connection for the attached muzzle light sources,
+- 5-pin pogo connection to the muzzle light sources, and
+- stabilised power for light emitters,
+
+### PCB
+
+v0.72 marks the transition from an assembly of break out boards to a customised Printed Circuit Board (PCB). The PCB design has been done by [J2 holding AB](https://www.j-2.se/index.php) a single person company run by Patrik Arvén. The microcontroller has been kept as a separate PCB that is fitted to the customised PCB.
+
+<figure>
+<img src="../../images/xspeclum_01_j2-holding_20020320.png">
+<figcaption> Customised PCB for xSpectre version 0.72. </figcaption>
+</figure>
+
+### Micro processor
+
+Looking for a new micro processor with built-in functions for controlling LiPo battery charging and draining, with ports connecting directly to the battery, and with BLE, we settled for an [Adafruit Feather nRF42840 Express](../../module/module-feather-nRF52840).
+
+<figure>
+<img src="../../images/adafruit_feather_NRF52840.png">
+<figcaption> Adafruit Feather NRF52840 Express.</figcaption>
+</figure>
+
+Karttur's post on [Adafruit Feather nRF52840](../../module/module-feather-nRF52840) summarises the technical details, how to setup the bootloader and then use Adafruit Feather nRF52840 with Arduino IDE.
+
+### Spectral sensor
+
+The default spectral sensor for v0.72 is [Hamamatsu miniature spectrometer C12880MA](https://www.hamamatsu.com/all/en/product/optical-sensors/spectrometers/mini-spectrometer/C12880MA.html). the C12880MA sensor has 10 pins, that are hardwired on the customised PCB.
+
+<figcaption> Hamamatsu C12880MA mini spectrometer pin connections </figcaption>
+
+| pin | symbol | id | I/O | comment |
+| 1 | +Vs | Vin | I | 5 V input |
+| 2  |  GND | Ground  | -  | Ground  |
+| 3 | +Vs | Vin | I| 5 V input |
+| 4 | CLK | Clock pulse | I | Sensor clock pulse |
+| 5 | Case  | Case | - | Case connection |
+| 6 | ST | Start pulse | I | Sensor start pulse |
+| 7 | TRG | Trigger pulse | O | Pulse for signals |
+| 8 | - | Fastening | - | Do not connect! |
+| 9 | EOS | End Of Scan | O | Sensor scan end  |
+| 10 | Video | Video output | O | Sensor video output |
+
+<figure>
+<img src="../../images/hamamatsu_C12880MA-pin-drawing.png">
+<figcaption> Connection pins for the Hamamatsu C12880MA mini spectrometer. </figcaption>
+</figure>
+
+### 5-pin pogo connection to light sources
+
+version 0.72 was designed to allow light sources between 1.8 and 5.0 volt, with up to 1.0 A (1000 mA). The power regulation for the light sources is a combined hardware and software solution that can be adjusted by software coding and parameter setting in realtime. To automate the power supply a 1-wire memory solution was added to the light source muzzle. The connection between the spectrometer box and the light muzzle thus in total required 5 connection pins.
+
+At the same time a new solution for attaching and holding the muzzle in place was needed. The best alternative, used by all large camera manufacturers, is a bayonet mount. Inspired by some alternative 3D printed bayonet connections I created a customised solution (see 3D graphics of the container box and the light muzzle below).
+
+Once the bayonet solutions was done, I choose a POGO-pin solution with a 5-pin female and a 5-pin male connection to rotate into contact when mounting the bayonet. The first bayonet plus POGO-pin solution used straight POGO-pins.
+
+<figure>
+<img src="../../images/pogo-5-pin_straight_female+male.png">
+<figcaption> Female and male straight POGO-pin connectors. </figcaption>
+</figure>
+
+### Container box
+
+Container box v0.72 for a single customised PCB and bayonet mounted light muzzles (interactive 3D graphics).
+
+<iframe width="640" height="480" style="border:1px solid #eeeeee;" src="https://3dviewer.net/embed.html#model=https://raw.githubusercontent.com/karttur/common/master/3dmodels/spectro-box-5pogos-HAMA_20220325_v072p_view.stl$camera=-59.80261,90.38682,120.15522,0.00000,10.65000,0.55000,0.00000,1.00000,0.00000$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=off,0,0,0,1"></iframe>
+
+### Light muzzle for solid samples
+
+The light muzzle with the corresponding bayonet mount. The triangular shape inside the muzzle is for a small PCB holding the light source, the female 5-pin pogo connector and the 1-wire memory unit defining the light source. the fastening for the 5-pin pogo connection (interactive 3D graphics).
+
+<iframe width="640" height="480" style="border:1px solid #eeeeee;" src="https://3dviewer.net/embed.html#model=https://raw.githubusercontent.com/karttur/common/master/3dmodels/spectro-direct-cyl-led_20220319_v072o.stl$camera=-41.31981,68.09308,82.86462,0.00000,13.00000,0.22500,0.00000,1.00000,0.00000$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=off,0,0,0,1"></iframe>

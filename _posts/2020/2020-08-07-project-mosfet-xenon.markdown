@@ -50,7 +50,7 @@ Note how the positions of the __G__, __D__, __S__ pins differ between the IRF520
 
 ### Xenon light
 
-The xenon high-pressure light bulb from [Barthelme](https://www.barthelme.de) is available from [Condar.com](https://www.conrad.com) that also has a Swedish outlet [Conrad.se](https://www.conrad.se/p/tru-components-1590267-xenonlampa-3-v-090-w-sockel-bi-pin-127-mm-klar-1-st-1590267). The xenon light requires 3 V and 300 mA, it has a diameter of 3mm and a length of 10.5 mm. It thus neatly fits into holders for micro leds. The xenon does not have any dedicated anode or cathode.
+The xenon high-pressure light bulb from [Barthelme](https://www.barthelme.de) is available from [Conrad.com](https://www.conrad.com) that also has a Swedish outlet [Conrad.se](https://www.conrad.se/p/tru-components-1590267-xenonlampa-3-v-090-w-sockel-bi-pin-127-mm-klar-1-st-1590267). The xenon light requires 3 V and 300 mA, it has a diameter of 3mm and a length of 10.5 mm. It thus neatly fits into holders for micro leds. The xenon does not have any dedicated anode or cathode.
 
 <figure>
 <img src="../../images/xenon-barthelme_3V-09W.png">

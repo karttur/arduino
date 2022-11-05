@@ -24,6 +24,23 @@ projectuno: null
 
 Hamamatsu's [C12880MA ultra-compact spectrometer](https://www.hamamatsu.com/jp/en/product/type/C12880MA/index.html) has been tested in several studies, summarised here.
 
+### Sketch
+
+[Review of Hamamastu C128880 Microspec Module](https://impfs.github.io/review/)
+
+[Groupgets C12880MA Micro-Spectrometer](https://groupgets.com/manufacturers/hamamatsu-photonics/products/c12880ma-micro-spectrometer)
+
+[Pure Engineering](https://www.pureengineering.com/projects/c12666ma)
+
+
+https://github.com/tricorderproject/arducordermini/tree/master/firmware/examples/spectrometer_c12666ma_example
+
+https://github.com/groupgets/c12666ma
+
+The best?:
+
+[Open-Source Miniature Spectrophotometer](https://osf.io/rbfse/) based on the scientific article [Laganovska et al, 2002. Portable low-cost open-source wireless spectrophotometer for fast and reliable measurements, https://doi.org/10.1016/j.ohx.2020.e00108](https://www.sciencedirect.com/science/article/pii/S246806722030016X).
+
 ### References
 
 [Csutak, Sebastian, Greg Bernero, and Gregory Ham. "High Temperature Fluorescence Sensor for Oilfield Applications." Sensors & Transducers 227.11 (2018): 82-87.](https://www.sensorsportal.com/HTML/DIGEST/november_2018/Vol_227/P_RP_0236.pdf).
