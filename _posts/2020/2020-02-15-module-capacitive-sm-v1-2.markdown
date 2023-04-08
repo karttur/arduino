@@ -2,7 +2,7 @@
 layout: post
 title: Capacitive Soil Moisture Sensor v1.2
 categories: module
-stulturum: True
+xspectrolum: True
 startversion: 0.017
 endversion: 0.017
 excerpt: "Capacitive Soil Moisture Sensor v1.2"
@@ -33,4 +33,4 @@ I got the capacitive soil moisture from [pchbutik](https://pchbutik.se/kretskort
 <figcaption> Capacitive soil moisture sensor. </figcaption>
 </figure>
 
-The capacitive moisture sensors used in the [Stulturum spectrometer](../../stulturum) are from [pchbutik](https://pchbutik.se/kretskort/1237-jordfukt-sensor-kapacitiv-avkanning-analogt-utgang-passar-arduino.html).
+The capacitive moisture sensors used in the [xspectrolum spectrometer](../../xspectrolum) are from [pchbutik](https://pchbutik.se/kretskort/1237-jordfukt-sensor-kapacitiv-avkanning-analogt-utgang-passar-arduino.html).

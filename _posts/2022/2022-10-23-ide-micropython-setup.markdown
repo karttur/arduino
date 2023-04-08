@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setup Micropython
+title: Setup CircuitPython
 categories: ide
 excerpt: "Setting up Micropython on MacOS"
 tags:
@@ -16,7 +16,7 @@ share: true
 
 ## Introduction
 
-MicroPython is a tiny open source Python dialect that runs on microcontrollers - like the [Adafruit Feather nRF52840 Express](../../module/module-feather-nRF52840/) microcontroller that I use for developing xSpectre's handheld spectrometer.
+[CircuitPython](https://circuitpython.org) is a tiny open source Python dialect that runs on microcontrollers - like the [Adafruit Feather nRF52840 Express](../../module/module-feather-nRF52840/) microcontroller that I use for developing [xSpectre's handheld spectrometer](../../spectrolum/spectrolum-v078-summary/).
 
 At time of writing this, late October 2022, the stable version of CircuitPython is 7.3.3. While I can get some of my sensors to work with CircuitPython, I can now mount the Feather nRF52840 microcontroller on version 0.78 of the spectrometer as CircuitPython lack the function to use analog pins for output. That is required for the customised Printed Circuit Board (PCB) of the spectrometer to work properly and power some of the integrated devices.
 

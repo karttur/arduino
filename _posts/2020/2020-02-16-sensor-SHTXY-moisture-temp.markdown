@@ -2,6 +2,10 @@
 layout: post
 title: SHTXY moisture and temperature sensor
 categories: sensor
+sensingfeature: moisture+temperature
+sensormethod: CMOSens
+sensorconnect: IIC
+sensingmedia: soil+air
 excerpt: "SHTXY moisture and temperature sensor"
 tags:
   - SHT10

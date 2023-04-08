@@ -1,7 +1,11 @@
 ---
 layout: post
 title: APDS-9930 Digital Proximity and Ambient Light Sensor
-categories: module
+categories: sensor
+sensingfeature: distance+ambient-light
+sensormethod: time-of-flight
+sensorconnect: i2c
+sensormedia: air
 excerpt: "Digital Proximity and Ambient Light Sensor"
 tags:
   - distance

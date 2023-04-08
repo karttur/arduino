@@ -2,7 +2,7 @@
 layout: post
 title: White LED
 categories: module
-excerpt: "White LED for spectroemter"
+excerpt: "White LED for spectrometer"
 tags:
   - spectrometer
   - module

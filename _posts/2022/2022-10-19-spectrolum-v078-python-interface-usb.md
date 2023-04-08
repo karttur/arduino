@@ -6,7 +6,7 @@ version: v0.78
 excerpt: "Python USB interface to xSpectre spectrometer v0.78"
 tags:
   - spectrometer
-  - stulturum
+  - xspectrolum
   - python
   - USB
   - interface

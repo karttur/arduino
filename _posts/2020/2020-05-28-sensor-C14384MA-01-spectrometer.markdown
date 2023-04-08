@@ -1,7 +1,14 @@
 ---
 layout: post
 title: Hamamatsu C14384MA-01 spectrometer
-categories: sensor
+categories: xspectrolum
+xspectrolum: sensor
+sensingfeature: spectra
+sensormethod: grating
+sensorconnect: video
+sensingmedia: solid+liquid+gas+soil+water+air
+startversion: 0.78
+endversion: 0.99
 excerpt: "Hamamatsu C14384MA-01 miniaturised sensor (for mobile phones)"
 tags:
   - spectrometer

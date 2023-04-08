@@ -26,7 +26,11 @@ projectuno: project-AS726X-spectrometer-uno
 
 The Austrian company [AMS](https://ams.com) produce filter based miniature spectrometers. When I first wrote this post in 2019 AMS produced three miniature spectrometers, each with 6 bands.
 
-The [AMS AS7341 11-band spectral sensor](https://ams.com/ko/as7341?fbclid=IwAR3RyybhA7qlqQo8N8hP6GgB0USwy7JsjBKn_7Tohk5hR1qRGd4WeozAuhA) was launched in 2019 and became available in 2020 as breakout board from [Adafruit](https://learn.adafruit.com/adafruit-as7341-10-channel-light-color-sensor-breakout). and [Mikroe](https://www.mikroe.com/spectrometer-click). In February 2022 AMS presented a 14-band filter based visible (VIS) to Near Infra Red (NIR) sensor - the [AMS AS7343 Spectral Sensor](https://ams.com/AS7343).
+The [AMS AS7341 11-band spectral sensor](https://ams.com/ko/as7341?fbclid=IwAR3RyybhA7qlqQo8N8hP6GgB0USwy7JsjBKn_7Tohk5hR1qRGd4WeozAuhA) was launched in 2019 and became available in 2020 as breakout board from [Adafruit](https://learn.adafruit.com/adafruit-as7341-10-channel-light-color-sensor-breakout). and [Mikroe](https://www.mikroe.com/spectrometer-click).
+
+In February 2022 AMS presented a 14-band filter based visible (VIS) to Near Infra Red (NIR) sensor - the [AMS AS7343 Spectral Sensor](https://ams.com/AS7343).
+
+In September 2022 AMS presented a 64-band Near Infra Red (NIR) sensor - the [[AS7421 Hyperspectral NIR Sensor](https://ams.com/as7421).
 
 ### Sparkfun
 
@@ -62,4 +66,4 @@ Adafruit has a nice blog on wiring including a small TFT-screen ["Adafruit AS726
 
 The Adafruit AMS AS7262 breakout board is available in Sweden from [Elfa](https://www.elfa.se/sv/as7262-koppling-till-sensor-foer-synligt-ljus-och-faerg-3v-adafruit-3779/p/30139177?channel=b2c&price_gs=237.5&wt_mc=se.cse.gshop.sv.-&source=googleps&ext_cid=shgooaqsesv-blcss&kw=%7Bkeyword%7D&&gclid=Cj0KCQiA-4nuBRCnARIsAHwyuPqSPZTEjfoprswfdB8c7i0HC-y9g0DKSvoAV360DCei4QqBRgstdysaAlipEALw_wcB), priced at 237.50 SKE incl. VAT.
 
-Adafruit also offers the [11 channel AMS spectrometer, AS7341](https://ams.com/as7341) assembled on a [breakout board](https://learn.adafruit.com/adafruit-as7341-10-channel-light-color-sensor-breakout). It is availbale from [Digikey](https://www.digikey.se/product-detail/en/adafruit-industries-llc/4698/1528-4698-ND/13162109) at about 15 USD.
+Adafruit also offers the [11 channel AMS spectrometer, AS7341](https://ams.com/as7341) assembled on a [breakout board](https://learn.adafruit.com/adafruit-as7341-10-channel-light-color-sensor-breakout). It is available from [Digikey](https://www.digikey.se/product-detail/en/adafruit-industries-llc/4698/1528-4698-ND/13162109) at about 15 USD.

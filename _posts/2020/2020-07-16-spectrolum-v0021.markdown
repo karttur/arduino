@@ -5,7 +5,7 @@ categories: spectrolum
 version: "v0.021"
 tags:
   - spectrometer
-  - stulturum
+  - xspectrolum
   - v0.021
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2020-07-16 11:27'
@@ -16,16 +16,16 @@ share: true
 
 Version 0.021 is outdated.
 
-## Stulturum spectrometer version v0.021
+## xSpectrolum version v0.021
 
-This is the fourth functional spectrometer in the Stulturum series. It was finished on 16 July 2020. Version v0.021 has the same components as v0.020 and also using the same ports. The difference is that v0.021 contains a battery and the breakout boards controlling the charging and drainage of the battery, a fixed DC to DC stepup module outputting 5 volt, and a power switch. This also means that the 3D printed box is somewhat different. All included modules/components are listed below.
+This is the fourth functional spectrometer in the xSpectrolum series. It was finished on 16 July 2020. Version v0.021 has the same components as v0.020 and also using the same ports. The difference is that v0.021 contains a battery and the breakout boards controlling the charging and drainage of the battery, a fixed DC to DC stepup module outputting 5 volt, and a power switch. This also means that the 3D printed box is somewhat different. All included modules/components are listed below.
 
 <figure>
 <img src="../../images/nano-spectro_v021_breadfree_bb.png">
 
 <img src="../../images/nano-TP4056+battery-stepup5v-switch_bb.png">
 
-<figcaption> Stulturum spectrometer version v0.021, the Bluetooth module should be BT10 (not HC05) but when writing this there is no fritzing component for BT10 available. The upper panel shows the sensor writing and the lower panel the power supply. As the power solution includes a DC-DC stepup module that outputs 5 volt, the power supply must by ported to the ordinary 5V and GND ports. Not to the VIN port that that requires above 7V. </figcaption>
+<figcaption> xSpectrolum spectrometer version v0.021, the Bluetooth module should be BT10 (not HC05) but when writing this there is no fritzing component for BT10 available. The upper panel shows the sensor writing and the lower panel the power supply. As the power solution includes a DC-DC stepup module that outputs 5 volt, the power supply must by ported to the ordinary 5V and GND ports. Not to the VIN port that that requires above 7V. </figcaption>
 </figure>
 
 ### Spectrometer box
@@ -33,17 +33,17 @@ This is the fourth functional spectrometer in the Stulturum series. It was finis
 The box holding all the components is similar to previous versions, but with spaces arranged for the power supply and control.
 
 <figure>
-<img src="../../images/spectra-stulturum_box_v0021.png">
-<figcaption> Stulturum spectrometer box version v0.021. This version is slightly deeper to hold the battery, has a carved out space for the DC-DC stepup module and a rectangular opening for the on-off switch.</figcaption>
+<img src="../../images/spectra-xspectrolum_box_v0021.png">
+<figcaption> xSpectrolum spectrometer box version v0.021. This version is slightly deeper to hold the battery, has a carved out space for the DC-DC stepup module and a rectangular opening for the on-off switch.</figcaption>
 </figure>
 
 ### Spectrometer solid sampler
 
-The solid sampler fits on the front of the spectrometer box and assures that sampling is confined to the oval opening. All three integrated light sources, the strong led built into the [Adafruit 6-channel spectrometer](http://localhost:4000/stulturum/stulturum-AS7262-adafruit-spectrometer/), the [SMD 5050 RGB LED](http://localhost:4000/stulturum/stulturum-ws2811-8mm-led/), and the [red laser](http://localhost:4000/stulturum/stulturum-laser650-3v/) all point towards the oval opening.
+The solid sampler fits on the front of the spectrometer box and assures that sampling is confined to the oval opening. All three integrated light sources, the strong led built into the [Adafruit 6-channel spectrometer](http://localhost:4000/xspectrolum/xspectrolum-AS7262-adafruit-spectrometer/), the [SMD 5050 RGB LED](http://localhost:4000/xspectrolum/xspectrolum-ws2811-8mm-led/), and the [red laser](http://localhost:4000/xspectrolum/xspectrolum-laser650-3v/) all point towards the oval opening.
 
 <figure>
-<img src="../../images/spectra-stulturum_soild-sampler_v0019.png">
-<figcaption> Stulturum spectrometer solid sampler v0.019.</figcaption>
+<img src="../../images/spectra-xspectrolum_soild-sampler_v0019.png">
+<figcaption> xSpectrolum spectrometer solid sampler v0.019.</figcaption>
 </figure>
 
 ### Spectrometer cuvette holder
@@ -51,8 +51,8 @@ The solid sampler fits on the front of the spectrometer box and assures that sam
 Also the cuvette holder fits on the front of the spectrometer box. Light is steered using fiber optic cables. Having evaluated different types of fiber optic cables I have started to develop a system where the light sources are instead integrated in the attached parts. Instead of the magnet holder the power connector is used for holding attachments in place.
 
 <figure>
-<img src="../../images/spectra-stulturum_cuvette-holder_v0019.png">
-<figcaption> Stulturum spectrometer cuvette holder v0.019.</figcaption>
+<img src="../../images/spectra-xspectrolum_cuvette-holder_v0019.png">
+<figcaption> xSpectrolum spectrometer cuvette holder v0.019.</figcaption>
 </figure>
 
 ### Assembly
@@ -77,7 +77,7 @@ Also the cuvette holder fits on the front of the spectrometer box. Light is stee
   <img src="../../images/spectrobox_v021_output-voltage.jpg" alt="image">
     </a>
 
-	<figcaption>Stulturum spectrometer version v0.020.</figcaption>
+	<figcaption>xSpectrolum spectrometer version v0.021.</figcaption>
 </figure>
 
 ### Issues
@@ -86,10 +86,10 @@ The DC-DC 5 volt stepup module does not boost the voltage all the way from the l
 
 ### Modules and components
 
-Apart from the Arduino Nano microcontroller, there are a total of nine different modules/components included in Stulturum's spectrometer version v0.019. To get more information, including the separate scripts for individual controls, follow the links.
+Apart from the Arduino Nano microcontroller, there are a total of twelve (12) different modules/components included in xSpectrolum's spectrometer version v0.021. To get more information, including the separate scripts for individual controls, follow the links.
 
 <ul class="post-list">
-{% for post in site.categories.stulturum %}
+{% for post in site.categories.xspectrolum %}
   {% if post.startversion <= 0.021 and post.endversion >= 0.021 %}
 
         <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a>

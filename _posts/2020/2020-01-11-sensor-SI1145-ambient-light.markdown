@@ -2,6 +2,10 @@
 layout: post
 title: SI1145 ambient light sensor
 categories: sensor
+sensingfeature: ambient-light
+sensormethod: photoresistor
+sensorconnect: i2c
+sensingmedia: NA
 excerpt: "Proximity/UV/ambient light sensor IC with I2C interface"
 tags:
   - ambient light

@@ -2,6 +2,10 @@
 layout: post
 title: AMS spectral sensor AS7341
 categories: sensor
+sensingfeature: spectra
+sensormethod: filter
+sensorconnect: i2c
+sensingmedia: solid+liquid+gas+soil+water+air
 excerpt: "AMS 11-channel broad band sensors"
 tags:
   - spectrometer

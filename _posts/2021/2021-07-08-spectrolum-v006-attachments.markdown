@@ -5,7 +5,7 @@ categories: spectrolum
 version: "v0.06 attachments"
 tags:
   - spectrometer
-  - stulturum
+  - xspectrolum
   - v0.06
   - attachments
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
@@ -15,32 +15,32 @@ comments: true
 share: true
 ---
 
-## Stulturum spectrometer version v0.06 attachemnts
+## xSpectrolum version v0.06 attachemnts
 
-Version 0.06 of xSpectres spectrometers is built using the Arduino [NANO IOT 33 board](http://localhost:4000/module/module-nano-iot-33/). All versions in the 0.06 series (regardless of spectrometer) can use the same set of attachments - or samplers.
+Version 0.06 of xSpectres spectrometers is built using the Arduino [NANO IOT 33 board](../../module/module-nano-iot-33/). All versions in the 0.06 series (regardless of spectrometer) can use the same set of attachments - or samplers.
 
 <figure>
 <img src="../../images/xspectre_spectrometer+attachments_v06.png">
-<figcaption>xSpectre spectromter v 0.6x with some of the available attachments </figcaption>
+<figcaption>xSpectrolum v0.06x with some of the available attachments </figcaption>
 </figure>
 
-The sample attachments all have two properties: 1) an emission source, and 2) a sample space. The emission source is typically a Light Emitting Diode (LED), laser or other light bulb. The sample space is either open (to be held directly against any surface), for ground (or solid) samples, or for liquids in a cuvette. A gas sampler is under development. Samplers that only use the xSpectre spectrometer as a light source and that can attach a fibre optic cable are also under development.
+The light and sample attachments all have two properties: 1) a light  source, and 2) a sample space. The light or mission source is typically a Light Emitting Diode (LED), laser or other light bulb. The sample space is either open (to be held directly against any surface), for ground (or solid) samples, or for liquids, a cuvette.
 
 Available [x] and planned [o] attachment samplers for xSpectre version 0.6.
 
-| Light source | open | solid | liquid | gas | x-solid | x-liquid |
-| White LED | x | x | x | o | o | o |
-| Blue LED | x | x | x | o | o | o |
-| NIR LED | x | x | x | o | x | o |
-| Xenon | x | x | x | o | x | o |
-| Red laser | x | x | x | o | o | o |
-| Green laser | - | x | x | - | - | - |
+| Light source | open | solid | liquid | gas |
+| White LED | x | x | x | o |
+| Blue LED | x | x | x | o |
+| NIR LED | x | x | x | o |
+| Xenon | x | x | x | o |
+| Red laser | x | x | x | o |
+| Green laser | - | x | x | - |
 
 ### Spectrometer sampler and light source attachments
 
 ![trx-connector](../../images/trx_connector_female-male.png)
 {: .pull-right}
-All sampler attachments are connected to the xSpectre spectrometer using a TRX connection (right). For the open, ground (solid) and cuvette samplers, the TRX connector also holds the sampler in place in front of the spectrometer. Samplers for solids and liquids also exists as stand alone samplers with the spectral signal picked up via an SMA905 connection to a fibre optic cable. These samplers are powered via a JST connector (see below).
+All sampler attachments are connected to the xSpectre spectrometer using a TRX connection (right). The TRX connector also holds the sampler in place in front of the spectrometer.
 
 ### Open sampler
 
@@ -182,8 +182,6 @@ The xenon light bulb is fitted into the  sampler using a soft (rubber) holder fo
 ![osram](../../images/spectro-osram-NIR-holder_20210704_v062a.png)
 {: .pull-right}
 The [Near Infra-Red (NIR) LED](../../component/component-osram-ir-led) used in version 0.06 is an outdated OSRAM LED that is still available from [Farnell](https://se.farnell.com/osram-opto-semiconductors/sfh-4735/infrared-emitter-1050-nm-smd/dp/2981794?mckv=smU6KqYGs_dc%7Cpcrid%7C417071399973%7Ckword%7Csfh%204735%7Cmatch%7Cp%7Cplid%7C%7Cslid%7C%7Cproduct%7C%7Cpgrid%7C97784419567%7Cptaid%7Ckwd-346858407321%7C&CMP=KNC-GSE-GEN-SKU-MDC). I first print a small holder ([spectro-osram-NIR-holder_20210704_v062a.stl](../../stl/spectro-osram-NIR-holder_20210704_v062a.stl)) and solder wires to the LED and then glue it into the holder. I then put the small holder into the solid sampler for NIR LED ([spectro-solid-cyl-led_20210606_v061d.stl](../../stl/spectro-solid-cyl-led_20210606_v061d.stl)).
-
-Also for absorbance. Not yet available.
 
 #### Cuvette sampler with blue LED
 
@@ -330,5 +328,3 @@ Spectral analysis with a single wavelength laser (e.g. red or green) is for Rama
 #### Stand alone cuvette sampler with green laser
 
 The 3D model for green laser cuvette sampler includes space for dc-dc step module to reach 5 volt for the green laser module used with version 0.6 ([spectro-cuvette-green-laser_20210606_v061d.stl](../../stl/spectro-cuvette-green-laser_20210606_v061d.stl))
-
-not yet available

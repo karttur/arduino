@@ -23,7 +23,7 @@ share: true
 
 Ion Selective Electrodes (ISE) from [Pasco](https://www.pasco.com) for Arduino. These ISE are sold in Sweden by [Sagitta](https://www.sagitta.se). All sensor fit the coaxial (BNC) connector that comes with Pasco's pH-meter.
 
-All prices are give excluding VAt.
+All prices are give excluding VAT.
 
 ### PASCO nitrate sensor
 

@@ -2,6 +2,10 @@
 layout: post
 title: TEMT6000 Ambient Light
 categories: sensor
+sensingfeature: ambient-light
+sensormethod: photoresistor
+sensorconnect: analoge
+sensingmedia: solid+liquid+gas+soil+water+air
 excerpt: "TEMT6000 Ambient Light Sensor Module"
 tags:
   - ambient light

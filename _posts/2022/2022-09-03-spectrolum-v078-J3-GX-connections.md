@@ -6,7 +6,7 @@ version: "v0.78"
 excerpt: "Connections to the GX expansion socket of xSpectre spectrometer v0.7"
 tags:
   - spectrometer
-  - stulturum
+  - xspectrolum
   - v0.07
   - GX
   - connections
@@ -92,7 +92,7 @@ The [AMS mini spectrometer module from Adafruit](../../module/module-AS726X-spec
 
 ### MODBUS sensor - AMS mini spectrometer
 
-[MODBUS-RTU](https://en.wikipedia.org/wiki/Modbus) is an industrial standard communication protocol that is often physically connected using the [RS485](https://en.wikipedia.org/wiki/RS-485) port protocol. This combination of MODBUS-RTU + RS485 is implemented in xSpectre v0.78 via the GX16 expansion plug. This setup is used for connecting the [SEEED-studio](https://www.seeedstudio.com/RS485-Soil-Moisture-Temperature-Sensor-S-Soil-MT-02-p-4634.html) industrial-grade soil moisture, electrical conductivity and temperature sensor [S-Soil MT-02A](../../module/module-seeed-modbus-soil-moisture). The GX16 pin wiring for RS485 in xSpectre's version 0.78:
+[MODBUS-RTU](https://en.wikipedia.org/wiki/Modbus) is an industrial standard communication protocol that is often physically connected using the [RS485](https://en.wikipedia.org/wiki/RS-485) port protocol. This combination of MODBUS-RTU + RS485 is implemented in xSpectre v0.78 via the GX16 expansion plug. This setup is used for connecting the [SEEED-studio](https://www.seeedstudio.com/RS485-Soil-Moisture-Temperature-Sensor-S-Soil-MT-02-p-4634.html) industrial-grade soil moisture, electrical conductivity and temperature sensor [S-Soil MT-02A](../../sensor/sensor-seeed-modbus-soil-moisture). The GX16 pin wiring for RS485 in xSpectre's version 0.78:
 
 | pin | function |
 | 1 | +5 V |

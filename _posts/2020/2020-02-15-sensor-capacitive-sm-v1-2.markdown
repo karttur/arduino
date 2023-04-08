@@ -2,6 +2,10 @@
 layout: post
 title: Capacitive Soil Moisture Sensor v1.2
 categories: sensor
+sensingfeature: soil-moisture
+sensormethod: capacitive
+sensorconnect: analog
+sensingmedia: soil
 excerpt: "Capacitive Soil Moisture Sensor v1.2"
 tags:
   - soil moisture

@@ -14,7 +14,7 @@ tags:
   - AS7341
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2019-10-20 11:27'
-modified: '2021-01-06 T18:17:25.000Z'
+modified: '2021-11-04'
 comments: true
 share: true
 component: component-AS726X-spectrometer

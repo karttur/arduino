@@ -1,0 +1,72 @@
+---
+layout: post
+title: MH-Z16 CO<sub>2</sub> MIR sensor
+categories: sensor
+sensingfeature: spectra
+sensormethod: filter
+sensorconnect: I2C+UART
+sensingmedia: gas+soil+air
+excerpt: "Winsen MH-Z16 MIR CO<sub>2</sub> plug & play Sensor"
+tags:
+- Spectrometer
+- MIR
+- CO2
+- Winsen
+- DFRobot
+- Seeed studio
+image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
+date: '2023-03-10 11:27'
+modified: '2023-03-10 T18:17:25.000Z'
+comments: true
+share: true
+component: component-mh-z16-co2
+module: null
+project: project-mh-z16-co2
+---
+<script src="https://karttur.github.io/common/assets/js/karttur/togglediv.js"></script>
+
+The post on [CO<sub>2</sub> dual thermal sensors](../sensor-CO2dualsensor-comparison) identifies different options for Mid-InfraRed (MIR) spectral sensing of air content of CO<sub>2</sub> and CH<sub>4</sub>. This post instead summarises a Mid Infraa-Red (MIR) "plug-and-play"Nondispersive infrared (NDIR) gas detector for CO<sub>2</sub>.
+
+### Introduction
+
+NDIR gas detection relies on an emitter and a sensor placed opposite each other inside a dark chamber. The [Winsen MH-Z16 Infrared CO2 Gas Sensor](https://www.winsen-sensor.com/product/mh-z16.html) is built with a 10 cm long cylindrical chamber with a microcontroller on top. It runs on 5 Volt and 80 mA and can be attached to an Arduino microcontroller.
+
+
+### MH-Z16 Infrared CO<sub>2</sub> Gas Sensor
+
+[Gyawali et al, 2019](https://www.frontiersin.org/articles/10.3389/feart.2019.00138/full) used the MH-Z16 sensor for developing an arduino based soil microbial activity assessment contraption (SMAAC). Or, stated more directly, a dual band MIR sensor that can be used for estimating soil CO<sub>2</sub> content and thus soil respiration.
+
+[Gyawali et al, 2019](https://www.frontiersin.org/articles/10.3389/feart.2019.00138/full) compared the SMAAC with a commercial infra-red gas analyzer (IRGA) and found that the SMAAC performed well as an inexpensive yet accurate tool for measuring soil respiration and microbial activity.
+
+#### Specification
+
+Specification
+
+- Gas Detection: Carbon Dioxide (CO2)
+- Operating Voltage: 4.5 ~ 5.5V DC
+- Average Current: <85mA
+- Output Signal: UART
+- Measuring Range: 0 ~ 50000ppm
+- Accuracy: ± (50ppm + 5% reading)
+- Preheating Time: 3min
+- Response Time: T90 < 30s
+- Operating Temperature: 0 ~ 50 ℃
+- Operating Humidity: 0 ~ 95% RH (no condensation)
+- Weight: 42 g
+
+
+The [Winsen MH-Z16 Infrared CO2 Gas Sensor](https://www.winsen-sensor.com/product/mh-z16.html) is sold by many vendors. [DR-robot](https://wiki.dfrobot.com) sell their [own version under their Gravity](https://wiki.dfrobot.com/Infrared_CO2_Sensor_0-50000ppm_SKU__SEN0220) series at 90 USD. Also [Seeed-studio](https://www.seeedstudio.com) sell [their own version - under their Grove](https://www.seeedstudio.com/Grove-Carbon-Dioxide-Sensor-MH-Z16.html) series. It costs 98 USD.
+
+Developing the SMAAC, [Gyawali et al, 2019](https://www.frontiersin.org/articles/10.3389/feart.2019.00138/full) used an [MH-Z16 from Sandbox](https://sandboxelectronics.com/?product_tag=co2-sensor](https://sandboxelectronics.com/?product_tag=co2-sensor).
+
+The Chinese company [Winsen](https://www.winsen-sensor.com/) produces the MH-Z16 CO<sub>2</sub> sensor, which is identicial to the above (probably it is the same). Buying this sensors in larger quantities at [AliExpress](https://aliexpress.com) you can get the [Winsen plug-and-play CO<sub>2</sub> at 35 USD] (https://www.aliexpress.com/item/1005004678211790.html?spm=a2g0o.productlist.0.0.685d105dVZn6wH&algo_pvid=c125256c-1627-4826-8d7a-f46ac4d6aa62&algo_exp_id=c125256c-1627-4826-8d7a-f46ac4d6aa62-16&pdp_ext_f=%7B%22sku_id%22%3A%2212000030070843054%22%7D&pdp_npi=2%40dis%21USD%21487.5%21360.75%21%21%21%21%21%402100bddf16676764667453237ec9c4%2112000030070843054%21sea&curPageLogUid=pv3FzfznqwwV).
+
+I bought my copies of the MH-Z16 sensor from [Aliexpress](https://vi.aliexpress.com/w/wholesale-MH%2525252dZ16.html?catId=0&initiative_id=SB_20230311124233&SearchText=MH-Z16&spm=a2g0o.home.1000002.0) where you can get one (1) for as little as 35 USD if you buy several in one go.
+
+[Seeedstudio](https://www.seeedstudio.com) also offers a smaller CO<sub>2</sub> [NDIR at 600 SEK](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html?queryID=6ad894478cb9df5ce4aed3e405677da2&objectID=2911&indexName=bazaar_retailer_products).
+
+### Sketch
+
+Example code for integrating this sensor with the Arduino is available at [https://github.com/SandboxElectronics/NDIRZ16](https://github.com/SandboxElectronics/NDIRZ16).
+
+Seeed-studio provides [setup instructons including an Arduino sketch](https://wiki.seeedstudio.com/Grove-CO2_Sensor/). But the code does not operate properly. A corrected code is offered by [devmobilenz](https://blog.devmobile.co.nz/2019/02/01/carbon-dioxide-sensormh-z16-library-comparison/). For details see the [project post](../../project/project-nh-z16-co2/).

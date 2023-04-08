@@ -44,12 +44,8 @@
   url: /prototype/
   include: 'N'
 
-- title: Spectrolum
-  url: /stulturum/
-  include: 'N'
-
-- title: Other
-  url: /blog/
+- title: xSpectrolum
+  url: /xspectrolum/
   include: 'N'
 
 - title: Search

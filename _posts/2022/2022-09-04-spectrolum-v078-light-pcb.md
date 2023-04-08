@@ -6,7 +6,7 @@ version: v0.78
 excerpt: "xspecled light PCB for xSpectre spectrometer v0.78"
 tags:
   - spectrometer
-  - stulturum
+  - xspectrolum
   - v0.07
   - light PCB
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A

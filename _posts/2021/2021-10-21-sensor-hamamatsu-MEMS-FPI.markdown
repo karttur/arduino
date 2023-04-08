@@ -1,8 +1,12 @@
 ---
 layout: post
-title: Hamamatsu MEMS-FPI
+title: Hamamatsu MEMS-FPI NIR
 categories: sensor
-excerpt: "Hamamatsu FPI Fabry-Perot Interferometer (MEMS-FPI) tunable filter for NIR sensing"
+sensingfeature: spectra
+sensormethod: mems-fpi
+sensorconnect: video
+sensingmedia: solid+liquid+gas+soil+water+air
+excerpt: "Hamamatsu Fabry-Perot Interferometer (MEMS-FPI) tunable filter for NIR sensing"
 tags:
   - Hamamatsu
   - MEMS-FPI
@@ -24,15 +28,18 @@ share: true
 
 The MEMS-FPI sensor is available for four different wavelengths (nm):
 
+![mems-fpi-TO-5](../../images/Hamamatsu_mems-fpi_TO-5.png)
+{: .pull-right}
+
 - 1750 - 2150 [C14273](https://www.hamamatsu.com/eu/en/product/optical-sensors/spectrometers/mems-fpi-spectrum-sensor/C14273.html)
 - 1550 - 1850 [C13272-02](https://www.hamamatsu.com/eu/en/product/optical-sensors/spectrometers/mems-fpi-spectrum-sensor/C13272-02.html)
 - 1550 - 1850 [C13272-03](https://www.hamamatsu.com/eu/en/product/optical-sensors/spectrometers/mems-fpi-spectrum-sensor/C13272-03.html)
 - 1350 - 1650 [C14272](https://www.hamamatsu.com/eu/en/product/optical-sensors/spectrometers/mems-fpi-spectrum-sensor/C14272.html)
 
-A TO-5 house has a diameter of 8.2 mm and a rim that is 9.14 mm. The height of the Hamamatus MEMS-FPI TO-05 housing is approximately 5.8 mm, including rim (0.4 mm)
+The TO-5 casing for these sensors has a diameter of 8.2 mm and a rim that is 9.14 mm. The height is approximately 5.8 mm, including rim (0.4 mm).
 
 Buying between 5 and 9 the price from Hamamatsu is approximately 200 USD per piece.
 
 #### Complete modules
 
-Hamamatsu also offers the MEM-FPI sensors as plug-and-play [spectrometer modules](https://www.hamamatsu.com/eu/en/product/optical-sensors/spectrometers/spectroscopic-modules.html) with emitters and electronics. A single unit the costs 1700 USD.
+Hamamatsu also offers the MEM-FPI sensors as plug-and-play [spectrometer modules](https://www.hamamatsu.com/eu/en/product/optical-sensors/spectrometers/spectroscopic-modules.html) with emitters and electronics. A single unit then costs 1700 USD.

@@ -2,14 +2,18 @@
 layout: post
 title: AMS AS726X spectrometer
 categories: sensor
+sensingfeature: spectra
+sensormethod: filter
+sensorconnect: i2c
+sensingmedia: soild+liquid+gas+soil+water+air
 excerpt: "AMS 6-channel broad band sensors"
 tags:
   - spectrometer
   - Sensors
   - AMS
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2019-10-20 11:27'
-modified: '2020-02-09 T18:17:25.000Z'
+date: '2019-10-20'
+modified: '2022-11-04'
 comments: true
 share: true
 component: null
@@ -31,6 +35,12 @@ There are three versions of the AMS series AS726x of 6-channel broad band micro-
 - [AS7261 (Red-Green-Blue, Near InfraRed)](https://ams.com/AS7261)
 - [AS7262 (Visible)](https://ams.com/AS7262)
 - [AS7263 (Near InfraRed)](https://ams.com/AS7263)
+
+The [AMS AS7341 11-band spectral sensor](https://ams.com/ko/as7341?fbclid=IwAR3RyybhA7qlqQo8N8hP6GgB0USwy7JsjBKn_7Tohk5hR1qRGd4WeozAuhA) was launched in 2019 and became available in 2020 as breakout board from [Adafruit](https://learn.adafruit.com/adafruit-as7341-10-channel-light-color-sensor-breakout). and [Mikroe](https://www.mikroe.com/spectrometer-click).
+
+In February 2022 AMS presented a 14-band filter based visible (VIS) to Near Infra Red (NIR) sensor - the [AMS AS7343 Spectral Sensor](https://ams.com/AS7343).
+
+In September 2022 AMS presented a 64-band Near Infra Red (NIR) sensor - the [[AS7421 Hyperspectral NIR Sensor](https://ams.com/as7421).
 
 ### Yotube presentation
 

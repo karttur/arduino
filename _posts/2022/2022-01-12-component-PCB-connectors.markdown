@@ -1,11 +1,14 @@
 ---
 layout: post
 title: Connection components
-categories: project
-version: "Connecting the spectrometer box and the various samplers"
+categories: component
+excerpt: "Alternatives for connecting the spectrometer box and the muzzles"
 tags:
   - Connection
   - PCB
+  - muzzel
+  - speclum
+  - ledlum
   - sampler
   - bayonet
   - pogo
@@ -18,7 +21,7 @@ share: true
 
 ### Introduction
 
-The first versions (up to v06) of the xSpectre spectrometer used TRX connectors for holding the muzzle samplers in place. TRX has several shortcomings; there are only two contacts, it is bulky, it becomes a 1-sided attachment that easily forming gaps. This post first identifies some different solutions for increasing the number of contacts and for better attachment of the muzzle, and then the solution selected for version 07 of the spectroemter is presented.
+The first versions (up to v06) of the xSpectre spectrometer used TRX connectors for holding the muzzle samplers in place. TRX has several shortcomings; there are only two contacts, it is bulky and it becomes a 1-sided attachment that easily forming gaps. This post first identifies some different solutions for increasing the number of contacts and for better attachment of the muzzle, and then the solution selected for version 07 of the spectrometer is presented.
 
 ### Magnetic Connector
 

@@ -2,6 +2,10 @@
 layout: post
 title: DS18B20 temperature
 categories: sensor
+sensingfeature: temperature
+sensormethod: 1-wire
+sensorconnect: 1-wire
+sensingmedia: solid+liquid+gas+soil+water+air
 excerpt: "DS18B20 temperature"
 tags:
   - temperature

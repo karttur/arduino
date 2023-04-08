@@ -2,6 +2,9 @@
 layout: post
 title: AMS AS7343 spectrometer
 categories: sensor
+sensingfeature: spectra
+sensormethod: filter
+sensorconnect: i2c
 excerpt: "AMS 14-channel broad band sensors"
 tags:
   - spectrometer

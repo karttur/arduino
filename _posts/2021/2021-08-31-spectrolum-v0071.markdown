@@ -5,7 +5,7 @@ categories: spectrolum
 version: "v0.71"
 tags:
   - spectrometer
-  - stulturum
+  - xspectrolum
   - v0.71
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2021-08-31'
@@ -14,15 +14,17 @@ comments: true
 share: true
 ---
 
-## Stulturum spectrometer version v0.71
+## xSpectrolum version v0.71
 
-Version 0.71 is built using the Arduino [NANO IOT 33 board](../../module/module-nano-iot-33/). Compared to version 0.06 (or 0.6), version 0.71 uses the Hamamatsu [C12880MA sensor](../../sensor/sensor-C12880MA-spectrometer/) **without** any breakout board. Additionally, the aviation plug is upgraded to a 6-pin version, to allow for 4 digital channels from an [RS-485 MODBUS breakout board](../../module/module-seeed-modbus-soil-moisture/) (note that the RS-485 breakout board is enclosed with the external sensor and not part of the wiring here). As with model versions 0.3 through 0.6, additional light sources are built into attachments and directly powered from the battery via a metal–oxide–semiconductor field-effect transistor (MOSFET).
+Version 0.71 of the xSpectrolum series is built using the Arduino [NANO IOT 33 board](../../module/module-nano-iot-33/). Compared to version 0.06, version 0.71 uses the Hamamatsu [C12880MA sensor](../../sensor/sensor-C12880MA-spectrometer/) **without** any breakout board. Additionally, the aviation plug is upgraded to a 6-pin version, to allow for 4 digital channels from an [RS-485 MODBUS breakout board](../../sensor/sensor-seeed-modbus-soil-moisture/) (note that the RS-485 breakout board is enclosed with the external sensor and not part of the wiring here). As with model versions 0.03 through 0.06, additional light sources are built into attachments and directly powered from the battery via a metal–oxide–semiconductor field-effect transistor (MOSFET).
 
-Note that version 0.71 is not intended for production, but is built as a template for designing and testing the wiring of a purpose built shield to fit with an arduino type microcontroller. Not necessarily the Ardiono [NANO IOT 33 board](../../module/module-nano-iot-33/).
+Note that version 0.71 is not intended for production, but is built as a template for designing and testing the wiring of a purpose built shield or Printed Circuit Borad (PCB) to be fitted with an arduino type microcontroller. Not necessarily the Ardiono [NANO IOT 33 board](../../module/module-nano-iot-33/).
+
+The step from wiring a set of breakout boards to a shield or PCB designates a major development; hence the step from 0.06 to 0.7.
 
 #### Light emission sources
 
-One of the major shortcomings with the solution of all versions from 0.3 (0.03) is the power supply for the electromagnetic emitter. The voltage and current supplied from the spectrometer to the muzzle with the light source depends on the charge level of the battery, and is regulated by a simple resistor in the muzzle unit. As the battery potential can vary between around 3 volt (low charge) to 4.2 volt (fully charged) the emitter is not generating a constant field. Further the resistor is a poor solution that wastes battery power, does not adjust for the potential and generates heat. A new solution is needed, and for that purpose the light sources to be used with forthcoming versions are listed here and summarised in table 1:
+One of the major shortcomings with the solution of all versions from 0.03 is the power supply for the electromagnetic emitter. The voltage and current supplied from the spectrometer to the muzzle with the light source depends on the charge level of the battery, and is regulated by a simple resistor in the muzzle unit. As the battery potential can vary between around 3 volt (low charge) to 4.2 volt (fully charged) the emitter is not generating a constant field. Further the resistor is a poor solution that wastes battery power, does not adjust for the potential and generates heat. A new solution is needed, and for that purpose the light sources to be used with forthcoming versions are listed here and summarised in table 1:
 
 - [xenon bulb, 3.0 V, 300 mA](https://www.conrad.se/p/barthelme-20710330-xenonlampa-3-v-090-w-sockel-bi-pin-127-mm-1-st-584939)
 - [IR broad band emitter (LED), 2.25 - 3.0 V, max 500 mA](https://www.osram.com/ecat/OSLON®%20P1616%20SFH%204737/com/en/class_pim_web_catalog_103489/prd_pim_device_10751075/)
@@ -61,7 +63,7 @@ Version 0.71 contains a battery and breakout boards controlling the charging and
 
 <figure>
 <img src="../../images/nano33-IOT-spectro_v071a_HAMA-VIS_bb.png">
-<figcaption> Stulturum spectrometer version v0.71 HAMA VIS with an Arduino NANO IOT 33 microcontroller. </figcaption>
+<figcaption> xSpectrolum spectrometer version v0.71 HAMA VIS with an Arduino NANO IOT 33 microcontroller. </figcaption>
 </figure>
 
 <figcaption> Hamamatsu C12880MA mini spectrometer pin connections </figcaption>
@@ -90,15 +92,15 @@ The container holding all the components is larger than earlier versions, approx
 The spectrometer box (<span class='file'>.stl</span>) for 3D printing is available as [spectro-box-HAMA-VIS_20210831_v071a.stl](../../stl/spectro-box-HAMA-VIS_20210831_v071a.stl).
 
 <figure>
-<img src="../../images/spectra-stulturum_box_v071.png">
-<figcaption> Stulturum spectrometer container version v0.71. </figcaption>
+<img src="../../images/spectra-xspectrolum_box_v071.png">
+<figcaption> xspectrolum spectrometer container version v0.71. </figcaption>
 </figure>
 
 ![trx-connector](../../images/trx_connector_female-male.png)
 {: .pull-right}
 ### Spectrometer sample and light source attachments
 
-The sample attachments for version 0.06 includes the required light sources. The samplers are attached to the spectrometer container using TRX connections. The light, samples and spectral sensor are thus always lined up in the most optimal manner regarding each sample type and light source.
+The sample attachments for version 0.71 includes the required light sources. The samplers are attached to the spectrometer container using TRX connections. The light, samples and spectral sensor are thus always lined up in the most optimal manner regarding each sample type and light source.
 
 <figure class="third">
 <img src="../../images/spectro-solid-cyl_v061.png">
@@ -138,13 +140,13 @@ All cuvette samplers are built from two pieces, the cuvette holder, and the [fou
 - [green laser side light (VIS-NIR Raman spectroscopy of transparent liquids)](../../stl/spectro-cuvette-green-laser_20210606_v061d.stl)
 - [red laser side light (NIR Raman spectroscopy of transparent liquids)](../../stl/spectro-cuvette-red-laser_20210606_v061d.stl)
 
-### Modules and components
+### Modules, components and sensors
 
-Apart from the Arduino Nano33 IoT microcontroller and the Hamamatsu C12880MA spectrometer, there are several additional modules/components included in Stulturum's spectrometer version v0.061. To get more information, including the separate scripts for individual controls, follow the links below.
+xSpectrolum v0.71 is constructed from  set of modules and components, and can also attach external sensors using either an aviator plug or a BNC prot. To get more information on these modules, components and sensors, including the separate scripts for individual controls, follow the links below.
 
 <ul class="post-list">
-{% for post in site.categories.stulturum %}
-  {% if post.startversion <= 0.071 and post.endversion >= 0.071 %}
+{% for post in site.categories.xspectrolum %}
+  {% if post.startversion <= 0.71 and post.endversion >= 0.71 %}
 
         <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a>
         </article></li>

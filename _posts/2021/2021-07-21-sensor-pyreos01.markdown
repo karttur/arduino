@@ -1,7 +1,11 @@
 ---
 layout: post
-title: Pyreos sensors
+title: Pyreos MIR sensors
 categories: sensor
+sensingfeature: spectra
+sensormethod: filter
+sensorconnect: I2C
+sensingmedia: solid+liquid+gas+soil+water+air
 excerpt: "Pyreos thin film thermal emissivity sensors"
 tags:
   - pyreos
@@ -17,7 +21,7 @@ share: true
 
 ### Introduction
 
-[Pyreos](https://pyreos.com), a company founded on an original patent by Siemens for thin film MIR sensing, offers both analog and digital uncooled sensors in the Mid Infra Red (MIR) wavelengths between 2.5 and 12 micro meters. This post summarises the Pyros sensors and links to online resources. Note that Pyreos does not offer any emitters. MIR emitters are listed in the posts on [Thermal emitters](../../component/component-thermal-emitters) and [Microhybrid IR](../sensor/sensor-micorhybrid01).
+[Pyreos](https://pyreos.com), a company founded on an original patent by Siemens for thin film MIR sensing, offers both analog and digital uncooled sensors in the Mid Infra Red (MIR) wavelengths between 2.5 and 12 micro meters. This post summarises the Pyros sensors and links to online resources. Note that Pyreos does not offer any emitters. MIR emitters are listed in the posts on [Thermal emitters](../../component/component-thermal-emitters) and [Microhybrid IR](../sensor/sensor-microhybrid-co2-kit).
 
 ### Filters
 

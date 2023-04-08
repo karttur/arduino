@@ -1,7 +1,11 @@
 ---
 layout: post
-title: Internet of Things soil moisturr probes
+title: Internet of Things soil moisture probes
 categories: sensor
+sensingfeature: soil-moisture
+sensormethod: review
+sensorconnect: NA
+sensingmedia: soil+air
 excerpt: "External connectors for arduino senor unit"
 tags:
   - probe

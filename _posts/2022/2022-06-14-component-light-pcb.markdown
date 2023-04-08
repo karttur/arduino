@@ -50,7 +50,7 @@ Looking for a surface mounted bright white LED with approximately the same surfa
 
 #### Xenon bulb (Conrad)
 
-[Conrad](https://www.conrad.se) offers an optoelectrical bi-pin [xenon bulb](https://www.conrad.se/p/xenonlampa-260-v-156-w-sockel-bi-pin-127-mm-na-1590355-tru-components-1-st-1590355). It used to be available in different version, inlcuing one with 3v and 0.9 W. This is the one I prefere but we need to find an alternative supplier or chnage to the 2.6volt version now availabe.
+[Conrad](https://www.conrad.se) offers an optoelectrical bi-pin [xenon bulb](https://www.conrad.se/p/xenonlampa-260-v-156-w-sockel-bi-pin-127-mm-na-1590355-tru-components-1-st-1590355). It used to be available in different version, including one with 3v and 0.9 W. This is the one I prefer but we need to find an alternative supplier or change to the 2.6volt version now available.
 
 #### Blue laser (Sony)
 

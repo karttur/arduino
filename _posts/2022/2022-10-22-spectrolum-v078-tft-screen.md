@@ -6,7 +6,7 @@ version: v0.78
 excerpt: "TFT LCD touch screen for xSpectre spectrometer"
 tags:
   - spectrometer
-  - stulturum
+  - xspectrolum
   - screen
   - touch
   - tft
@@ -39,3 +39,7 @@ Youtube
 https://www.youtube.com/watch?v=EFAfcsYOriM
 
 https://www.youtube.com/watch?v=9Ms59ofSJIY
+
+#### Projects
+
+Adafruit offers a nice blog on wiring an AMS spectrometer including a small TFT-screen ["Adafruit AS7262 6-Channel Visible Light / Color Sensor Breakout"](https://blog.adafruit.com/2018/03/29/new-product-adafruit-as7262-6-channel-visible-light-color-sensor-breakout/)

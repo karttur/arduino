@@ -2,7 +2,7 @@
 layout: post
 title: Capacitive Soil Moisture Sensor v1.2
 categories: project
-stulturum: True
+xspectrolum: True
 startversion: 0.017
 endversion: 0.017
 excerpt: "Capacitive Soil Moisture Sensor v1.2"

@@ -5,7 +5,7 @@ categories: spectrolum
 version: "v0.032"
 tags:
   - spectrometer
-  - stulturum
+  - xspectrolum
   - v0.032
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2021-04-26 11:27'
@@ -16,20 +16,20 @@ share: true
 
 Version 0.032 is outdated.
 
-## Stulturum spectrometer version v0.032
+## xSpectrolum version v0.032
 
 
 ![trx-connector](../../images/trx_connector_female-male.png)
 {: .pull-right}
-The new idea for version 0.03 has been to move all the light sources to the external attachments. This also led to the idea of replacing the magnet for holding the attachments in place and instead look for a connector that could be used both for powering the external light and for holding attachments in place. The solution I came up with was to use a TRX connector (shown to the right), with the female sitting in the box and the male in the attachment.
+The new idea for version 0.03x has been to move all the light sources to the external attachments. This also led to the idea of replacing the magnet for holding the attachments in place and instead look for a connector that could be used both for powering the external light and for holding attachments in place. The solution I came up with was to use a [TRX connector](../../component/component-trx/) (shown to the right), with the female sitting in the box and the male in the attachment.
 
-As the additional light sources require different voltage, each attached light contains a resistor adjusting the power, plus the light source. This simplifies the wiring on the electronics inside the box itself. Also v0.032 contains a battery and the breakout boards controlling the charging and drainage of the battery, a fixed DC to DC stepup module outputting 5 volt, and a power switch.
+As the additional light sources require different voltage, each attached light contains a resistor adjusting the power, plus the light source. This simplifies the wiring of the electronics inside the box itself. Further, v0.032 contains a battery and the breakout boards controlling the charging and drainage of the battery, a fixed DC to DC stepup module outputting 5 volt, and a power switch.
 
 <figure>
 <img src="../../images/nano-spectro_v032_trx_bb.png">
 
 
-<figcaption> Stulturum spectrometer version v0.032 with an external light sources connected via a TRX connecto - the example shows the wiring with a red laser light source. The laser and the resistor are connected via TRX connectors.</figcaption>
+<figcaption> xSpectrolum spectrometer version v0.032 with an external light sources connected via a TRX connection - the example shows the wiring with a red laser light source.</figcaption>
 </figure>
 
 ### Spectrometer box
@@ -37,13 +37,13 @@ As the additional light sources require different voltage, each attached light c
 The box holding all the components is changed to accommodate the female TRX connector.
 
 <figure>
-<img src="../../images/spectra-stulturum_box_v0032.png">
-<figcaption> Stulturum spectrometer box version v0.021. This version is slightly deeper to hold the battery, has a carved out space for the DC-DC stepup module and a rectangular opening for the on-off switch.</figcaption>
+<img src="../../images/spectra-xspectrolum_box_v0032.png">
+<figcaption> xSpectrolum spectrometer box version v0.032. This version is slightly deeper to hold the battery, has a carved out space for the DC-DC stepup module and a rectangular opening for the on-off switch.</figcaption>
 </figure>
 
 ### Spectrometer sample and light source attachments
 
-The sample holders for version 0.03x also include the required light sources. As explained above, the samplers are attached to the spectrometer box using TRX connections. The light, samples and spectral sensor are thus always lines up in the most optimal manner regarding each sample type and light source.
+The sample holders for version 0.03x also include the required light sources. As explained above, the samplers are attached to the spectrometer box using TRX connections. The light, samples and spectral sensor are thus always lined up in the most optimal manner regarding each sample type and light source.
 
 <figure class="third">
 <img src="../../images/spectro-solid-cyl_v32.png">
@@ -78,19 +78,19 @@ The figures below show version 0.033 assembled in May 2021.
   <a href="../../images/xspectre_spectrometer_v033_front+muzzles.png"><img src="../../images/xspectre_spectrometer_v033_front+muzzles.png" alt="image">
   </a>
 
-	<figcaption>Stulturum spectrometer version v0.032.</figcaption>
+	<figcaption>xspectrolum spectrometer version v0.032.</figcaption>
 </figure>
 
 ### Issues
 
-The DC-DC 5 volt stepup module does not boost the voltage all the way from the lithium battery 3.7 V to 5 V. It only reaches up to 4 V. With no load the stepup modules outputs 6 V. The best solution would be to have a more powerful DC-DC stepup module and connect the external power to the VIN port of the Arduino Nano board.
+The DC-DC 5 volt stepup module does not boost the voltage all the way from the lithium battery 3.7 V to 5 V. It only reaches up to 4 V. With no load the stepup modules outputs 6 V. Perhaps a solution would be to have a more powerful DC-DC stepup module and connect the external power to the VIN port of the Arduino Nano board.
 
 ### Modules and components
 
-Apart from the Arduino Nano microcontroller, there are a total of X different modules/components included in Stulturum's spectrometer version v0.019. To get more information, including the separate scripts for individual controls, follow the links.
+Apart from the Arduino Nano microcontroller, there are a total of 12 different modules/components included in xSpectrolum's spectrometer version v0.032/0.033. To get more information, including the separate scripts for individual controls, follow the links.
 
 <ul class="post-list">
-{% for post in site.categories.stulturum %}
+{% for post in site.categories.xspectrolum %}
   {% if post.startversion <= 0.032 and post.endversion >= 0.032 %}
 
         <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a>

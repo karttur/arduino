@@ -15,7 +15,7 @@ share: true
 
 ### Introduction
 
-This is the first of three pH meters that I tested for Arduino. The pH meter in this article is the (same as the) [DFRobot, Gravity: Analog pH Sensor / Meter Kit For Arduino](https://www.dfrobot.com/product-1025.html?tracking=5cfb9465c247d). But I got my copy from [Amazon.se](https://www.amazon.se/gp/product/B081QK9TX2/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1). The control board (breakout board) only is constructed for 5 volt power (Vin = 5). The [pH meter in the next post](module-ph-meter02) can be calibrated also for Vin = 3.3.
+This is the first of three pH meters that I tested for Arduino. The pH meter in this article is the (same as the) [DFRobot, Gravity: Analog pH Sensor / Meter Kit For Arduino](https://www.dfrobot.com/product-1025.html?tracking=5cfb9465c247d). But I got my copy from [Amazon.se](https://www.amazon.se/gp/product/B081QK9TX2/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1). The control board (breakout board) is constructed for 5 volt power (Vin = 5). The [pH meter in the next post](module-ph-meter02) can be calibrated also for Vin = 3.3.
 
 <figure>
 <img src="../../images/phmeter_dfrobot_gravity.png">

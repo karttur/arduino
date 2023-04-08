@@ -2,7 +2,11 @@
 layout: post
 title: Hamamatsu C12880MA spectrometer
 categories: sensor
-excerpt: "Hamamatsu C12880MA miniaturised 288 band sensor"
+sensingfeature: spectra
+sensormethod: grating
+sensorconnect: video
+sensingmedia: solid+liquid+gas+soil+water+air
+excerpt: "Hamamatsu C12880MA miniaturised visible, 288 band sensor"
 tags:
   - spectrometer
   - Sensors
@@ -22,7 +26,13 @@ projectuno: null
 
 ### Introduction
 
-Hamamatsu's [C12880MA ultra-compact spectrometer](https://www.hamamatsu.com/jp/en/product/type/C12880MA/index.html) is at time of writing this (May 2020) perhaps the best option for a minituarized spectrometer to put with a micro-controller.
+Hamamatsu's [C12880MA ultra-compact spectrometer](https://www.hamamatsu.com/jp/en/product/type/C12880MA/index.html) is at time of writing this (May 2020) perhaps the best option for a minituarized spectrometer to put with a micro-controller. It has a spectral response range of 340 to 850 nm, 288 pixels, and 256 channels with 15 nm of resolution. The internal CMOS image sensor and optics are hermetically sealed to increase humidity resistance.
+
+<figure>
+<img src="../../images/sensor-hamamatsu-C12880MA-spectrometer.png">
+<figcaption> Hamamatsu C12880MA micro spectrometer.
+</figcaption>
+</figure>
 
 ### Versions
 
@@ -38,3 +48,9 @@ The C12880MA spectrometer is the second generation of this minituarized sensor. 
 ### Breakout boards
 
 The C12880MA sensor is available as [Arduino breakout boards](../../modules/module-C12880MA-spectrometer).
+
+
+[Link to post on Arduino compatible breakout boards with the Hamamatsu C12880MA MEMS micro-spectrometer](../../modules/module-hamamatsu-C12880MA)
+
+
+A [hackaday solution](https://hackaday.io/project/4141-c12666ma-micro-spectrometer).

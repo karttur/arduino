@@ -5,7 +5,7 @@ categories: spectrolum
 version: "v0.051"
 tags:
   - spectrometer
-  - stulturum
+  - xspectrolum
   - v0.021
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2021-06-08'
@@ -14,26 +14,24 @@ comments: true
 share: true
 ---
 
-## Stulturum spectrometer version v0.051
+## xSpectrolum spectrometer version v0.051
 
-Version 0.05 is built using the Arduino [NANO IOT 33 board](http://localhost:4000/module/module-nano-iot-33/). Compared to the older NANO boards, the NANO IOT 33 has a faster processor, inbuilt wifi and bluetooth connections and a 3-axis gyrometer. Despite these additions, the IOT 33 has the same form factor as earlier NANO boards. As with model versions 0.03 and 0.04, additional light sources are built into attachments and powered via a metal–oxide–semiconductor field-effect transistor (MOSFET), the [BS170](http://localhost:4000/component/component-mosfet-xenon/).
+Version 0.05 is built using the Arduino [NANO IOT 33 board](../../module/module-nano-iot-33/). Compared to the older NANO boards, the NANO IOT 33 has a faster processor, inbuilt wifi, bluetooth connections and a 3-axis gyrometer. Despite these additions, the IOT 33 has the same form factor as earlier NANO boards. As with model versions 0.03 and 0.04, additional light sources are built into attachments and powered via a metal–oxide–semiconductor field-effect transistor (MOSFET), the [BS170](http://localhost:4000/component/component-mosfet-xenon/).
 
 This first version in the 0.05 series is built with the [AMS 6-band sensor](http://localhost:4000/project/project-AS726X-spectrometer-nano/). It also contains a battery and breakout boards controlling the charging and drainage of the battery, a fixed DC to DC stepup module outputting 5 volt, and a power switch. All included modules/components are listed below.
 
 <figure>
 <img src="../../images/nano33-IOT-spectro_v051_bb.png">
-<figcaption> Stulturum spectrometer version v0.051 with an Arduino NANO IOT 33 microcontroller. </figcaption>
+<figcaption> xSpectrolum spectrometer version v0.051 with an Arduino NANO IOT 33 microcontroller. </figcaption>
 </figure>
 
 ### Spectrometer box
 
 The box holding all the components is similar to previous versions, but with spaces arranged for the power supply and control.
 
-The spectrometer box will become available as 3d print files (<span class='file'>.stl</span>) shortly.
-
 <figure>
-<img src="../../images/spectra-stulturum_box_v0051.png">
-<figcaption> Stulturum spectrometer box version v0.051. </figcaption>
+<img src="../../images/spectra-xspectrolum_box_v0051.png">
+<figcaption> xSpectrolum spectrometer box version v0.051. </figcaption>
 </figure>
 
 ![trx-connector](../../images/trx_connector_female-male.png)
@@ -60,7 +58,7 @@ The sample holders for version 0.05 also include the required light sources. The
   <img src="../../images/spectrolum_v040_photo_inside2.png" alt="image">
   </a>
 
-	<figcaption>Assembled electronics inside spectrometer box, Stulturum spectrometer version v0.051.</figcaption>
+	<figcaption>Assembled electronics inside spectrometer box, xSpectrolum spectrometer version v0.051.</figcaption>
 </figure>
 
 <figure>
@@ -68,16 +66,16 @@ The sample holders for version 0.05 also include the required light sources. The
   <img src="../../images/spectrolum_v051_photo_front+attachments.png" alt="image">
   </a>
 
-	<figcaption>Stulturum spectrometer version v0.051 with different attachment samplers.</figcaption>
+	<figcaption>xSpectrolum spectrometer version v0.051 with different attachment samplers.</figcaption>
 </figure>
 
 ### Modules and components
 
-Apart from the Arduino Nano microcontroller, there are a total of nine different modules/components included in Stulturum's spectrometer version v0.019. To get more information, including the separate scripts for individual controls, follow the links.
+Modules and components on which xSpectrolum version v0.051 is built. To get more information, including the separate scripts for individual controls, follow the links.
 
 <ul class="post-list">
-{% for post in site.categories.stulturum %}
-  {% if post.startversion <= 0.021 and post.endversion >= 0.021 %}
+{% for post in site.categories.xspectrolum %}
+  {% if post.startversion <= 0.051 and post.endversion >= 0.051 %}
 
         <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a>
         </article></li>

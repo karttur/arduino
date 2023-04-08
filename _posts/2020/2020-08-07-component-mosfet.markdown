@@ -15,7 +15,7 @@ share: true
 
 ### Introduction
 
-A _metal oxide semiconductor field-effect transistor_, or MOSFET is a type of transistor that is used for opening and closing a circuit. MOSFETs are the most manufactured human artefact on the planet. In Arduino projects, MOSFETs are typically used for switching power consuming actuators between On and Off states. Typical actuators include motors and stronger light sources. For building arduino spectroemters, MOSFETs are needed for supplying power to stronger light sources, including [xenon](#) and [broad spectrum infrared LEDs](#).
+A _metal oxide semiconductor field-effect transistor_, or MOSFET is a type of transistor that is used for opening and closing a circuit. MOSFETs are the most manufactured human artefact on the planet. In Arduino projects, MOSFETs are typically used for switching power consuming actuators between On and Off states. Typical actuators include motors and stronger light sources. For building arduino spectrometers, MOSFETs are needed for supplying power to stronger light sources, including [xenon](#) and [broad spectrum infrared LEDs](#).
 
 ### MOSFET
 

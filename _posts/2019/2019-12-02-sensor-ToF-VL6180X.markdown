@@ -2,6 +2,10 @@
 layout: post
 title: VL6810X distance and ambient light module
 categories: sensor
+sensingfeature: distance+ambient-light
+sensormethod: time-of-flight
+sensorconnect: i2c
+sensingmedia: air
 excerpt: "VL6180X Time-of-Flight distance and ambient light sensing"
 tags:
   - distance

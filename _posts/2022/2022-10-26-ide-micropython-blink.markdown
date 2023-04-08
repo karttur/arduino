@@ -2,7 +2,7 @@
 layout: post
 title: Micropython rainbow blink
 categories: ide
-excerpt: "Micropython rainbow blink"
+excerpt: "Micropython rainbow blinking for the Adafruit nRF52480 Express board"
 tags:
   - Micropython
   - setup
@@ -16,10 +16,15 @@ share: true
 
 ## Introduction
 
-MicroPython is a tiny open source Python dialect that runs on microcontrollers - like the Adafruit Feather nRF52840 microcontroller that I use for developing xSpectre's handheld spectrometer.
+MicroPython is a tiny open source Python dialect that runs on microcontrollers - like the [Adafruit Feather nRF52840](../../module/module-feather-nRF52840/) microcontroller that I use for developing [xSpectre's handheld spectrometer](../../spectrolum/spectrolum-v078-summary/).
 
+## Micropython pin labels for Adafruit nRF52480 Express
 
 The naming of the pins, both for Arduino IDE and CircuitPython, for the Adafruit nRF52480 Express board is [here](https://blog.adafruit.com/2021/05/25/pin-reference-adafruit-feather-nrf52840-prettypins/).
+
+## Neopixel blinking
+
+The python script below loops a rainbow colored sequence for the Adafruit Neopixel Red-Green-Blue light on the Adafruit nRF52480 Express board.
 
 ```
 """

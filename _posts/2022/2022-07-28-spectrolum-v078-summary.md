@@ -6,7 +6,7 @@ categories: spectrolum
 excerpt: "Version 0.78 of xSpectre handheld spectrometer"
 tags:
   - spectrometer
-  - stulturum
+  - xspectrolum
   - v0.78
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
 date: '2022-07-28'
