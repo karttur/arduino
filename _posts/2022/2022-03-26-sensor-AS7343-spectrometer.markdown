@@ -5,6 +5,7 @@ categories: sensor
 sensingfeature: spectra
 sensormethod: filter
 sensorconnect: i2c
+sensingmedia: solid+liguid+gas+soil+water+air
 excerpt: "AMS 14-channel broad band sensors"
 tags:
   - spectrometer
