@@ -39,7 +39,7 @@ https://github.com/groupgets/c12666ma
 
 The best?:
 
-[Open-Source Miniature Spectrophotometer](https://osf.io/rbfse/) based on the scientific article [Laganovska et al, 2002. Portable low-cost open-source wireless spectrophotometer for fast and reliable measurements, https://doi.org/10.1016/j.ohx.2020.e00108](https://www.sciencedirect.com/science/article/pii/S246806722030016X).
+[Open-Source Miniature Spectrophotometer](https://osf.io/rbfse/) based on the scientific article [Laganovska et al, 2020. Portable low-cost open-source wireless spectrophotometer for fast and reliable measurements, https://doi.org/10.1016/j.ohx.2020.e00108](https://www.sciencedirect.com/science/article/pii/S246806722030016X).
 
 ### References
 

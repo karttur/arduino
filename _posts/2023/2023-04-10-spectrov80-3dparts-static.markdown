@@ -1,353 +1,288 @@
 ---
 layout: post
-title: rs485/MODBUS NPK
-categories: sketch
+title: v080 3D models
+categories: spectrolum
 version: v0.80
-excerpt: "Arduino sketch for rs485/MODIS NPK probe for Spectrolum v080"
+excerpt: "xSpectrolum v080 3D print models"
 tags:
   - spectrolum
   - v080
-  - skecth
-  - NPK
-  - pH
-  - SM
-  - EC
-  - ModbusMaster
+
 image: avg-trmm-3b43v7-precip_3B43_trmm_2001-2016_A
-date: '2022-02-21 11:27'
-modified: '2022-02-21 T11:27'
+date: '2023-04-10 11:27'
+modified: '2023-04-10 T11:27'
 comments: true
 share: true
 ---
 
-```
-/*
- * Initial test program for
- * Adafruit Feather nRF52840 with XSPECLUM01 board.
- *
- * Test:
- * - rs485 communication with NPK+pH+SM-EC sensor, ModbusMaster
- *
- * Note: the feather needs to be removed from the board when updated,
- * since the bootloader does not set nKILL high (which will turn off the device after a few hundreds of ms).
- *
- *
- * Arduino IDE installation:
- * ========================
- *     Download and install the Arduino IDE (At least v1.8)
- *     Start the Arduino IDE
- *     Go into Preferences
- *     Add https://adafruit.github.io/arduino-board-index/package_adafruit_index.json as an 'Additional Board Manager URL'
- *     Restart the Arduino IDE
- *     
- *     Open the Boards Manager option from the Tools -> Board menu and install 'Adafruit nRF52 by Adafruit'
- *     Once the BSP is installed (takes long time with a long delay in the middle), select
- *     Adafruit Bluefruit nRF52840 Feather Express (for the nRF52840) from the Tools -> Board menu
- *     
- *
- *
- * To update the bootloader:
- * =========================
- * Step 1:
- * Tools -> Board: Adafruit Feather nRF52840 Express
- * select "Bootloader DFU for Bluefruit nRF52" for Tools->Programmer
- * Select the right com port
- * Tools->Burn Bootloader
- *
- * Step 2:
- * Double-click the Reset button. NeoPixel turns green.
- * Drag the downloaded .uf2 file to FTHR840BOOT. The LED will flash.
- *
- */
+##### To view the 3D print models as dynamic 3D objects, just click the static image of the part you want to rotate and zoom.
 
-#define DAC6571_ADDR 0x4C
+### Main container shell body
 
-#define BNC               A0
-#define SPECTRO_AN        A1 // The analog video signal for the spectrometer
-#define GX16_AN           A2 // The GX16 analog sensor signal
-#define nKILL             17
-#define nPBINT            18
-#define ONEWIRE           19
+The main container box of the xSpectrolum v080 can hold 2 differently shaped spectral sensors modules. For each sensor type the container can be produced with or without ports for external sensors. The container can also be produced for only external sensors and no bayonet join for a main spectral sensor. v080 thus comes with 5 different front sides and 2 different back sides.
 
-#define GPIOSCK           26  // NC
-#define nRE               25
-#define GPIOMISO          24
-#define GPIORX            1
-#define GPIOTX            0
-#define GPIOD2            2
+#### Front for Hamamatsu C12880MA
 
-#define SPECTRO_CLK       13
-#define SPECTRO_ST        12
-#define SPECTRO_TRG       11
-#define SPECTRO_EOS       10
-#define SPECTRO_BOOST_EN  9
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-container-front-C12880MA_20230314_v080g.stl">
+<img src="../../images/xspectrolum-container-front-C12880MA_20230314_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum front for Hamamatsu C12880MA, with external ports.</figcaption>
+</figure>
 
-#define LED_BUCK_EN       6
-#define LED_PULSE         5
+#### Front for Hamamatsu C12880MA without external ports
 
-#define GPIOSCL           23
-#define GPIOSDA           22
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-container-front-C12880MA-no-ext_20230314_v080g.stl">
+<img src="../../images/xspectrolum-container-front-C12880MA-no-ext_20230314_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum front for Hamamatsu C12880MA, without external ports.</figcaption>
+</figure>
 
-#define USERSWITCH        7
-#define BATTERYV2         A6
-#define NEOPIXEL          8
+#### Front for Hamamatsu C14483MA
 
-#define SPECTRO_CHANNELS          256 // Nr of spectral channels in sensor
-#define SPECTRO_START_CHANNEL     64 // First channel with valid data
-#define SPECTRO_END_CHANNEL       256 // Last channel with valid data
-#define SPECTRO_integration_time  300 // Integration time for spectral sensor sampling ("expsoture rime")
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-container-front-C14384MA_20230314_v080g.stl">
+<img src="../../images/xspectrolum-container-front-C14384MA_20230314_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum front for Hamamatsu C14384MA, with external ports.</figcaption>
+</figure>
 
-uint16_t data[SPECTRO_CHANNELS];
+#### Front for Hamamatsu C14483MA without external ports
 
-#include <Adafruit_NeoPixel.h>    //  Library that provides NeoPixel functions
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-container-front-C14384MA-no-ext_20230314_v080g.stl">
+<img src="../../images/xspectrolum-container-front-C14384MA-no-ext_20230314_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum front for Hamamatsu C14384MA, without external ports.</figcaption>
+</figure>
 
-// -- Create a NeoPixel object called onePixel that addresses 1 pixel in pin 8
-Adafruit_NeoPixel rgbPixel = Adafruit_NeoPixel(1, 8, NEO_GRB + NEO_KHZ800);
+#### Front without bayonet joint for spectral sensor
 
-#include <Wire.h>                 // Library
-#include "SHT2x.h"                // Library for in-box temperature and relaive humidity
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-container-front-no-spectro_20230314_v080g.stl">
+<img src="../../images/xspectrolum-container-front-no-spectro_20230314_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum container front without bayonet joint for spectral sensor.</figcaption>
+</figure>
 
-// -- Create a SHT2x object called sht for accessing the in-box Temperature and Relative Humidity
-SHT2x sht;
+#### Back for containers with external ports
 
-/* ModbusMaster For communication with RS485+MODBUS sensors */
-#include <ModbusMaster.h>  
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-container-back_20230314_v080g.stl">
+<img src="../../images/xspectrolum-container-back_20230314_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum back for containers with external ports.</figcaption>
+</figure>
 
-/* tinyusb is for the serical connection with Adafruit nRF52 boards */
-#if defined(USE_TINYUSB)
-#include <Adafruit_TinyUSB.h> // for Serial
-#endif
+#### Back for containers without external ports
 
-/* Setup the Modbus transmission basics */
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-container-back-no-ext_20230314_v080g.stl">
+<img src="../../images/xspectrolum-container-back-no-ext_20230314_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum back for containers without external ports.</figcaption>
+</figure>
 
-void PreTransmission(){
-  // Set transmit mode
-  digitalWrite(nRE, HIGH);
-}
+### Main container bayonet cover
 
-void PostTransmission(){
-  // Set receive mode
-  digitalWrite(nRE, LOW);
-}
+The bayonet cover is for protecting the spectral sensor and interior of the main container. It comes in two versions, one higher for the Hamamatsu C12880MA spectral sensor and one lower for the Hamamatsu C14384MA sensor.
 
-// instantiate ModbusMaster object
-ModbusMaster node;
+#### Bayonet cover for Hamamatsu C12880MA
 
-/* END - Setup the Modbus transmission basics */
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-container-bayonet-cover-low_20230314_v080g.stl">
+<img src="../../images/xspectrolum-container-bayonet-cover-low_20230314_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum bayonet cover for Hamamatsu C12880MA containers.</figcaption>
+</figure>
 
-void setup() {
+#### Bayonet cover for Hamamatsu C14384MA
 
-  pinMode(BNC,      INPUT);  // BNc connection - usually an Ion Selecteve Electrode (ISE)
-  pinMode(SPECTRO_AN,   INPUT);  // Spectro video analog signal
-  pinMode(GX16_AN,      INPUT);  // Aalog signal from GX16 expansion socket)
-  pinMode(nKILL,    OUTPUT); // #KILL
-  pinMode(nPBINT,   INPUT);  // #PBINT (pushbutton)
-  pinMode(ONEWIRE,   INPUT);  // 1W interface (pulled up to 3v3 by 2k2)
-  pinMode(SCK,      OUTPUT); // - (not connected)
-  pinMode(nRE,      OUTPUT); // #RE (Receive enabled, RS485)
-  pinMode(GPIOMISO, OUTPUT); // - (not connected)
-  pinMode(GPIORX,   INPUT);  // Rx (Uart)
-  pinMode(GPIOTX,   OUTPUT); // Tx (Uart)
-  pinMode(GPIOD2,   OUTPUT); // - (not connected)
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-container-bayonet-cover-high_20230314_v080g.stl">
+<img src="../../images/xspectrolum-container-bayonet-cover-high_20230314_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum bayonet cover for Hamamatsu C14384MA containers.</figcaption>
+</figure>
 
-  pinMode(SPECTRO_CLK,   OUTPUT); // Spectrometer clock pulse
-  pinMode(SPECTRO_ST,    OUTPUT); // Spectrometer start pulse
-  pinMode(SPECTRO_TRG,   INPUT);  // Spectrometer trigger pulse
-  pinMode(SPECTRO_EOS,   INPUT);  // SPECTRO_EOS
-  pinMode(SPECTRO_BOOST_EN, OUTPUT); // Spectrometer end of scan
+### Solid sampling equipment
 
-  pinMode(LED_BUCK_EN,  OUTPUT); // LED_BUCK_EN
-  pinMode(LED_PULSE,    OUTPUT); // LED_PULSE
+The equipment for solid sampling consists of a muzzle, that is a cylinder with a bayonet joint that also has a platform for attaching the xSpecled PCB. The other end of the muzzle can be held open against any (solid) object for spectral scanning, or fitted with a sample dish, a white referene or a cover. There is also a separate cover for the white reference.
 
-  pinMode(GPIOSCL,  INPUT);  // SCL
-  pinMode(GPIOSDA,  INPUT);  // SDA
+#### Muzzle for solid sampling
 
-  pinMode(USERSWITCH,   INPUT);  // User switch
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-muzzle-solid_20230314_v080g.stl">
+<img src="../../images/xspectrolum-muzzle-solid_20230314_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum muzzle for solid sampling.</figcaption>
+</figure>
 
-  pinMode(A6,           INPUT);  // Battery voltage/2
-  pinMode(LED_BUILTIN,  OUTPUT); // Red LED
+#### Solid sampling dish
 
-  pinMode(NEOPIXEL,     OUTPUT); // RGB
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-solid-sample-dish_20230301_v080g.stl">
+<img src="../../images/xspectrolum-solid-sample-dish_20230301_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum (grained) solid sampling dish that fits the muzzle.</figcaption>
+</figure>
 
-  // Disable LED driver
-  digitalWrite(LED_BUCK_EN, LOW);
-  digitalWrite(LED_PULSE, HIGH);
+#### Solid sampling dish and muzzle cover combined
 
-  // Start Spectrometer and RS485
-  digitalWrite(SPECTRO_BOOST_EN, HIGH); // +5V for rs485
-  digitalWrite(nRE, HIGH);          // Set transmit mode
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-solid-sample-dish+lock_20230314_v080g.stl">
+<img src="../../images/xspectrolum-solid-sample-dish+lock_20230314_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum combined (grained) solid sampling dish and muzzle cover.</figcaption>
+</figure>
 
-  // Set the baud rate for the sensor connection
-  // The soil-NPK sensor is set to a baudrate of 4800
-  Serial1.begin(4800);
-  node.begin(1, Serial1);
-  node.preTransmission(PreTransmission);
-  node.postTransmission(PostTransmission);
-}
+#### Solid sampling white reference (and muzzle cover)
 
-void print_rs485_modbus_npk(float temperature, float sm, int ec, float ph, int nitrogen, int phosphorus, int potassium, int salinity, int tds){
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-solid-dish+whiteref-lock_20230314_v080g.stl">
+<img src="../../images/xspectrolum-solid-dish+whiteref-lock_20230314_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum solid sampling white reference that also function as a muzzle cover.</figcaption>
+</figure>
 
-  //temp 34.0, sm 80.2, ph 8.4, N:2, P:51, K: 44107, salinity98, tds: 1539.0
-  Serial.print(temperature,1);
-  Serial.print(',');
-  Serial.print(sm,1);
-  Serial.print(',');
-  Serial.print(ph,1);
-  Serial.print(',');
-  Serial.print(nitrogen);
-  Serial.print(',');
-  Serial.print(phosphorus);
-  Serial.print(',');
-  Serial.print(potassium);
-  Serial.print(',');
-  Serial.print(salinity);
-  Serial.print(',');
-  Serial.print(tds);
+#### Solid sampling white reference cover
 
-  Serial.print("\n");
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-solid-whiteref+lock_20230317_v080g.stl">
+<img src="../../images/xspectrolum-solid-whiteref+lock_20230317_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum solid sampling white reference cover.</figcaption>
+</figure>
 
-}
+### Liquid (cuvette) sampling equipment
 
-void full_print_rs485_modbus_npkphcth(float temperature, float sm, int ec, float ph, int nitrogen, int phosphorus, int potassium, int salinity, int tds){
+The equipment for liquid sampling consists of a muzzle, that is a cylinder with a bayonet joint that usually also has a platform for attaching the xSpecled PCB. The cylinder has a cubic cut-out that fits any of a number of cuvette holders. Cuvette holders include those for full band light that shines through the liquid sample (abosrbance/transmittance spectroscopy) or monochromatic (laser or LED) light that shines at right angle compared to the spectral sensor (fluorescence or Raman spectroscopy). There are also versions, of both the muzzle and the cuvette holder, for attaching a (stronger) external laser. Two different covers are also available.
 
-  Serial.print("Temperature: ");
-  Serial.print(temperature,1);
-  Serial.print(", SM: ");
-  Serial.print(sm,1);
-  Serial.print(", pH: ");
-  Serial.print(ph,1);
-  Serial.print(", N: ");
-  Serial.print(nitrogen);
-  Serial.print(", P: ");
-  Serial.print(phosphorus);
-  Serial.print(", K: ");
-  Serial.print(potassium);
-  Serial.print(", salinity: ");
-  Serial.print(salinity);
-  Serial.print(", TDS: ");
-  Serial.print(tds);
+#### Muzzle for liquid (cuvette) sampling
 
-  Serial.print("\n");
+The muzzle for liquid smaples, that joins the cuvette holder to the main container using the baoynet joint, comes in 2 version: a standard version for all lightsource that connect via the pogo-pins in the bayonet joins, and one special version for external lasers that lack the pogi-pin connectors.
 
-}
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-muzzle-cuvette_20230314_v080g.stl">
+<img src="../../images/xspectrolum-muzzle-cuvette_20230314_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum muzzle for liquid (cuvette) sampling.</figcaption>
+</figure>
 
-void rs485_modbus_npkphcth(){
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-muzzle-cuvette-external-laser_20230317_v080g.stl">
+<img src="../../images/xspectrolum-muzzle-cuvette-external-laser_20230317_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum muzzle for liquid (cuvette) sampling using an external laser.</figcaption>
+</figure>
 
-  uint8_t resultMain;
-  float sm = -999.0;
-  float temperature = -999.0;
-  int ec = -999;
-  float ph = -999;
-  int nitrogen = -999;
-  int phosphorus = -999;
-  int potassium = -999;
-  int salinity = -999;
-  int tds = -999;
+#### Cuvette holder for absorbance/transmittance
 
-  // 0x0000 = Moisture (%)
-  delay (500);
-  resultMain = node.readInputRegisters(0x000, 1);
-  if (resultMain == node.ku8MBSuccess)
-  {
-    sm = float( node.getResponseBuffer(0x00) )/10;
-  }
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-cuvette-opposite_20230318_v080g.stl">
+<img src="../../images/xspectrolum-cuvette-opposite_20230318_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum cuvette holder for absorbance/transmittance spectroscopy (the cuvette holder fits the muzzle for liquid sampling).</figcaption>
+</figure>
 
-  // 0x0001 = Temperature (C)
-  delay (500);
-  resultMain = node.readInputRegisters(0x0001, 1);
-  if (resultMain == node.ku8MBSuccess)
-  {
-    temperature = float( node.getResponseBuffer(0x00) )/10;
-  }
+#### Cuvette holders for fluorescence and Raman spectroscopy
 
-  // 0x0002 = ec (uS/cm)
-  delay (500);
-  resultMain = node.readInputRegisters(0x0002, 1);
-  if (resultMain == node.ku8MBSuccess)
-  {
-    ec =  float( node.getResponseBuffer(0x00) )/10;
-  }
+Cuvette holders with light entering from the side comes in different versions with different openings for different light sources.
 
-  // 0x0003 = ph
-  delay (500);
-  resultMain = node.readInputRegisters(0x0003, 1);
-  if (resultMain == node.ku8MBSuccess)
-  {
-    ph =  float( node.getResponseBuffer(0x00) )/10;
-  }
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-cuvette-side-5mm_20230318_v080g.stl">
+<img src="../../images/xspectrolum-cuvette-side-5mm_20230318_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum cuvette holder for 5 mm LED or laser for fluorescence or Raman spectroscopy.</figcaption>
+</figure>
 
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-cuvette-side-pcb_20230318_v080g.stl">
+<img src="../../images/xspectrolum-cuvette-side-pcb_20230318_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum cuvette holder for Speclum PCB, for e.g. 3mm LEDs or lasers.</figcaption>
+</figure>
 
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-cuvette-external-laser_20230318_v080g.stl">
+<img src="../../images/xspectrolum-cuvette-external-laser_20230318_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum cuvette holder for external laser.</figcaption>
+</figure>
 
-  // 0x0004 = phosphorus (mg/kg)
-  delay (500);
-  resultMain = node.readInputRegisters(0x0004, 1);
-  if (resultMain == node.ku8MBSuccess)
-  {
-    phosphorus =  node.getResponseBuffer(0x00);
-  }
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-cuvette-side-3mm-390nm_20230318_v080g.stl">
+<img src="../../images/xspectrolum-cuvette-side-3mm-390nm_20230318_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum cuvette holder for narrow wavelength LED; example for 390nm.</figcaption>
+</figure>
 
-  // 0x0005 = potassium (mg/kg)
-  delay (500);
-  resultMain = node.readInputRegisters(0x0005, 1);
-  if (resultMain == node.ku8MBSuccess)
-  {
-    potassium =  node.getResponseBuffer(0x00);
-  }
+#### Cuvette muzzle cover
 
-  // 0x0006 = nitrogen
-  delay (500);
-  resultMain = node.readInputRegisters(0x0006, 1);
-  if (resultMain == node.ku8MBSuccess)
-  {
-    nitrogen =  node.getResponseBuffer(0x00);
-  }
+The cover for the cuvette muzzle is attached more firmly and permanent compared to the removable cover or the solid muzzle. The cuvette muzzle cover comes in 2 versions, a higher version with room for opposite light suorces and a lower version for other light sources.
 
-  // 0x0007 = salinity (ppm)
-  delay (500);
-  resultMain = node.readInputRegisters(0x0007, 1);
-  if (resultMain == node.ku8MBSuccess)
-  {
-    salinity =  node.getResponseBuffer(0x00);
-  }
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-cuvette-opposite-cover_20230319_v080g.stl">
+<img src="../../images/xspectrolum-cuvette-opposite-cover_20230319_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum cuvette muzzle cover, higher version for cuvettes with opposite light sources.</figcaption>
+</figure>
 
-  // 0x0008 = tds (ppm)
-  delay (500);
-  resultMain = node.readInputRegisters(0x0008, 1);
-  if (resultMain == node.ku8MBSuccess)
-  {
-    tds =  node.getResponseBuffer(0x00);
-  }
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-cuvette-side-cover_20230319_v080g.stl">
+<img src="../../images/xspectrolum-cuvette-side-cover_20230319_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum cuvette muzzle cover, lower version for cuvettes with right angle (side) light sources.</figcaption>
+</figure>
 
-  full_print_rs485_modbus_npkphcth(temperature, sm, ec, ph, nitrogen, phosphorus, potassium, salinity, tds);
+### Muzzle bayonet cover
 
-}
+The muzzles come with a bayonet joint that fit in the main contaier shell, to protect the electronics in the muzzles that can be fitted with a cover when not in use.
 
-#define RA 68.0
-#define RB 16.9
-#define RD 75.0
-#define DAC_VREF_mV 3300.0
-#define DAC_MAX 4095.0
-#define VSET_MIN_mV 566
-#define VSET_MAX_mV 3558
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-muzzle-bayonet-cover_20230320_v080g.stl">
+<img src="../../images/xspectrolum-muzzle-bayonet-cover_20230320_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum muzzle baynet cover.</figcaption>
+</figure>
 
-#define pH_OFFSET_mV 1650
-#define pH_GAIN 3
-#define pH_mV_PER_pH 59.194
-#define pH_OFFSET_pH 7
+### External sensor shells
 
-void loop()
-{
-  int adcvalue = 0;
-  float ph,vbat,vid_in,an2;
-  float mv_per_lsb = 3600.0F/1024.0F; // 10-bit ADC with 3.6V input range
+Two kinds of external sensors come with 3D printed shells. The series of [AMS filter based spectral sensors](#) come in a cylinder that is more or less like the solid muzzle, but as a stand alone version with both light and sensor built into the PCB (breakout board) that fits the unit. The AMS external sensors cylinde fits the same sample holder, white reference and cover as the ordinary soild muzzle. The second set of sensors are the [MQx series of flammable gas sensors](#). They all have the same size and basic design and fit in a 2-part shell.
 
-  delay (100);
-  digitalWrite(LED_RED, HIGH);
+#### AMS spectral sensor shell
 
-  rs485_modbus_npkphcth();
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-AMS-standalone-20230314_v080g.stl">
+<img src="../../images/xspectrolum-AMS-standalone-20230314_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum external AMS spectral sensor cylinder.</figcaption>
+</figure>
 
-  delay (100);
-  digitalWrite(LED_RED, LOW);
+#### MQx gas sensors shell
 
-}
-```
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-MQx-gas-sensor-top_20230310_v080g.stl">
+<img src="../../images/xspectrolum-MQx-gas-sensor-top_20230310_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum external MQx gas sensor shell, top part with a hole for the actual sensor.</figcaption>
+</figure>
+
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-MQx-gas-sensor-bottom_20230310_v080g.stl">
+<img src="../../images/xspectrolum-MQx-gas-sensor-bottom_20230310_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum external MQx gas sensor shell, bottom part with holes for cables and the potentiometer for adjustment.</figcaption>
+</figure>
+
+### Mold for silicon casing for the Hamamatsu C14483MA sensor
+
+The Hamamatsu C14483MA sensor must be fitted using a silicon frame or casing. To create the silicon frame we use a 3D mold model.
+
+<figure>
+<a href="https://github.com/karttur/common/blob/master/3dmodels_v080/xspectrolum-SMD-casting_20230303_v080g.stl">
+<img src="../../images/xspectrolum-SMD-casting_20230303_v080g.png">
+</a>
+<figcaption> 3D model of the xSpectrolum mold for silicon casing for the Hamamatsu C14483MA sensor.</figcaption>
+</figure>

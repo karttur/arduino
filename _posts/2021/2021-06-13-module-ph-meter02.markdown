@@ -217,5 +217,3 @@ Offset = [(PH2+PH1)-ScaleFac*(V1+V2)]/2
 #### Interactive calibration
 
 Looking at an indepedntn Youtube presentation on pH-metering, an interactive calibration system was presented - [by Jessica](https://www.youtube.com/watch?v=4pDPzQdSmqg). That should be the right thing for our thing.
-
-[New Arduino/Genuino MKR1000: First tests and comparison with ESP8266](https://www.youtube.com/watch?v=dE6sVm3QdE0) by Andreas Spiess (on the original MKR 1000, not the Wifi version).

@@ -20,4 +20,4 @@ This post is a rather disorganised list of commercially available handheld spect
 
 ### LI-180 Spectrometer
 
-Handheld spectrometer adapted for analysing plant growth (400 - 700 nm) by [Licor](https://www.licor.com/env/products/light/spectrometer.html?gclid=CjwKCAjw-5v7BRAmEiwAJ3DpuLhjvOm8_m9MhJiIBqQR6_D7rLpPdwU-euRE6eE3-Dk4QBvZLCZrNBoCzUgQAvD_BwE).
+Handheld spectrometer adapted for analysing plant growth (400 - 700 nm) by [Licor](https://www.licor.com/env/products/light/spectrometer.html).
