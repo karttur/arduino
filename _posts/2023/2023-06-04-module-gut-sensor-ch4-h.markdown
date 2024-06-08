@@ -16,7 +16,7 @@ share: true
 
 ## Introduction
 
-This is not really an Arduino module but links to a stand alone sensor that mesures methane (CH4) and Hydrogen (H) as a way to analyze gut functions. This could be chieved with the xSpectre spectrometer by adding a breathing component that anlyse the spectral absurbance of the gas flow.
+This is not really an Arduino module but links to a stand alone sensor that measures methane (CH4) and Hydrogen (H) as a way to analyze gut functions. This could be achieved with the xSpectre spectrometer by adding a breathing component that analyse the spectral absurbance of the gas flow.
 
 https://foodmarble.com/product/foodmarble-aire-2/
 
