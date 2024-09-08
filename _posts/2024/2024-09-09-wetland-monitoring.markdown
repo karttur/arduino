@@ -21,9 +21,9 @@ This post outlines an idea for how to design and assemble a climate gas monitori
 
 ### Idea and design
 
-The overall design is a perforated 2 inch iron pipe with one end having a tip and the other end being open. The pipe is inserted to about one meter in the soil (wetland). The top (10 to 50 cm?) of the perforated pipe should be above ground. Inside the iron pipe a rail fitted with holders for different sensors is inserted. The upper (atmospheric) part is separated from the lower (soil) part by a membrane fitted on the rail. Sensors are fitted both for the atmospheric and the soil sections.
+The overall design is a [perforated 2 inch iron pipe](#iron-pipe) with one end having a tip and the other end being open. The pipe is inserted to about one meter in the soil (wetland). The top (10 to 50 cm?) of the perforated pipe should be above ground. Inside the iron pipe a rail fitted with holders for different sensors is inserted. The upper (atmospheric) part is separated from the lower (soil) part by a membrane fitted on the rail. Sensors are fitted both for the atmospheric and the soil sections.
 
-The open top of the pipe is fitted with a 3D printed bayonet coupling that holds the rail and the wires from the sensors fitted on the rail. On top of the pipe, with a corresponding (male-female) bayonet a 3-D printed container (approximately 20x20x20 cm) is fitted. The container houses a Wireless LoRaWAN logger ([Senscap S2100 LoRaWAN data logger](#)), a sensor connection hub ([SenseCAP S2110 Sensor Builder](#)) and a [rechargeable battery](#) of around 20 Ah. The top of the container has another bayonet connected opening for fitting of a [multi-sensor weather station](#).
+The open top of the pipe is fitted with a [3D printed bayonet coupling](#3d-printed-parts) that holds the rail and the wires from the sensors fitted on the rail. On top of the pipe, with a corresponding (male-female) bayonet a 3-D printed container (approximately 20x20x20 cm) is fitted. The container houses a Wireless LoRaWAN logger ([Senscap S2100 LoRaWAN data logger](#sensecap-s2100-wireless-lorawan-data-logger)), a sensor connection hub ([SenseCap S2110 Sensor Builder](#sensecap s2110-sensor-builder)) and a [rechargeable battery](#12-v-battery) of around 20 Ah. The top of the container has another bayonet connected opening for fitting of a [multi-sensor weather station](#weather-station).
 
 Within (and outside) the outlined structure the following sensors are fitted:
 
@@ -85,9 +85,9 @@ A standard 2 inch iron pipe with ~2 mm perforations is used both for anchoring t
 
 For wetlands perhaps the exhaust pipe alternative would be the most favourable (and cost-effective) pipe. For mineral soils, more sturdy pipes are probably required. The cost for a 1 m perforated steel pipe for exhausts is approximately 300 SEK.
 
-#### SenseCAP S2110 Sensor Builder
+#### SenseCap S2110 Sensor Builder
 
-The [SenseCAP S2110 Sensor Builder](https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html?srsltid=AfmBOoq92z3JwSlTMfnM2WI-qncnhuIorDRdsl1dKM7iSYWvad5LFt5O) is an open-source hub for wire connecting sensors using different protocols and convert the input signals to a uniform output. The output signal is then typically sent to a [Senscap S2100 LoRaWAN data logger](#).
+The [SenseCAP S2110 Sensor Builder](https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html?srsltid=AfmBOoq92z3JwSlTMfnM2WI-qncnhuIorDRdsl1dKM7iSYWvad5LFt5O) is an open-source hub for wire connecting sensors using different protocols and convert the input signals to a uniform output. The output signal is then typically sent to a [Senscap S2100 LoRaWAN data logger](#sensecap-s2100-wireless-lorawan-data-logger).
 
 <figure>
   <img src="../../images/caelilum_SenseCAP_S2110_Sensor_Builder.png">
@@ -99,10 +99,9 @@ A SenseCAP S2110 unit costs approximately 200 SEK.
 
 An alternative solution is to use an UART to RS485 converter like the [SparkFun Transceiver Breakout - RS-485](https://www.sparkfun.com/products/10124).
 
-#### SenseCAP S2100 wireless LoRaWAN sensor hub data logger
+#### SenseCap S2100 wireless LoRaWAN data logger
 
-The [SenseCAP S2100 LoRaWAN logger](https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html) is a weather proof, battery-powered wireless data logger that use LoRa communication for sending data to a [gateway](#). The logger supports RS485/Analog/GPIO sensors. To solve that the input signal for the multiple sensors, the[SenseCAP S2110 Sensor Builder](#) will be used as a hub between the individual sensors and the logger.
-
+The [SenseCAP S2100 LoRaWAN logger](https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html) is a weather proof, battery-powered wireless data logger that use LoRa communication for sending data to a [gateway](#sensecap-lora-Gateway). The logger supports RS485/Analog/GPIO sensors. To solve that the input signal for the multiple sensors, the[SenseCAP S2110 Sensor Builder](#sensecap-s2110-sensor-builder) will be used as a hub between the individual sensors and the logger.
 
 <figure>
   <img src="../../images/caelilum_SenseCAP_S2100_LoRaWAN_logger.png">
@@ -116,22 +115,21 @@ The cost for a SenseCAP S2100 LoRaWAN logger is approximately 700 SEK.
 
 #### SenseCap LoRa Gateway
 
-To connect the [SenseCAP S2100 LoRaWAN logger](#) to the internet a LoRa gateway with an internet connection is required. For instance the [SenseCap M1 LoRaWAN Indoor Gateway - EU868](https://www.seeedstudio.com/SenseCAP-M1-LoRaWAN-Indoor-Gateway-EU868-p-5022.html?srsltid=AfmBOoqPAc7okf8mTlkI4TxTgv5gxdLNUSK1oiktvS_P72poggA-_XuE).
+To connect the [SenseCAP S2100 LoRaWAN logger](#sensecap-s2100-wireless-lorawan-data-logger) to the internet a LoRa gateway with an internet connection is required. For instance the [SenseCap M1 LoRaWAN Indoor Gateway - EU868](https://www.seeedstudio.com/SenseCAP-M1-LoRaWAN-Indoor-Gateway-EU868-p-5022.html?srsltid=AfmBOoqPAc7okf8mTlkI4TxTgv5gxdLNUSK1oiktvS_P72poggA-_XuE).
 
 The cost for a SenseCap M1 Gateway is approximately 6000 SEK.
 
 ![battery](../../images/caelilum_battery_v01_20240907.png)
 {: .pull-right}
-#### 12 V batteri
+#### 12 V battery
 
-The power consumption by the sensors required for monitoring climate gases is too high for being long-term supplied by the battery in the [data logger](#).
-[A more robust battery, e.g. for motor bikes, with dimensions fitting the proposed container, cost around 1000 SEK](https://www.biltema.se/bil---mc/fordonsbatterier/mc-batterier/agm-batterier/mc-batteri-agm-12-v-20-ah-175-x-87-x-155-mm-2000036062).
+The power consumption by the sensors required for monitoring climate gases is too high for being long-term supplied by the battery in the [data logger](#sensecap-s2100-wireless-lorawan-data-logger). [A more robust battery, e.g. for motor bikes, with dimensions fitting the proposed container, cost around 1000 SEK](https://www.biltema.se/bil---mc/fordonsbatterier/mc-batterier/agm-batterier/mc-batteri-agm-12-v-20-ah-175-x-87-x-155-mm-2000036062).
 
 #### Water pressure sensor
 
 ![waterressure](../../images/caelillum_water_pressure_sensor.png)
 {: .pull-right}
-Water pressure sensors operating with microcontrollers most commonly have a simple analog signal response with the voltage returned linearly correlated to the pressure (water depth). The [DFRobot SEN0257](https://wiki.dfrobot.com/Gravity__Water_Pressure_Sensor_SKU__SEN0257)is Arduino compatible (i.e. can be programmed with [SenseCAP S2110](#). It has an accuracy of 0.5 % and cost 200 SEK.
+Water pressure sensors operating with microcontrollers most commonly have a simple analog signal response with the voltage returned linearly correlated to the pressure (water depth). The [DFRobot SEN0257](https://wiki.dfrobot.com/Gravity__Water_Pressure_Sensor_SKU__SEN0257)is Arduino compatible (i.e. can be programmed with [SenseCAP S2110](#sensecap s2110-sensor-builder). It has an accuracy of 0.5 % and cost 200 SEK.
 
 The equivalent [SEEED studio pressure gauge](https://solution.seeedstudio.com/product/industrial-water-level-sensor/) is more expensive but comes with a longer cable if required. It costs around 850 SEK.
 
@@ -191,7 +189,7 @@ Seeed studies offers a [SenseCap wireless soil moisture and temperature sensor](
 
 The key weather information to acquire for estimating GHG fluxes across the soil-atmosphere interface is wind speed and wind direction - anemometers.
 
-A new generation of ultrasonic anemometers have reached maturity and are now included as components in many weather station packages, including those developed for integration with microcontrollers. Also [Seeed studios](), the company behind the SenseCap family, has developed weather sensors for integration with their [sensor builder](#) and [logger](). Seed studios offer:
+A new generation of ultrasonic anemometers have reached maturity and are now included as components in many weather station packages, including those developed for integration with microcontrollers. Also [Seeed studios](), the company behind the SenseCap family, has developed weather sensors for integration with their [sensor builder](#sensecap s2110-sensor-builder) and [logger](#sensecap-s2100-wireless-lorawan-data-logger). Seed studios offer:
 - [traditional SenseCAP S2120 8-in-1 LoRaWAN Weather SensorSenseCap weather station - SenseCAP S2120 8-in-1 LoRaWAN Weather Sensor](https://www.seeedstudio.com/sensecap-s2120-lorawan-8-in-1-weather-sensor-p-5436.html) (@ 2500 SEK),
 - [a 7-in-1 compact weather station including ultrasonic anemometer](https://www.seeedstudio.com/SenseCAP-S700-7-in-1-Compact-Weather-Station-p-5651.html) (@ 7000 SEK),
 - [ultrasonic anemometer station](https://www.seeedstudio.com/SenseCAP-S200-Wind-Speed-and-Direction-Sensor-p-5693.html?gad_source=1&gbraid=0AAAAACr5AMF0JpEo3GkfMGFSqPp1A3skz&gclid=Cj0KCQjw8--2BhCHARIsAF_w1gwqjk5dxvNnk4sBmIijqXfu1P7z5BBOKs_-Xp0m086skxGyUy4Qm9EaAlcOEALw_wcB) (@ 3000 SEK)
