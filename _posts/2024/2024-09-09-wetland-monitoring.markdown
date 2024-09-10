@@ -21,7 +21,9 @@ This post outlines an idea for how to design and assemble a climate gas monitori
 
 ### Idea and design
 
-The overall design is a [perforated 2 inch iron pipe](#iron-pipe) with one end having a tip and the other end being open. The pipe is inserted to about one meter in the soil (wetland). The top (10 to 50 cm?) of the perforated pipe should be above ground. Inside the iron pipe a rail fitted with holders for different sensors is inserted. The upper (atmospheric) part is separated from the lower (soil) part by a membrane fitted on the rail. Sensors are fitted both for the atmospheric and the soil sections.
+The overall design is a [perforated 2 inch iron pipe](#iron-pipe) with one end having a tip and the other end being open. The pipe is inserted to about one meter in the soil (wetland). The top of the perforated pipe should be above ground. Ideally the the top should reach between 100 and 150 cm above ground. This would make the central unit on top of the pipe easier to service, and the weather station on top of the central unit could be put at the recommended height of 2m.
+
+Inside the iron pipe a rail fitted with holders for different sensors is inserted. The upper (atmospheric) part is separated from the lower (soil) part by a membrane fitted on the rail. Sensors are fitted both for the atmospheric and the soil sections.
 
 The open top of the pipe is fitted with a [3D printed bayonet coupling](#3d-printed-parts) that holds the rail and the wires from the sensors fitted on the rail. On top of the pipe, with a corresponding (male-female) bayonet a 3-D printed container (approximately 20x20x20 cm) is fitted. The container houses a Wireless LoRaWAN logger ([Senscap S2100 LoRaWAN data logger](#sensecap-s2100-wireless-lorawan-data-logger)), a sensor connection hub ([SenseCap S2110 Sensor Builder](#sensecap s2110-sensor-builder)) and a [rechargeable battery](#12-v-battery) of around 20 Ah. The top of the container has another bayonet connected opening for fitting of a [multi-sensor weather station](#weather-station).
 
@@ -101,7 +103,7 @@ An alternative solution is to use an UART to RS485 converter like the [SparkFun 
 
 #### SenseCap S2100 wireless LoRaWAN data logger
 
-The [SenseCAP S2100 LoRaWAN logger](https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html) is a weather proof, battery-powered wireless data logger that use LoRa communication for sending data to a [gateway](#sensecap-lora-Gateway). The logger supports RS485/Analog/GPIO sensors. To solve that the input signal for the multiple sensors, the[SenseCAP S2110 Sensor Builder](#sensecap-s2110-sensor-builder) will be used as a hub between the individual sensors and the logger.
+The [SenseCAP S2100 LoRaWAN logger](https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html) is a weather proof, battery-powered wireless data logger that use LoRa communication for sending data to a [gateway](#sensecap-lora-gateway). The logger supports RS485/Analog/GPIO sensors. To solve that the input signal for the multiple sensors, the[SenseCAP S2110 Sensor Builder](#sensecap-s2110-sensor-builder) will be used as a hub between the individual sensors and the logger.
 
 <figure>
   <img src="../../images/caelilum_SenseCAP_S2100_LoRaWAN_logger.png">
@@ -204,7 +206,7 @@ Total material cost for 2 PMMA test tubes amounts to approximately 2000 SEK.
 
 ### Proposed components solution
 
-<figcaption>Table 1. Selected components and itemised costs, the cost is either per item or total cost divided by 6 units.</figcaption>
+<figcaption>Table 1. Selected components and itemised costs, the figure in brackets is the number of units covered by the indicated cost.</figcaption>
 
 
 | part | selected component | cost (SEK) [units] |
